@@ -1,0 +1,24 @@
+\section{FastIC+}
+The FastIC+ is an 8-channel front-end for photo detectors such as SiPM, PMT or MCP, capable of precisely
+measuring the Time-of-Arrival (ToA) and energy of photons hitting the detector from the Time-over-Treshold (ToT). 
+
+\subsection{Detection}
+\label{sec:fastic:detection}
+The detection part of the chip implements current mode front-ends capable of working with both positive and negative polarity sensors with dynamic range of \SI{5}{\micro\ampere} to \SI{20}{\milli\ampere} and capacitance range of \SI{10}{\pico\farad} to \SI{1}{\nano\farad}. The eight channels can either operate independently or in a summation mode and can be highly configured to suffice demanding user needs. Several triggering schemes are available for discriminating the photon impacts by their energy aswell as external trigger input and trigger output to allow synchronization of multiple chips. Three different measurement modes, 
+\begin{itemize}
+    \item ToA (Non linear ToT),
+    \item Energy (from ToT),
+    \item Hybrid (ToA + Energy),
+\end{itemize}
+are present to allow the user to optimize for measurement of ToA, ToT or both. The maximum detection rate of the impacts is approximately \SI{2}{\mega\hertz} in the linear mode and \SI{50}{\mega\hertz} in non-linear mode. A \SI{40}{\mega\hertz} low jitter reference clock is required for the chip to operate.
+
+
+\subsection{Digitizing}
+The measured ToA and ToT are outputted separately for each channel as a digital pulse, where the beginning of the pulse marks the ToA of the photon and the length of the pulse encodes the energy (ToT). These channels are exposed to the user and can be used for photon detection.
+
+However in order to enhance the time measurement of the ToA and ToT pulses and offload this processing from the user, a \SI{25}{\pico\second} time bin TDC for digitizing the pulses directly on the chip has been implemented. This, in turn, has necessitated the need for a high-speed communication channel capable of transferring the resulting digital data stream. The Aurora 64B/66B protocol was chosen for its sufficient speed and easy interfacing with FPGAs. The FastIC+ itself implements a simplified Aurora transmitter with one simplex lane capable of transmission at speeds from \SI{80}{\mega\bit\per\second} to \SI{1.28}{\giga\bit\per\second}.
+
+\subsection{Configuration and testing}
+An I2C interface has been implemented alongside the Aurora bus to allow for easy configuration of the chip parameters. This interface can run at speeds up to \SI{1}{\mega\hertz} and can be shared between multiple FastIC+ chips. 
+
+For testing purposes, four debug pins are exposed to read out the state of the internal state machine. If not used for debugging, they can be utilized for configuration of the I2C address. 

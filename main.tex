@@ -1,0 +1,63 @@
+\documentclass{cernatsnote}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{placeins}
+\usepackage{siunitx}
+\usepackage{soul}
+\usepackage{bytefield}
+\usepackage{tikz-timing}
+
+
+\newcolumntype{?}{!{\vrule width 2pt}}
+
+\usepackage{svg}
+\svgsetup{
+    inkscape=pdf,
+    inkscapeexe={C:/inkscape.exe.lnk -z -C"}
+}
+\graphicspath{{images/}}
+
+\usepackage[per-mode=symbol,separate-uncertainty=true]{siunitx}
+
+\title{FastIC+ readout in-depth description}
+\author{
+	Vojtech Vosahlo \; \\		
+	CERN, CH-1211 Geneva, Switzerland
+}
+\email{vojtech.vosahlo@cern.ch}
+\date{\today}
+
+\DeclareSIUnit\bit{b}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This document aims to describe the concept and working principles of the FastIC+ readout. To do so, it first introduces the FastIC+ chip itself. Afterwards, it focuses on the Aurora protocol, it's packet structure and the structure of the FastIC+ packets. Than, the main ideas behind receiving the data stream with an microcontroller are presented. Last but not least, each block of the system is described in detail.
+\end{abstract}
+\\ \\ \\ 
+
+\newpage
+\begingroup
+\color{black}
+\tableofcontents
+\endgroup
+
+\pagebreak
+
+\section{Introduction}
+In order to enhance the time measurement of the ToA and ToT analog pulses, FastIC+ has added a picosecond TDC for digitizing the pulses on the chip itself. This, in turn, has necessitated the need for a high-speed communication channel capable of transferring the resulting data stream. The Aurora 64B/66B protocol was chosen for its sufficient speed and easy interfacing with FPGAs.
+
+
+\include{fastic}
+\include{aurora}
+\include{fastic_com}
+\include{electronics}
+
+
+
+\clearpage
+\FloatBarrier
+\bibliography{references}
+\bibliographystyle{plain}
+
+\end{document}
