@@ -81,12 +81,76 @@ For transfering the Aurora data stream from the FastIC+ chips to the computer, t
 The configuration for the Si5340 clock synthetizer was generated using the Clock Builder application provided by Skyworks. This software generates a register map as a C/C++ array that is later parsed by the software and the configuration is applied to the synthetizer over I2C.
 
 \section{HV power supply}
-For controlling the HV power supply, a DAC peripheral has been used to provide the control voltage. Two channels of an ADC peripheral with 256 times oversampling, resulting in a \SI{1000}{\sample\per\second} sample rate were used. 
-\subsection{PID tuning}
+For controlling the HV power supply, a DAC peripheral has been used to provide the control voltage. Two channels of an ADC peripheral with 256 times oversampling, resulting in a \SI{1000}{\hertz} sample rate, were than used to acquire feedback for voltage and current monitoring. 
+
+\subsection{PID controller}
+A closed control loop was implemented, using the ADC inputs and DAC output called a PID controller. This controller calculates the DAC value in order to minimize the difference between a required output voltage and a feedback from the ADC. On every cycle, which takes place after the ADCs finished sampling, an error value $e$ is calculated, which represents the difference between the setpoint and the measured voltage. The error is than integrated into variable $I$ and a derivation of the measured value is calculated, denoted $D$. In the end, a corrective output setting is calculated, to compensate for possible error, using the following equation:
+
+\begin{equation}
+    O = K_P \cdot e + K_I \cdot I + K_D \cdot D
+\end{equation}
+where $O$ is the output value and $K_P$, $K_I$ and $K_D$ are the progressive, integral and derivative constants respectively.
+
+The afformentioned constants can either be determined analytically after modelling the control loops transfer function or they can be determined heuristically. A heuristical method, namely the Ziegler-Nichols method was used in this case.
+
+The tuning of the constants begins with setting $K_I$ and $K_D$ both equal to zero. $K_P$ is than increased until the output of the PID controller starts to oscillate consistantly. The value of $K_P$ at this point is called the ultimate gain $K_U$ and the period of oscillations is called $T_U$. Based on the acquired constants, the values of $K_P$, $K_I$ and $K_D$ are than set.
+
+For a classic PID, the values of the constants should be set to $K_P = 0.6 \cdot K_U$, $K_I = 1.2 \cdot \frac{K_U}{T_U}$ and $K_D = 0.075 \cdot K_U \cdot T_U$
 
 \section{FastIC+}
-\subsection{I2C Communication}
+Both of the FastIC+ chips are mainly controlled over the I2C interface. Only a very basic configuration is done by the software, setting the propper clock dividers to be able to receive the Aurora stream. Rest of the settings are left for the user to modify, as the registers of the FastIC+ can be accessed directly over the communication interface and most of them need to be tuned for a specific application of the readout.
+
 \subsection{Aurora stream}
+The Aurora stream is continuously sampled by an SPI interface on the rising edge of the sampling clock. The SPI interface buffers the received bytes in its internal FIFO until a DMA peripheral, configured in double-buffer circular mode, transfers the data to a buffer. In the double buffer mode, the programmer provides the DMA wit two separate buffers. The DMA is than configured to switch back and forth between the buffers every time one of them is full. This allows the rest of the code to transfer data from one of the buffers while the other one is being filled, not causing any bit drops. 
+
 \subsection{Pulse injection}
 
+The pulse injection circuit is fed by a fast timer output. The width of the timer pulse directly influences the width and amplitude of the generated pulse which is used for testing the frontends. The size of this pulse has been fixed and the pulses are generated with a period of \SI{100}{\hertz}. 
+\newpage
 \section{Userboard}
+
+The userboard detection is achieved with the four exposed GPIO pins. When a command, such as \verb|get userboard status| tries to access the userboard, the short ID is first obtained. If the short ID equals \verb|0b1111|, the pins are switched into a I2C mode and the microcontroller checks if a configuration header is present in the EEPROM. 
+
+The following structure of a configuration header has been implemented:
+
+\FloatBarrier
+\begin{figure}[tph!]
+    \begin{center}
+        \begin{bytefield}[endianness=little,bitwidth=1em, bitheight=1.2em]{32}
+            \bitheader{0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31} \\
+            \bitbox[lrt]{32}{}\\
+            \bitbox[lr]{32}{\texttt{\footnotesize UID}}\\
+            \bitbox[lr]{32}{\texttt{\footnotesize (128 bits)}}\\
+            \bitbox[lrb]{32}{}\\
+            \bitbox[lbr]{32}{\texttt{\footnotesize WRITE CYCLES}}\\
+            \bitbox[lrb]{1}{\texttt{\tiny WP}} & \bitbox[lrb]{1}{\texttt{\tiny UI}} & \bitbox[lrb]{1}{\texttt{\tiny NI}} & \bitbox[lrb]{1}{\texttt{\tiny VI}} & \bitbox[lrb]{1}{\texttt{\tiny F1I}} & \bitbox[lrb]{1}{\texttt{\tiny F2I}} & \bitbox[lrb]{2}{\texttt{\tiny RES}} & \bitbox[lr]{24}{}\\
+            \bitbox[lr]{32}{\texttt{\footnotesize RESERVERD}}\\
+            \bitbox[lr]{32}{\texttt{\footnotesize (120 bits)}}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lrt]{32}{} \\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{\texttt{\footnotesize NAME}}\\
+            \bitbox[lr]{32}{\texttt{\footnotesize (512 bits)}}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lr]{32}{}\\
+            \bitbox[lrb]{32}{} \\
+            \bitbox[lrb]{32}{\texttt{\footnotesize VOLTAGE}} 
+           
+        \end{bytefield}
+    \end{center}
+    \caption{EEPROM configuration header structure}
+    \label{fig:config_header}
+\end{figure}
+\FloatBarrier
+
+where \verb|UID| is a unique ID generated on first initialization of the userboard, \verb|WRITE CYCLES| stores the number of times that the EEPROM has been written. \verb|WP| is a write protect bit and the \verb|UI|, \verb|NI|, \verb|VI|, \verb|F1I|, \verb|F2I| signal if the UID, name, voltage value, FastIC+ 1 and FastIC+ 2 registers have been initialized respectively. \verb|NAME| contains up to 64 character user name and \verb|VOLTAGE| is a floating point value that stores the high voltage preset of a given userboard.
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  28 MAR 2025 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  28 MAR 2025 19:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1632,33 +1632,36 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count518
 \@quotereset=\count519
-(./main.aux)
+(./main.aux
+Package babel Info: 'czech' activates 'czech' shorthands.
+(babel)             Reported  on input line 26.
+ (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./firmware.aux) (./software.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 194.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 194.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 193.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 193.
  (/opt/texlive/2025/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 194.
-LaTeX Font Info:    ... okay on input line 194.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 193.
+LaTeX Font Info:    ... okay on input line 193.
  (/opt/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count520
@@ -1680,8 +1683,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/opt/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 194.
-Package translations Info: no dictionary file `translations-basic-dictionary-czech.trsl' found. on input line 194.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 193.
+Package translations Info: no dictionary file `translations-basic-dictionary-czech.trsl' found. on input line 193.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1715,22 +1718,22 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 194.
-Package biblatex Info: Reference segment=0 on input line 194.
-LaTeX Info: Redefining \microtypecontext on input line 194.
-Package microtype Info: Applying patch `item' on input line 194.
-Package microtype Info: Applying patch `toc' on input line 194.
-Package microtype Info: Applying patch `eqnum' on input line 194.
-Package microtype Info: Applying patch `footnote' on input line 194.
-Package microtype Info: Applying patch `verbatim' on input line 194.
-LaTeX Info: Redefining \microtypesetup on input line 194.
+Package biblatex Info: Reference section=0 on input line 193.
+Package biblatex Info: Reference segment=0 on input line 193.
+LaTeX Info: Redefining \microtypecontext on input line 193.
+Package microtype Info: Applying patch `item' on input line 193.
+Package microtype Info: Applying patch `toc' on input line 193.
+Package microtype Info: Applying patch `eqnum' on input line 193.
+Package microtype Info: Applying patch `footnote' on input line 193.
+Package microtype Info: Applying patch `verbatim' on input line 193.
+LaTeX Info: Redefining \microtypesetup on input line 193.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 194.
+LaTeX Info: Redefining \showhyphens on input line 193.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1773,46 +1776,47 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count526
-Package hyperref Info: Link coloring OFF on input line 194.
+Package hyperref Info: Link coloring OFF on input line 193.
+(./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
 \ctuclsnamebox=\box151
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 203.
-(/opt/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 202.
+ (/opt/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 203.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 202.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 203.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 202.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 203.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 202.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 203.
+(Font)              <10.95> on input line 202.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 203.
+(Font)              <8> on input line 202.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 203.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 203.
+(Font)              <6> on input line 202.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 202.
  (/opt/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/opt/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 203.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 202.
  (/opt/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/opt/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 203.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 202.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1824,19 +1828,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<ctu_logo_black.pdf, id=7, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=232, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 <use ctu_logo_black.pdf>
-Package pdftex.def Info: ctu_logo_black.pdf  used on input line 206.
+Package pdftex.def Info: ctu_logo_black.pdf  used on input line 205.
 (pdftex.def)             Requested size: 85.86746pt x 65.40001pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 206.
+(Font)              <14.4> on input line 205.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 206.
+(Font)              <10> on input line 205.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 206.
+(Font)              <7> on input line 205.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 206--206
+Overfull \hbox (5.0pt too wide) in paragraph at lines 205--205
 []|| [][][] 
  []
 
@@ -1893,32 +1897,27 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 206--206
 
 ]
 
-Package babel Info: 'czech' activates 'czech' shorthands.
-(babel)             Reported  on input line 206.
 
 
 [4
 
-]
-No file main.toc.
+] (./main.toc
+
+)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
 
 
-
-
 [5
 
-
-]
-No file main.lof.
+] (./main.lof)
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
 
 
-No file main.lot.
+(./main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
@@ -2001,15 +2000,12 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [5{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 221.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 220.
 [6{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
 \openout2 = `aurora.aux'.
 
  (./aurora.tex
 Chapter 3.
-
-LaTeX Warning: Reference `fig:blockExample' on page 7 undefined on input line 5.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
@@ -2068,13 +2064,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
 
 ]
-
-LaTeX Warning: Reference `sec:kblock' on page 8 undefined on input line 31.
-
-
-LaTeX Warning: Reference `fig:data' on page 8 undefined on input line 36.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
@@ -2119,9 +2108,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 \height=\dimen362 (locally)
 \depth=\dimen363 (locally)
 \totalheight=\dimen364 (locally)
-
-LaTeX Warning: Reference `fig:sep7' on page 8 undefined on input line 56.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
@@ -2170,10 +2156,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
 
 [8]
-
-LaTeX Warning: Reference `fig:sep' on page 9 undefined on input line 76.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
@@ -2218,9 +2200,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--78
 \height=\dimen362 (locally)
 \depth=\dimen363 (locally)
 \totalheight=\dimen364 (locally)
-
-LaTeX Warning: Reference `fig:kblock' on page 9 undefined on input line 97.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
@@ -2269,10 +2248,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
 
 [9]
-
-LaTeX Warning: Reference `fig:idle' on page 10 undefined on input line 117.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 117--119
 
  []
@@ -2329,9 +2304,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--119
 \height=\dimen362 (locally)
 \depth=\dimen363 (locally)
 \totalheight=\dimen364 (locally)
-
-LaTeX Warning: Reference `eq:scrambler' on page 10 undefined on input line 149.
-
 )
 
 [10]
@@ -2342,9 +2314,6 @@ Chapter 4.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 3.
-
-
-LaTeX Warning: Reference `fig:packet' on page 11 undefined on input line 5.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--7
@@ -2419,10 +2388,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
 
 
 ]
-
-LaTeX Warning: Reference `fig:statpacket' on page 12 undefined on input line 43.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
@@ -2488,10 +2453,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--45
 [12]
 
 [13]
-
-LaTeX Warning: Reference `fig:extpacket' on page 14 undefined on input line 79.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
@@ -2552,13 +2513,6 @@ Chapter 6.
 
 [17]
 
-LaTeX Warning: Reference `sec:fastic:detection' on page 18 undefined on input line 41.
-
-
-LaTeX Warning: Reference `fig:clock_align' on page 18 undefined on input line 43.
-
-
-
 [18{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 64.
@@ -2571,7 +2525,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic-eps-converted-to.pdf images/schematic/fastic.eps>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic-eps-converted-to.pdf, id=168, 587.19376pt x 259.97125pt>
+<images/schematic/fastic-eps-converted-to.pdf, id=481, 587.19376pt x 259.97125pt>
 File: images/schematic/fastic-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic-eps-converted-to.pdf  used on input line 83.
@@ -2593,7 +2547,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic_vmon.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic_vmon-eps-converted-to.pdf images/schematic/fastic_vmon.eps>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic_vmon-eps-converted-to.pdf, id=177, 167.62625pt x 93.34875pt>
+<images/schematic/fastic_vmon-eps-converted-to.pdf, id=488, 167.62625pt x 93.34875pt>
 File: images/schematic/fastic_vmon-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic_vmon-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic_vmon-eps-converted-to.pdf  used on input line 104.
@@ -2610,7 +2564,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic_top.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic_top-eps-converted-to.pdf images/schematic/fastic_top.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic_top-eps-converted-to.pdf, id=188, 215.80624pt x 140.525pt>
+<images/schematic/fastic_top-eps-converted-to.pdf, id=495, 215.80624pt x 140.525pt>
 File: images/schematic/fastic_top-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic_top-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic_top-eps-converted-to.pdf  used on input line 124.
@@ -2632,7 +2586,7 @@ Package epstopdf Info: Source file: <images/schematic/usb_con.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/usb_con-eps-converted-to.pdf images/schematic/usb_con.eps>
 (epstopdf)             \includegraphics on input line 135.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/usb_con-eps-converted-to.pdf, id=198, 435.6275pt x 217.81375pt>
+<images/schematic/usb_con-eps-converted-to.pdf, id=502, 435.6275pt x 217.81375pt>
 File: images/schematic/usb_con-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/usb_con-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/usb_con-eps-converted-to.pdf  used on input line 135.
@@ -2657,7 +2611,7 @@ Package epstopdf Info: Source file: <images/schematic/usb.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/usb-eps-converted-to.pdf images/schematic/usb.eps>
 (epstopdf)             \includegraphics on input line 148.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/usb-eps-converted-to.pdf, id=211, 526.96875pt x 400.49625pt>
+<images/schematic/usb-eps-converted-to.pdf, id=512, 526.96875pt x 400.49625pt>
 File: images/schematic/usb-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/usb-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/usb-eps-converted-to.pdf  used on input line 148.
@@ -2679,7 +2633,7 @@ Package epstopdf Info: Source file: <images/schematic/ucpd.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/ucpd-eps-converted-to.pdf images/schematic/ucpd.eps>
 (epstopdf)             \includegraphics on input line 158.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/ucpd-eps-converted-to.pdf, id=220, 366.36874pt x 191.71625pt>
+<images/schematic/ucpd-eps-converted-to.pdf, id=520, 366.36874pt x 191.71625pt>
 File: images/schematic/ucpd-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/ucpd-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/ucpd-eps-converted-to.pdf  used on input line 158.
@@ -2698,7 +2652,7 @@ Package epstopdf Info: Source file: <images/schematic/clock.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/clock-eps-converted-to.pdf images/schematic/clock.eps>
 (epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/clock-eps-converted-to.pdf, id=221, 545.03625pt x 416.55624pt>
+<images/schematic/clock-eps-converted-to.pdf, id=521, 545.03625pt x 416.55624pt>
 File: images/schematic/clock-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/clock-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/clock-eps-converted-to.pdf  used on input line 168.
@@ -2720,7 +2674,7 @@ Package epstopdf Info: Source file: <images/schematic/slvs.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/slvs-eps-converted-to.pdf images/schematic/slvs.eps>
 (epstopdf)             \includegraphics on input line 178.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/slvs-eps-converted-to.pdf, id=230, 118.4425pt x 90.3375pt>
+<images/schematic/slvs-eps-converted-to.pdf, id=528, 118.4425pt x 90.3375pt>
 File: images/schematic/slvs-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/slvs-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/slvs-eps-converted-to.pdf  used on input line 178.
@@ -2737,7 +2691,7 @@ Package epstopdf Info: Source file: <images/schematic/hv.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv-eps-converted-to.pdf images/schematic/hv.eps>
 (epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv-eps-converted-to.pdf, id=239, 521.95pt x 394.47375pt>
+<images/schematic/hv-eps-converted-to.pdf, id=536, 521.95pt x 394.47375pt>
 File: images/schematic/hv-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv-eps-converted-to.pdf  used on input line 190.
@@ -2759,7 +2713,7 @@ Package epstopdf Info: Source file: <images/schematic/hv_isense.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv_isense-eps-converted-to.pdf images/schematic/hv_isense.eps>
 (epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv_isense-eps-converted-to.pdf, id=248, 243.91125pt x 225.84375pt>
+<images/schematic/hv_isense-eps-converted-to.pdf, id=543, 243.91125pt x 225.84375pt>
 File: images/schematic/hv_isense-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv_isense-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv_isense-eps-converted-to.pdf  used on input line 203.
@@ -2773,7 +2727,7 @@ Package epstopdf Info: Source file: <images/schematic/hv_usense.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv_usense-eps-converted-to.pdf images/schematic/hv_usense.eps>
 (epstopdf)             \includegraphics on input line 204.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv_usense-eps-converted-to.pdf, id=249, 249.93375pt x 227.85126pt>
+<images/schematic/hv_usense-eps-converted-to.pdf, id=544, 249.93375pt x 227.85126pt>
 File: images/schematic/hv_usense-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv_usense-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv_usense-eps-converted-to.pdf  used on input line 204.
@@ -2790,7 +2744,7 @@ Package epstopdf Info: Source file: <images/schematic/power_dcdc.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/power_dcdc-eps-converted-to.pdf images/schematic/power_dcdc.eps>
 (epstopdf)             \includegraphics on input line 216.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/power_dcdc-eps-converted-to.pdf, id=257, 293.095pt x 100.375pt>
+<images/schematic/power_dcdc-eps-converted-to.pdf, id=551, 293.095pt x 100.375pt>
 File: images/schematic/power_dcdc-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/power_dcdc-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/power_dcdc-eps-converted-to.pdf  used on input line 216.
@@ -2807,7 +2761,7 @@ Package epstopdf Info: Source file: <images/schematic/power_fastic.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/power_fastic-eps-converted-to.pdf images/schematic/power_fastic.eps>
 (epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/power_fastic-eps-converted-to.pdf, id=271, 631.35875pt x 113.42375pt>
+<images/schematic/power_fastic-eps-converted-to.pdf, id=562, 631.35875pt x 113.42375pt>
 File: images/schematic/power_fastic-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/power_fastic-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/power_fastic-eps-converted-to.pdf  used on input line 227.
@@ -2834,7 +2788,7 @@ Package epstopdf Info: Source file: <images/schematic/sipm.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/sipm-eps-converted-to.pdf images/schematic/sipm.eps>
 (epstopdf)             \includegraphics on input line 247.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/sipm-eps-converted-to.pdf, id=286, 282.05376pt x 78.2925pt>
+<images/schematic/sipm-eps-converted-to.pdf, id=575, 282.05376pt x 78.2925pt>
 File: images/schematic/sipm-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/sipm-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/sipm-eps-converted-to.pdf  used on input line 247.
@@ -2847,22 +2801,22 @@ Package pdftex.def Info: images/schematic/sipm-eps-converted-to.pdf  used on inp
 
 ]
 Chapter 8.
-<images/readout_3d-top.png, id=301, 279.444pt x 233.673pt>
+<images/readout_3d-top.png, id=587, 279.444pt x 233.673pt>
 File: images/readout_3d-top.png Graphic file (type png)
 <use images/readout_3d-top.png>
 Package pdftex.def Info: images/readout_3d-top.png  used on input line 264.
 (pdftex.def)             Requested size: 204.15445pt x 170.71652pt.
-<images/readout_3d-bottom.png, id=303, 279.444pt x 233.673pt>
+<images/readout_3d-bottom.png, id=589, 279.444pt x 233.673pt>
 File: images/readout_3d-bottom.png Graphic file (type png)
 <use images/readout_3d-bottom.png>
 Package pdftex.def Info: images/readout_3d-bottom.png  used on input line 265.
 (pdftex.def)             Requested size: 204.15445pt x 170.71652pt.
-<images/userboard_3d-top.png, id=304, 228.855pt x 228.855pt>
+<images/userboard_3d-top.png, id=590, 228.855pt x 228.855pt>
 File: images/userboard_3d-top.png Graphic file (type png)
 <use images/userboard_3d-top.png>
 Package pdftex.def Info: images/userboard_3d-top.png  used on input line 274.
 (pdftex.def)             Requested size: 170.72241pt x 170.71652pt.
-<images/userboard_3d-bottom.png, id=305, 231.264pt x 231.264pt>
+<images/userboard_3d-bottom.png, id=591, 231.264pt x 231.264pt>
 File: images/userboard_3d-bottom.png Graphic file (type png)
 <use images/userboard_3d-bottom.png>
 Package pdftex.def Info: images/userboard_3d-bottom.png  used on input line 276.
@@ -2912,100 +2866,191 @@ Overfull \hbox (16.41641pt too wide) in paragraph at lines 45--45
 \depth=\dimen363 (locally)
 \totalheight=\dimen364 (locally)
 
-./firmware.tex:84: Undefined control sequence.
-<argument> \sample 
-                   \per \second 
-l.84 ...sulting in a \SI{1000}{\sample\per\second}
-                                                   sample rate were used.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./firmware.tex:84: Undefined control sequence.
-<argument> \sample 
-                   \per \second 
-l.84 ...sulting in a \SI{1000}{\sample\per\second}
-                                                   sample rate were used.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-)
 
 [37]
 
 [38]
+
+[39]
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+\width=\dimen361 (locally)
+\height=\dimen362 (locally)
+\depth=\dimen363 (locally)
+\totalheight=\dimen364 (locally)
+)
+
+[40]
 \openout2 = `software.aux'.
 
  (./software.tex
 Chapter 10.
 )
 
-[39
+[41
 
 
 
 
 ]
 
-[40
+[42
 
 
 
 
 ]
 
-[41] (./main.aux (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./firmware.aux) (./software.aux)
-
-Package mparhack Warning: Marginpars may have changed.
-(mparhack)                Rerun to get them right.
-
-)
+[43] (./main.aux (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./firmware.aux) (./software.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  25DB894953F4DE9B637AE92B3A660CA0;7299.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 6FDDBFC75AAC75D2F78C30448A3AD256;7169.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47681 strings out of 473190
- 951032 string characters out of 5688193
- 1808336 words of memory out of 5000000
- 69801 multiletter control sequences out of 15000+600000
- 662620 words of font info for 224 fonts, out of 8000000 for 9000
+ 47780 strings out of 473190
+ 952385 string characters out of 5688193
+ 1829001 words of memory out of 5000000
+ 69871 multiletter control sequences out of 15000+600000
+ 662880 words of font info for 226 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,17n,101p,1321b,3151s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (47 pages, 2553567 bytes).
+ 95i,17n,101p,1321b,4091s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (49 pages, 2555455 bytes).
 PDF statistics:
- 480 PDF objects out of 1000 (max. 8388607)
- 370 compressed objects within 4 object streams
- 139 named destinations out of 1000 (max. 500000)
- 63084 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 757 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 63532 words of extra memory for PDF output out of 74296 (max. 10000000)
 
