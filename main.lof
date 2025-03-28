@@ -1,0 +1,52 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {czech}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example Aurora block structure}}{7}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Data block structure}}{8}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Separator-7 block structure}}{8}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Separator block structure}}{9}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces User K-Block structure}}{9}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Idle block structure}}{10}{figure.3.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces FastIC+ data packet structure}}{11}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces FastIC+ statistics packet structure}}{12}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces FastIC+ counter extension and event counter packet structure}}{14}{figure.4.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Alignment of the sampling clock and data stream}}{19}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Schematic of the FastIC+}}{20}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Schematic of the voltage monitoring amplifier}}{21}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Schematic of the FastIC+ trigger circuitry}}{22}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Schematic of the USB connector with ESD protection}}{22}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Schematic of the USB}}{23}{figure.6.6}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Schematic of the USB}}{24}{figure.6.7}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Schematic of the clock generator}}{25}{figure.6.8}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Divider for the LVDS to SLVS conversion}}{26}{figure.6.9}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces High voltage power supply schematic}}{27}{figure.6.10}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Sensing of the high voltage and current}}{28}{figure.6.11}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Step down regulator schematic}}{28}{figure.6.12}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces FastIC+ power domain sequencing}}{29}{figure.6.13}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces The readout PCB}}{33}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces The user board PCB}}{34}{figure.8.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Setup packet structure}}{37}{figure.9.1}%
+\addvspace {10\p@ }

@@ -1,4 +1,4 @@
-\section{FastIC+ packet structure}
+\chapter{FastIC+ packet structure}
 %
 \subsection{Data packet}
 %
@@ -8,14 +8,14 @@ Each detection event on each channel of the FastIC+ is represented by a 48 bit d
 \begin{figure}[tph!]
     \begin{center}
         \begin{bytefield}[endianness=little,bitwidth=4em]{8}
-            \bitheader{0-7} \\
-            \bitbox{4}{\texttt{CHANNEL}} & \bitbox{2}{\texttt{TYPE}} & \bitbox[ltr]{2}{} \\
-            \bitbox[lr]{8}{\texttt{TIMESTAMP}} \\
-            \bitbox[lr]{8}{\texttt{(22 bits)}} \\
+            \bitheader{0,1,2,3,4,5,6,7} \\
+            \bitbox{4}{\texttt{\footnotesize CHANNEL}} & \bitbox{2}{\texttt{\footnotesize TYPE}} & \bitbox[ltr]{2}{} \\
+            \bitbox[lr]{8}{\texttt{\footnotesize TIMESTAMP}} \\
+            \bitbox[lr]{8}{\texttt{\footnotesize (22 bits)}} \\
             \bitbox[lrb]{4}{} & \bitbox[lrt]{4}{} \\
-            \bitbox[lr]{8}{\texttt{PULSE WIDTH (14 bits)}}  \\
-            \bitbox[lrb]{2}{} & \bitbox{1}{\texttt{DBG}} & \bitbox{1}{\texttt{CHP}} & \bitbox{1}{\texttt{TYP}} &
-            \bitbox{1}{\texttt{TSP}} & \bitbox{1}{\texttt{PWP}} & \bitbox{1}{\texttt{PAR}} 
+            \bitbox[lr]{8}{\texttt{\footnotesize PULSE WIDTH (14 bits)}}  \\
+            \bitbox[lrb]{2}{} & \bitbox{1}{\texttt{\footnotesize DBG}} & \bitbox{1}{\texttt{\footnotesize CHP}} & \bitbox{1}{\texttt{\footnotesize TYP}} &
+            \bitbox{1}{\texttt{\footnotesize TSP}} & \bitbox{1}{\texttt{\footnotesize PWP}} & \bitbox{1}{\texttt{\footnotesize PAR}} 
         \end{bytefield}
     \end{center}
     \caption{FastIC+ data packet structure}
@@ -47,18 +47,18 @@ In addition to the data packets, FastIC+ also periodically transmits a statistic
     \begin{center}
         \begin{bytefield}[endianness=little,bitwidth=4em]{8}
             \bitheader{0-7} \\
-            \bitbox[lrt]{8}{\texttt{FIFO DROP}}\\
-            \bitbox[lr]{8}{\texttt{(20 bits)}}\\
+            \bitbox[lrt]{8}{\texttt{\footnotesize FIFO DROP}}\\
+            \bitbox[lr]{8}{\texttt{\footnotesize (20 bits)}}\\
             \bitbox[lrb]{4}{} & \bitbox[lrt]{4}{}\\
-            \bitbox[lr]{8}{\texttt{PWIDTH DROP}}\\
-            \bitbox[lrb]{8}{\texttt{(20 bits)}}\\
-            \bitbox[lrt]{8}{\texttt{DCOUNT DROP}}\\
-            \bitbox[lr]{8}{\texttt{(20 bits)}}\\
+            \bitbox[lr]{8}{\texttt{\footnotesize PWIDTH DROP}}\\
+            \bitbox[lrb]{8}{\texttt{\footnotesize (20 bits)}}\\
+            \bitbox[lrt]{8}{\texttt{\footnotesize DCOUNT DROP}}\\
+            \bitbox[lr]{8}{\texttt{(\footnotesize 20 bits)}}\\
             \bitbox[lrb]{4}{} & \bitbox[lrt]{4}{}\\
-            \bitbox[lr]{8}{\texttt{TRIGGER DROP}}\\
-            \bitbox[lrb]{8}{\texttt{(20 bits)}}\\
-            \bitbox[lrt]{8}{\texttt{PULSE ERROR}}\\
-            \bitbox[lrb]{8}{\texttt{(16 bits)}}
+            \bitbox[lr]{8}{\texttt{\footnotesize TRIGGER DROP}}\\
+            \bitbox[lrb]{8}{\texttt{\footnotesize (20 bits)}}\\
+            \bitbox[lrt]{8}{\texttt{\footnotesize PULSE ERROR}}\\
+            \bitbox[lrb]{8}{\texttt{\footnotesize (16 bits)}}
         \end{bytefield}
     \end{center}
     \caption{FastIC+ statistics packet structure}
@@ -83,12 +83,12 @@ When no detection events are processed during the \emph{Coarse Counter Extension
     \begin{center}
         \begin{bytefield}[endianness=little,bitwidth=4em]{8}
             \bitheader{0-7} \\
-            \bitbox[lrt]{8}{\texttt{PACKET COUNT}}\\
-            \bitbox[lr]{8}{\texttt{(23 bits)}}\\
+            \bitbox[lrt]{8}{\texttt{\footnotesize PACKET COUNT}}\\
+            \bitbox[lr]{8}{\texttt{\footnotesize (23 bits)}}\\
             \bitbox[lrb]{7}{} & \bitbox[lrt]{1}{}\\
-            \bitbox[lr]{8}{\texttt{COARSE COUNTER}}\\
-            \bitbox[lr]{8}{\texttt{(24 bits)}}\\
-            \bitbox[lrb]{7}{} & \bitbox{1}{\texttt{RST}}
+            \bitbox[lr]{8}{\texttt{\footnotesize COARSE COUNTER}}\\
+            \bitbox[lr]{8}{\texttt{\footnotesize (24 bits)}}\\
+            \bitbox[lrb]{7}{} & \bitbox{1}{\texttt{\footnotesize RST}}
         \end{bytefield}
     \end{center}
     \caption{FastIC+ counter extension and event counter packet structure}

@@ -1,5 +1,5 @@
 
-\section{Device concept}
+\chapter{Device concept}
 The ultimate goal was to develop a system utilizing the FastIC+ chips that could be used at CERN to quickly assess measurements, by companies to simplify prototyping with the FastIC+ chips or by schools to use them in experiments. This implied the base requirements for the system to be:
 \begin{itemize}
     \item versatile to allow for both simple and demanding tasks,
@@ -19,7 +19,7 @@ Considering all of the above, it was decided to split the device into two parts:
     \item the easily replacable user board containing mainly the sensors.
 \end{itemize}
 
-\section{Readout board}
+\chapter{Readout board}
 
 In the usual use case, a system integrating the FastIC+ chips would be based on an FPGA with dedicated Aurora receiver, or an FPGA with a custom HDL definition of the receiver. This approach results in easier implementation, as the FPGAs integrate the necessary deserializers and are capable of synchronizing to the data stream and reconstructing the data clock. The disadvantage is that capable enough FPGAs are usually expensive and power hungry, which goes against the requirements of the device. The second thing being, even though Aurora receiver implementation is quite simple, the implementation of other interfaces like USB is complicated or requires expensive IP cores to be purchased. These downsides led to the decision of using a microcontroller for the readout system. 
 When a proper microcontroller is selected all the interfaces as
@@ -31,13 +31,13 @@ When a proper microcontroller is selected all the interfaces as
 \end{itemize}
 are implemented in hardware and do not have to be defined in HDL code. A simple firmware in C/C++ can than be programmed to control those interfaces, possibly speeding up and simplifying the development and allowing more users to easily customize the device functionality. The main issue with this approach is, that no microcontroller on the market implements the receivers or deserializers needed to recover the clock from the Aurora stream and synchronize to it, thus, the clock recovery has to be done externally and a suitable alternative peripheral has to be chosen to serve as the receiver.
 
-\subsection{Microcontroller}
+\section{Microcontroller}
 The STM32H753XIH6 was chosen as a great microcontroller candidate for the system. It is based on an Arm Cortex-M7 core running at up to \SI{480}{\mega\hertz} which allows for fast computation required for processing of the two continuous \SI{80}{\mega\bit\per\second} streams. It integrates \SI{2}{\mega\byte} of flash memory and \SI{1}{\mega\byte} of RAM which is plenty for buffering the data. From the peripheral side, it supports USB High Speed with a maximum throughput of \SI{480}{\mega\bit} which is needed for transferring the large amount of data to the host. It also features multiple SPI peripherals supporting input clocks of up to \SI{120}{\mega\hertz} which are an ideal choice for sampling the Aurora stream running at the \SI{80}{\mega\bit\per\second}. The internal data buses of the microcontroller are running at half of the core clock and support DMA which also dramatically increases the performance with such a big amount of data. Aside from these main features, the chips implementation of two ADCs, one DAC and I2C for digital communication is useful for the readout aswell. The chip is packaged in a compact \SI{14}{\milli\meter} $\times$ \SI{14}{\milli\meter} TFBGA 240+25 package.
 
-\subsubsection{Receiving the Aurora stream}
+\section{Receiving the Aurora stream}
 As noted above, the most suitable peripheral that can be used for receiving the Aurora stream with this microcontroller is the SPI peripheral. This peripheral is an industry standard serial interface, implemented in all of today MCUs, meant for receiving a serial stream with a dedicated clock. In a simplex slave, receiver only mode, which is suitable for receiving of the Aurora stream, the peripheral exposes the \verb|CLK| and \verb|MOSI| pins. The \verb|MOSI| pin is used for inputting the data stream to the peripheral. The clock, present on the \verb|CLK| pin, is than used to sample the data stream. The sampled data is than shifted into a register and sent over the internal microcontroller buses for processing. The only issue with using SPI is that the need to recover the Aurora clock persists.
 
-\subsubsection{Omitting clock recovery with the FastIC+}
+\section{Omitting clock recovery with the FastIC+}
 As noted in section \ref{sec:fastic:detection}, the FastIC+ requires a \SI{40}{\mega\hertz} reference clock to function. The chip features an internal PLL, which synchronizes to this clock and distributes it to other peripherals including the Aurora transmitter. Since the PLL phase is locked to the input clock, the Aurora transmitter, and thus the Aurora output stream, is also locked to the input clock, just delayed by a propagation delay $t_{pd}$. By measurement, it has been found that this delay is very stable for temperature range of \SI{0}{\celsius} - \SI{100}{\celsius} at a value $t_{pd}$ = \SI{3.48 (0.08)}{\nano\second}. If this delay is combined with an additional controlled delay, the digital stream can be aligned such that the data can be sampled with an \SI{80}{\mega\hertz} sampling clock thats in phase with the reference clock. 
 
 The delay can be implemented by a variable delay line. However it turns out that this delay in combination with the typical propagation delay of a common LVDS to CMOS receiver equals approximately \SI{9}{\nano\second}. The Aurora data stream is double data rate, meaning that a valid symbol is transfered on both rising and falling edge of the reference clock. This results in the symbol duration of \SI{12.5}{\nano\second}. The \SI{9}{\nano\second} delay, being almost exactly 3/4 of the symbol duration, shifts the data such that both sampling clock edges are contained in the data symbol as seen in figure \ref{fig:clock_align}. Thus the data symbol can be sampled be either the rising or falling edge. Since the FastIC+ outputs an SLVS stream and a MCU with CMOS inputs is used to capture the stream, this converter has to be in place anyways and if carefully chosen, it can at the same time be used as the delay line to achieve the correct sampling clock phase. 
@@ -70,7 +70,7 @@ The delay can be implemented by a variable delay line. However it turns out that
 \end{figure}
 \FloatBarrier
 
-\subsection{FastIC+}
+\section{FastIC+}
 The FastIC+ requires almost no additional components aside from decoupling of the power domains. The XVDD (PLL) power domain has been isolated from the TVDD (treshold circuitry) by a ferrite bead, to reduce noise coupling between the two. However, the PLL is only expected to produce noise at startup, while the treshold circuitry is used only after the PLL has locked, so any noise coupling between the two domains should have little to no impact.
 
 To increase the stability of the internal band gap reference, a \SI{10}{\nano\farad} capacitor has been added to the \verb|VBG| pin.
@@ -88,13 +88,13 @@ Both \verb|nRST| (reset of the FastIC+) and \verb|SRST| (reset of the synchronou
 
 
 %
-\subsubsection{I2C communication}
+\subsection{I2C communication}
 As the FastIC+ voltage domains all run at \SI{1.2}{\volt}, a voltage shifter had to be implemented for communication with the microcontroller over I2C. For this, the PCA9306DQER has been chosen for its miniature X2SON package and sufficent \SI{400}{\kilo\hertz} speed. 
 %
-\subsubsection{Calibration pulse generator}
+\subsection{Calibration pulse generator}
 The FastIC+ features a \verb|CAL| input pin used for injecting a test pulse into any of the eight input channels. This pin converts the pulse to current with an internal \SI{70}{\ohm} resistor. The usual shape of such a pulse should resemble a real sensor output, thus a decaying exponential with an amplitude of a few milliamperes and length under a microsecond. To create this pulse, a high side switch has been implemented with series resistance to limit the current and parallel capacitance to recreate the decaying exponential. The transistor gate is driven by a quick digital pulse from the microcontroller, whos length can be adjusted to adjust the current pulse width and by some degree also the amplitude. 
 %
-\subsubsection{Voltage monitoring}
+\subsection{Voltage monitoring}
 %
 The \verb|VMON| pin on the ASIC serves for monitoring of the internal analog tresholds and DAC outputs. Since the microcontrollers internal voltage reference has been selected to run at \SI{1.8}{\volt}, a simple non inverting amplifier has been implemented to amplify the \SI{1.2}{\volt} output to the microcontrollers full-scale range and improve the performance. Because the \verb|VMON| output is used only for treshold monitoring, thus only DC voltages, a slow RC filter has been used to reduce the noise coupled to the analog signal.
 %
@@ -107,7 +107,7 @@ The \verb|VMON| pin on the ASIC serves for monitoring of the internal analog tre
 \end{figure}
 \FloatBarrier
 %
-\subsubsection{High speed outputs}
+\subsection{High speed outputs}
 %
 The FastIC+ offers multiple high speed SLVS outputs. For each channel, a differential output is present capable of transmitting a pulse whos beginning timestamps the ToA of a photon and length resembles the ToT. However, as the readout uses the data digitalized by the internal TDC, these channels can be left unconnected and disabled in the chip.
 
@@ -115,7 +115,7 @@ The \verb|TIME| output can either be used to generate a digital pulse whenever a
 
 Both of the above mentioned pins are converted to a CMOS signal using the DS90LVRA2 dual channel differential line receiver. This receiver has been chosen specifically for its small size, high enough speed but also for its typical propagation delay $t_{pd}$ = \SI{4.4}{\nano\second} to correctly align the data to the sampling clock.
 
-\subsubsection{Trigger input and output}
+\subsection{Trigger input and output}
 The trigger inputs (used for externally triggering the ASIC) and outputs (outputting the signal from the internal comparator) have been exposed to the user on two SMA connectors. Termination has been placed on these to mitigate any reflections and ESD protection diodes have been added to protect the chip from ESD events. It's important to note that the ESD diodes add capacitance to the trigger lines, thus degrading (slowing) the trigger edge and introducing a slight delay in the trigger. This either needs to be accounted for when using the readout or the diodes need to be left unassembled at the expense of worse ESD immunity. 
 %
 \FloatBarrier
@@ -123,18 +123,18 @@ The trigger inputs (used for externally triggering the ASIC) and outputs (output
     \centering
     \includegraphics[scale=1.8]{schematic/fastic_top.eps}
     \caption{Schematic of the FastIC+ trigger circuitry}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_fastic_triggers}
 \end{figure}
 \FloatBarrier
 
-\subsection{USB}
+\section{USB}
 To supply power to the device and handle communication with the host computer, a USB type C connector has been used.
 \FloatBarrier
 \begin{figure}[htp!]
     \centering
     \includegraphics[scale=.9]{schematic/usb_con.eps}
     \caption{Schematic of the USB connector with ESD protection}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_usb_con}
 \end{figure}
 \FloatBarrier
 \subsubsection{External PHY}
@@ -147,7 +147,7 @@ A USB3320 interface was chosen as it is well supported by the microcontroller an
     \centering
     \includegraphics[scale=.8]{schematic/usb.eps}
     \caption{Schematic of the USB}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_usb}
 \end{figure}
 \FloatBarrier
 \subsubsection{Power Delivery}
@@ -157,7 +157,7 @@ A FUSB302 chip was added to allow for power limit negotiation with a UCPD capabl
     \centering
     \includegraphics[scale=1.2]{schematic/ucpd.eps}
     \caption{Schematic of the USB}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_ucpd}
 \end{figure}
 \FloatBarrier
 \subsection{Clock generation}
@@ -167,7 +167,7 @@ For generating the \SI{40}{\mega\hertz} reference clock for both of the FastIC+ 
     \centering
     \includegraphics[scale=0.8]{schematic/clock.eps}
     \caption{Schematic of the clock generator}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_clock}
 \end{figure}
 \FloatBarrier
 
@@ -177,7 +177,7 @@ Unfortunately, the FastIC+ implements SLVS instead of LVDS, which uses voltages 
     \centering
     \includegraphics[scale=2]{schematic/slvs.eps}
     \caption{Divider for the LVDS to SLVS conversion}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_slvs}
 \end{figure}
 \FloatBarrier
 
@@ -189,7 +189,7 @@ All the usual sensors like SiPMs, PMTs or MCPs need high voltage biasing for the
     \centering
     \includegraphics[scale=.8]{schematic/hv.eps}
     \caption{High voltage power supply schematic}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_hv}
 \end{figure}
 \FloatBarrier
 
@@ -203,7 +203,7 @@ To allow for closed loop control with the microcontroller, the output voltage on
     \includegraphics[scale=.8]{schematic/hv_isense.eps}
     \includegraphics[scale=.8]{schematic/hv_usense.eps}
     \caption{Sensing of the high voltage and current}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_hvsense}
 \end{figure}
 \FloatBarrier
 
@@ -215,7 +215,7 @@ A DC/DC converter has been implemented to efficiently lower the \SI{5}{\volt} in
     \centering
     \includegraphics[scale=1]{schematic/power_dcdc.eps}
     \caption{Step down regulator schematic}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_dcdc}
 \end{figure}
 \FloatBarrier
 
@@ -226,19 +226,19 @@ A power sequencing has been implemented for all the three FastIC+ domains. First
     \centering
     \includegraphics[scale=.7]{schematic/power_fastic.eps}
     \caption{FastIC+ power domain sequencing}
-    \label{fig:fastic_triggers}
+    \label{fig:schem_fastic_power}
 \end{figure}
 \FloatBarrier
 
-\subsection{Connector}
+\section{Connector}
 For interfacing with the user board, the \SI{9}{\milli\meter} high version of ERM8-020 has been used for its durability and suitable pin count. This connector carries all the sixteen input channels alongside the high voltage biasing supply. The \SI{3.3}{\volt} supply is also exposed and four pins are dedicated to the user board identification.
 \subsubsection{Identification pins}
 The identification pins serve as an easy way to assign a four bit ID to a specific user board. This ID can than be used by the software to load a configuration preset defined for the user board. For advanced cases, the pins ID0 and ID1 are used as I2C communication lines. A compatible EEPROM can than be assembled on the user board, saving the full configuration on the user board itself, as well as additional data like name. If the I2C interface is to be used, all the ID pins need to be pulled up high by a suitable resistor. At least one of the ID pins has to be high at all times, this means that an ID of \verb|0b0000| is not allowed and in this case, the readout will not recognize a valid user board. 
 %
-\section{User Board}
+\chapter{User Board}
 The user board has been developed as a template for the users to get easily started with the readout system. It contains a matrix of 4 $\times$ 4 SiPM sensors as well as an EEPROM for storing the board configuration. The \SI{9}{\milli\meter} high ERF8-020 connector has been chosen for the user board to match the counterpart present on the readout and allow enough clearance between the assembled readout board and user board.
 
-\subsection{Sensors}
+\section{Sensors}
 The footprint for a typical generic THT SiMPs has been implemented on the board. Each SiPM is powered from the HV plane and the input is filtered with a dual RC low pass to eliminate a possibility of cross triggering of the sensors. 
 
 \FloatBarrier
@@ -249,13 +249,13 @@ The footprint for a typical generic THT SiMPs has been implemented on the board.
 \end{figure}
 \FloatBarrier
 
-\subsection{EEPROM}
+\section{EEPROM}
 The 24AA04T-I/OT \SI{4}{\kilo\bit} EEPROM has been used on the user board for the configuration storage. It has been selected for the low price and sufficient capacity. 
 
 
 
 \newpage
-\section{Summary}
+\chapter{PCB design}
 The two concepts described above were designed and manufactured keeping in mind the required performance. The final PCBs can be seen on the images bellow. 
 
 \FloatBarrier

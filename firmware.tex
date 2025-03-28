@@ -1,0 +1,92 @@
+\chapter{Firmware}
+A firware in the C++ programming language has been developped for the readout aiming for best performance and reliable functionality. 
+\section{USB}
+The TinyUSB library has been used for implementing the USB stack on the device. It is an open-source cross-platform USB stack for embedded systems, designed to be memory-safe with no dynamic allocation and thread-safe. It provides support for both Host and Device roles and implements all the common usb classes such as CDC, HID, DFU, Vendor specific and others. On the STM32H7 series specifically, it is capable of working with the ULPI PHY in HS mode and make use of the internal DMA to allow for very high throughput and good latency. All of these specification make it ideal for this application.
+
+Three interfaces have been implemented in order to allow for configuration of the device via human readable protocol, binary protocol and readout of the two data streams.
+\subsection{CDC interface}
+A Communication Device Class has been implemented on the first interface (endpoints 0x81, 0x82 ans 0x02). This interface emulates a COM port over USB and allows for easy, human-readable interaction with the device. A simple text protocol has been impemented to serve all the required functions of the device. 
+\newpage
+The following commands have been implemented, where square brackets indicate a choice between the options separated by slash and curly braces indicate value in the specified format:
+%
+\begin{itemize}
+    \item \verb|get readout status| - returns the status of the readout
+    \item \verb|get readout uid| - returns a UID of the readout
+    \item \verb|get hv enable| - returns the state of the HV supply
+\end{itemize}
+\begin{verbatim}
+set hv enable [true/false]
+get hv current
+get hv voltage
+set hv voltage {float: voltage}
+get fastic register [1/2] {hex byte: address}
+set fastic register [1/2] {hex byte: address} {hex byte: value}
+get fastic voltage [1/2]
+get fastic syncreset [1/2]
+set fastic syncreset [1/2] [high/low]
+set fastic calpulse [1/2] [enable/disable]
+get fastic time [1/2]
+get fastic aurora [1/2]
+set fastic aurora [1/2] [enable/disable]
+get userboard status
+get userboard uid
+get userboard name
+set userboard name {string: name}
+get userboard writeprotect
+set userboard writeprotect [true/false]
+get userboard init
+set userboard init 
+get userboard voltage 
+set userboard voltage {float: voltage}
+get userboard register [1/2] {hex byte: address}
+set userboard register [1/2] {hex byte: address} {hex byte: value}
+set userboard tomemory
+set userboard frommemory
+\end{verbatim}
+
+A detailed description of the commands and their usage is provided in the device user manual.
+
+\subsection{Vendor control}
+The USB specification describes a way to communicate with a USB device in a bursty matter by Control Transfers. A control transfer is typically a short random packet, containing up to \SI{64}{\byte} of data, which is delivered to the default endpoint with the best effort delievery (no retransmissions). These packets are, for example, used to control the flow of the CDC interface but can be very easilly adopted to transfer auxilary vendor data and thus allow for binary communication with the device. 
+
+The same commands as in the CDC interface have been implemented using control transfers to allow for easier interactions with the device via software on the PC as the text communication adds unneccessary overhead in thios regard.
+
+A control transfer is started by an eight byte long Setup Packet, which contains the following fields:
+
+\FloatBarrier
+\begin{figure}[htpb]
+    \begin{center}
+        \begin{bytefield}[endianness=little,bitwidth=1em]{32}
+            \bitheader{0,7,8,15,16,31} \\
+            \bitbox{8}{\texttt{\footnotesize bmType}} & 
+            \bitbox{8}{\texttt{\footnotesize bRequest}} & 
+            \bitbox{16}{\texttt{\footnotesize wValue}} \\[3ex]
+            \hfill
+            \bitheader[lsb=32]{32,47,48,63} \\
+            \bitbox{16}{\texttt{\footnotesize wIndex}} & 
+            \bitbox{16}{\texttt{\footnotesize wLength}} 
+        \end{bytefield}
+        \caption{Setup packet structure}
+        \label{fig:usb_control_transfer}
+    \end{center}
+\end{figure}
+
+
+\verb|bmType| indicates the direction of the communication, the type, in this case a Vendor transfer, and the recipient, in this case a Device. \verb|bRequest| field indicates the request number. The readout text commands have been each mapped to a unique number which is used in this field in the binary communication. \verb|wValue| and \verb|wIndex| allow for other parameters to be passed with the request, in this case parameters such as the index of the FastIC+ chip to work with. If there is more data to be transfered, the \verb|wLength| field is used to specify the length of an additional data packet sent after the Setup Packet.
+
+\subsection{Vendor interfaces}
+For transfering the Aurora data stream from the FastIC+ chips to the computer, two vendor interfaces have been implemented, one for each FastIC+ chip. The sampled bitstream is transfered using Bulk Transfers over these two interfaces. 
+
+\section{Clock generation}
+The configuration for the Si5340 clock synthetizer was generated using the Clock Builder application provided by Skyworks. This software generates a register map as a C/C++ array that is later parsed by the software and the configuration is applied to the synthetizer over I2C.
+
+\section{HV power supply}
+For controlling the HV power supply, a DAC peripheral has been used to provide the control voltage. Two channels of an ADC peripheral with 256 times oversampling, resulting in a \SI{1000}{\sample\per\second} sample rate were used. 
+\subsection{PID tuning}
+
+\section{FastIC+}
+\subsection{I2C Communication}
+\subsection{Aurora stream}
+\subsection{Pulse injection}
+
+\section{Userboard}
