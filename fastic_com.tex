@@ -1,6 +1,6 @@
 \chapter{FastIC+ packet structure}
 %
-\subsection{Data packet}
+\section{Data packet}
 %
 Each detection event on each channel of the FastIC+ is represented by a 48 bit data packet containing the digitized \emph{ToA} and \emph{ToT} values. The stream of packets is then encoded into Aurora data blocks. A structure of the packet is depicted in Figure \ref{fig:packet}.
 \\
@@ -39,7 +39,7 @@ Each detection event on each channel of the FastIC+ is represented by a 48 bit d
     \item and the overall parity bit \verb|PAR| computed from all fields.
 \end{itemize}
 
-\subsection{Statistics packet}
+\section{Statistics packet}
 In addition to the data packets, FastIC+ also periodically transmits a statistics packet that contains basic information about the events. Structure of the packet is shown in Figure \ref{fig:statpacket}. This packet is sent onto the Aurora bus in two \emph{K-Blocks} due to the packet size being bigger than the \emph{K-Block} capacity. The first 56 bits are sent in a block with the \emph{BTF} of \verb|0x99|, the rest is sent in a second block with the \emph{BTF} of \verb|0x55|.
 \\
 \FloatBarrier
@@ -75,7 +75,7 @@ In addition to the data packets, FastIC+ also periodically transmits a statistic
 \end{itemize}
 \newpage
 %
-\subsection{Counter Extension + Event Counter packet}
+\section{Counter Extension + Event Counter packet}
 When no detection events are processed during the \emph{Coarse Counter Extension} inactivity period, the timestamp counter would overflow the timestamp field. The following packet, specified in Figure \ref{fig:extpacket}, is transmitted periodically so the receiver can base the data timestamp on the most recent coarse counter value, thus drastically increase the dynamic range of the time detection. The packet is encoded in an \emph{K-Block} with the \emph{BTF} of \verb|0xD2|.
 \\
 \FloatBarrier
