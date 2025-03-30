@@ -1,28 +1,11 @@
 
 \chapter{Aurora protocol}
 Aurora 64B/66B is a link-layer, point-to-point protocol that enables high-speed data transfers between two Aurora partners. The Aurora channel, established between the partners, can comprise one or more simplex or full-duplex lanes. Data frames are transmitted in 66-bit blocks, consisting of a two-bit synchronization preamble and 64 bits of data. The channel is shared for both data and control messages. 
-\section{Frame notation}
-Frame notation and bit order adopted from the Aurora specification \cite{auroraSpec} will be used in this document. In this notation the leftmost bit is the one transmitted first onto the bus and is considered the most significant in the block. The rightmost bit is LSB. An example of a block notation can be seen in Figure \ref{fig:blockExample}.
-\\
-\FloatBarrier
-\begin{figure}[htpb]
-    \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=0.8em, bitheight=1.2em]{32}
-            \bitheader{0,1,2,9,10,17,18,25,26,33} \\
-            \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{1}{\texttt{\footnotesize 1}} & \bitbox{8}{\texttt{\footnotesize MSB}} &
-            \bitbox{8}{} & \bitbox{8}{} & \bitbox{8}{}\\[3ex]
-            \hfill
-            \bitheader[lsb=34]{34,41,42,49,50,57,58,65} \\
-            \hfill
-            \bitbox{8}{} & \bitbox{8}{} & \bitbox{8}{} & \bitbox{8}{\texttt{\footnotesize LSB}}
-        \end{bytefield}
-        \caption{Example Aurora block structure}
-        \label{fig:blockExample}
-    \end{center}
-\end{figure}
+
+Frame notation and bit order adopted from the Aurora specification \cite{auroraSpec} is used in this chapter, the leftmost bit being the first one transmitted to the bus is considered MSB. The rightmost one LSB.
 %
 \section{Encoding}
-As previously mentioned, the Aurora protocol utilizes the commonly used 64B/66B encoding. This encoding scheme converts 64 bits of data into a 66-bit block by appending a two-bit preamble. The \verb|01| preamble signifies that the block contains 8 octets of data and is therefore called a \emph{Data block}. If the preamble is \verb|10|, the block is recognized as \emph{Control block} with the most significant octet in the block being a \emph{BTF} (Block Type Field). The remaining 7 octets are data. Preambles \verb|00| and \verb|11| are interpreted as errors.
+As mentioned above, the Aurora protocol utilizes the commonly used 64B/66B encoding. This encoding scheme converts 64 bits of data into a 66-bit block by appending a two-bit preamble. The \verb|0b01| preamble signifies that the block contains 8 octets of data and is therefore called a \emph{Data block}. If the preamble is \verb|0b10|, the block is recognized as \emph{Control block} with the most significant octet in the block being a \emph{BTF} (Block Type Field). The remaining 7 octets are data. Preambles \verb|0b00| and \verb|0b11| are interpreted as errors. These preambles are than used by the receiver to synchronize to the data stream.
 \newline\newline
 FastIC+ is capable of transmitting the \emph{Data block} and four of the \emph{Control block} types:
 \begin{itemize}
@@ -93,8 +76,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
 \end{figure}
 
 \subsection{User K-block}
-\label{sec:kblock}
-\emph{User K-Blocks} are provided by the Aurora specification to allow the user application to send specific control messages separately from the data. Figure \ref{fig:kblock} shows the \emph{K-Block} comprising the \emph{BTF} and seven data octets. There are nine \emph{K-Blocks} available with IDs 0 to 8, corresponding to \emph{BTFs} \verb|0xD2|, \verb|0x99|, \verb|0x55|, \verb|0xB4|, \verb|0xCC|, \verb|0x66|, \verb|0x33|, \verb|0x4B| and \verb|0x87|, respectively.
+\label{sec:kblock}previouslyto 8, corresponding to \emph{BTFs} \verb|0xD2|, \verb|0x99|, \verb|0x55|, \verb|0xB4|, \verb|0xCC|, \verb|0x66|, \verb|0x33|, \verb|0x4B| and \verb|0x87|, respectively.
 \\
 \FloatBarrier
 \begin{figure}[!htpb]
@@ -145,7 +127,7 @@ The \emph{Idle block} contains four flag bits determining the type of the block:
 \end{itemize}
 
 \section{Scrambling}
-Whenever either \emph{Data Block} or \emph{Control Block} is transmitted, the eight octets in the block have to be scrambled with the polynomial shown in Equation \ref{eq:scrambler}. Note that the two bit preamble must never be scrambled.
+Whenever either \emph{Data Block} or \emph{Control Block} is transmitted, the eight octets in the block have to be scrambled with the polynomial shown in Equation \ref{eq:scrambler}. The scrambling serves as a way to randomize the data stream so that a receive can later recover the clock from the bit transitions and synchronize to the stream. Note that the two bit preamble is never scrambled, otherwise, the synchronization could not be acquired.
 \begin{equation}
     P(x) = 1 + x^{39} + x^{58}
     \label{eq:scrambler}

@@ -28,62 +28,70 @@
 \contentsline {subsection}{\numberline {2.1.3}Trigger path}{6}{subsection.2.1.3}%
 \contentsline {section}{\numberline {2.2}Digitizing}{6}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Aurora protocol}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Frame notation}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Encoding}{7}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Data block}{8}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Separator-7 block}{8}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Separator block}{9}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}User K-block}{9}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Idle block}{10}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}Scrambling}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.1}Encoding}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Data block}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Separator-7 block}{8}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Separator block}{9}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}User K-block}{9}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Idle block}{10}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Scrambling}{10}{section.3.2}%
 \contentsline {chapter}{\numberline {4}FastIC+ packet structure}{11}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Data packet}{11}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Statistics packet}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Counter Extension + Event Counter packet}{13}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Counter Extension + Event Counter packet}{14}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Device concept}{15}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Readout board}{17}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Microcontroller}{17}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Receiving the Aurora stream}{18}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}Omitting clock recovery with the FastIC+}{18}{subsection.6.1.2}%
 \contentsline {section}{\numberline {6.2}FastIC+}{19}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}I2C communication}{19}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.1}I2C communication}{20}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Calibration pulse generator}{20}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}Voltage monitoring}{20}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}High speed outputs}{20}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Trigger input and output}{21}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.4}High speed outputs}{21}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Trigger input and output}{22}{subsection.6.2.5}%
 \contentsline {section}{\numberline {6.3}USB}{22}{section.6.3}%
-\contentsline {subsubsection}{External PHY}{22}{subsubsection*.6}%
-\contentsline {subsubsection}{External PHY}{22}{subsubsection*.6}%
-\contentsline {subsubsection}{Power Delivery}{23}{subsubsection*.7}%
-\contentsline {subsubsection}{Power Delivery}{23}{subsubsection*.7}%
-\contentsline {subsection}{\numberline {6.3.1}Clock generation}{24}{subsection.6.3.1}%
+\contentsline {subsubsection}{External PHY}{23}{subsubsection*.6}%
+\contentsline {subsubsection}{External PHY}{23}{subsubsection*.6}%
+\contentsline {subsubsection}{Power Delivery}{24}{subsubsection*.7}%
+\contentsline {subsubsection}{Power Delivery}{24}{subsubsection*.7}%
+\contentsline {subsection}{\numberline {6.3.1}Clock generation}{25}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}High Voltage}{26}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Power}{27}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}Connector}{28}{section.6.4}%
-\contentsline {subsubsection}{Identification pins}{28}{subsubsection*.8}%
-\contentsline {subsubsection}{Identification pins}{28}{subsubsection*.8}%
-\contentsline {chapter}{\numberline {7}User Board}{29}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Sensors}{29}{section.7.1}%
-\contentsline {section}{\numberline {7.2}EEPROM}{29}{section.7.2}%
-\contentsline {chapter}{\numberline {8}PCB design}{31}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Differential pairs}{31}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Triggers}{31}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Power integrity}{31}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Enclosure design}{33}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Firmware}{35}{chapter.10}%
-\contentsline {section}{\numberline {10.1}USB}{35}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}CDC interface}{35}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Vendor control}{36}{subsection.10.1.2}%
-\contentsline {subsection}{\numberline {10.1.3}Vendor interfaces}{37}{subsection.10.1.3}%
-\contentsline {section}{\numberline {10.2}Clock generation}{37}{section.10.2}%
-\contentsline {section}{\numberline {10.3}HV power supply}{37}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}PID controller}{38}{subsection.10.3.1}%
-\contentsline {section}{\numberline {10.4}FastIC+}{38}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Aurora stream}{38}{subsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.4.2}Pulse injection}{39}{subsection.10.4.2}%
-\contentsline {section}{\numberline {10.5}Userboard}{40}{section.10.5}%
-\contentsline {chapter}{\numberline {11}Software}{41}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Device control}{41}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Stream reception}{41}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Packet parsing}{41}{section.11.3}%
-\contentsline {chapter}{Bibliography}{43}{chapter*.9}%
+\contentsline {subsection}{\numberline {6.3.3}Power}{28}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Connector}{29}{section.6.4}%
+\contentsline {subsubsection}{Identification pins}{29}{subsubsection*.8}%
+\contentsline {subsubsection}{Identification pins}{29}{subsubsection*.8}%
+\contentsline {chapter}{\numberline {7}User Board}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Sensors}{31}{section.7.1}%
+\contentsline {section}{\numberline {7.2}EEPROM}{31}{section.7.2}%
+\contentsline {chapter}{\numberline {8}PCB design}{33}{chapter.8}%
+\contentsline {section}{\numberline {8.1}BGA fanout}{33}{section.8.1}%
+\contentsline {section}{\numberline {8.2}High speed signals}{33}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Power integrity}{33}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Enclosure design}{35}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Firmware}{37}{chapter.10}%
+\contentsline {section}{\numberline {10.1}USB}{37}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}CDC interface}{37}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Vendor control}{38}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Vendor interfaces}{39}{subsection.10.1.3}%
+\contentsline {section}{\numberline {10.2}Clock generation}{39}{section.10.2}%
+\contentsline {section}{\numberline {10.3}HV power supply}{39}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}PID controller}{40}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}FastIC+}{40}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Aurora stream}{40}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Pulse injection}{41}{subsection.10.4.2}%
+\contentsline {section}{\numberline {10.5}Userboard}{42}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Software}{43}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Device control}{43}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Stream reception}{43}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Packet parsing}{43}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Measurements}{45}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Power supplies}{45}{section.12.1}%
+\contentsline {section}{\numberline {12.2}ADC precision}{45}{section.12.2}%
+\contentsline {section}{\numberline {12.3}High speed signals}{45}{section.12.3}%
+\contentsline {section}{\numberline {12.4}High Voltage power supply}{45}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Detection emulation test}{45}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Pulse injection}{45}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Data analysis}{45}{subsection.12.5.2}%
+\contentsline {subsection}{\numberline {12.5.3}Results}{45}{subsection.12.5.3}%
+\contentsline {chapter}{Bibliography}{47}{chapter*.9}%

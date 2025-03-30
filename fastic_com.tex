@@ -1,5 +1,6 @@
 \chapter{FastIC+ packet structure}
 %
+As mentioned in section \ref{sec:fastic_digitizing}, the ASIC encodes the timing and other information into a format suitable for transmission. The structure of these packets is described
 \section{Data packet}
 %
 Each detection event on each channel of the FastIC+ is represented by a 48 bit data packet containing the digitized \emph{ToA} and \emph{ToT} values. The stream of packets is then encoded into Aurora data blocks. A structure of the packet is depicted in Figure \ref{fig:packet}.
@@ -24,10 +25,10 @@ Each detection event on each channel of the FastIC+ is represented by a 48 bit d
 %
 \noindent The \verb|CHANNEL| field specifies the number of the channel that the event was detected on (0-7) or the trigger channel (8). The \verb|TYPE| field indicates the packet type where the following types are recognized:
 \begin{itemize}
-    \item \emph{ToA + non-linear ToT} type represented by the value \verb|00|,
-    \item \emph{ToA only} type represented by the value \verb|01|,
-    \item \emph{Linear ToT only} type represented by the value \verb|10|,
-    \item \emph{ToA + linear ToT} type represented by the value \verb|11|.
+    \item \emph{ToA + non-linear ToT} type represented by the value \verb|0b00|,
+    \item \emph{ToA only} type represented by the value \verb|0b01|,
+    \item \emph{Linear ToT only} type represented by the value \verb|0b10|,
+    \item \emph{ToA + linear ToT} type represented by the value \verb|0b11|.
 \end{itemize}
 %
 \verb|TIMESTAMP| and \verb|PULSE WIDTH| fields contain the digitized ToA and ToT values. \verb|DBG| is a flag used in debug mode. The rest of the bits are even parity bits, namely:
@@ -40,7 +41,7 @@ Each detection event on each channel of the FastIC+ is represented by a 48 bit d
 \end{itemize}
 
 \section{Statistics packet}
-In addition to the data packets, FastIC+ also periodically transmits a statistics packet that contains basic information about the events. Structure of the packet is shown in Figure \ref{fig:statpacket}. This packet is sent onto the Aurora bus in two \emph{K-Blocks} due to the packet size being bigger than the \emph{K-Block} capacity. The first 56 bits are sent in a block with the \emph{BTF} of \verb|0x99|, the rest is sent in a second block with the \emph{BTF} of \verb|0x55|.
+In addition to the data packets, FastIC+ also periodically transmits a statistics packet that contains basic information about the past events. Structure of the packet is shown in Figure \ref{fig:statpacket}. This packet is sent onto the Aurora bus in two \emph{K-Blocks} due to the packet size being bigger than the \emph{K-Block} capacity. The first 56 bits are sent in a block with the \emph{BTF} of \verb|0x99|, the rest is sent in a second block with the \emph{BTF} of \verb|0x55|.
 \\
 \FloatBarrier
 \begin{figure}[tph!]
@@ -76,7 +77,7 @@ In addition to the data packets, FastIC+ also periodically transmits a statistic
 \newpage
 %
 \section{Counter Extension + Event Counter packet}
-When no detection events are processed during the \emph{Coarse Counter Extension} inactivity period, the timestamp counter would overflow the timestamp field. The following packet, specified in Figure \ref{fig:extpacket}, is transmitted periodically so the receiver can base the data timestamp on the most recent coarse counter value, thus drastically increase the dynamic range of the time detection. The packet is encoded in an \emph{K-Block} with the \emph{BTF} of \verb|0xD2|.
+When no detection events are processed during the \emph{Coarse Counter Extension} inactivity period, the timestamp counter would overflow the timestamp field sent in the data packet. The following packet, specified in Figure \ref{fig:extpacket}, is transmitted periodically so the receiver can base the data timestamp on the most recent coarse counter value, thus drastically increase the dynamic range of the time detection. The packet is encoded in an \emph{K-Block} with the \emph{BTF} of \verb|0xD2|.
 \\
 \FloatBarrier
 \begin{figure}[tph!]

@@ -445,6 +445,9 @@ INPUT firmware.aux
 INPUT ./software.aux
 INPUT ./software.aux
 INPUT software.aux
+INPUT ./measurements.aux
+INPUT ./measurements.aux
+INPUT measurements.aux
 OUTPUT main.aux
 INPUT /opt/texlive/2025/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 INPUT /opt/texlive/2025/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
@@ -610,8 +613,8 @@ OUTPUT aurora.aux
 INPUT ./aurora.tex
 INPUT ./aurora.tex
 INPUT aurora.tex
-INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt9.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt9.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt8.tfm
 INPUT ./fastic_com.tex
@@ -831,6 +834,12 @@ OUTPUT software.aux
 INPUT ./software.tex
 INPUT ./software.tex
 INPUT software.tex
+INPUT ./measurements.tex
+INPUT ./measurements.tex
+OUTPUT measurements.aux
+INPUT ./measurements.tex
+INPUT ./measurements.tex
+INPUT measurements.tex
 INPUT main.aux
 INPUT ./fastic.aux
 INPUT ./fastic.aux
@@ -853,6 +862,9 @@ INPUT firmware.aux
 INPUT ./software.aux
 INPUT ./software.aux
 INPUT software.aux
+INPUT ./measurements.aux
+INPUT ./measurements.aux
+INPUT measurements.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml

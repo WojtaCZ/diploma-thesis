@@ -19,40 +19,40 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Top-level architecture block diagram}}{5}{figure.2.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Example Aurora block structure}}{7}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Data block structure}}{8}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Separator-7 block structure}}{8}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Separator block structure}}{9}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces User K-Block structure}}{9}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Idle block structure}}{10}{figure.3.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Data block structure}}{8}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Separator-7 block structure}}{8}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Separator block structure}}{9}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces User K-Block structure}}{9}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Idle block structure}}{10}{figure.3.5}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces FastIC+ data packet structure}}{11}{figure.4.1}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces FastIC+ statistics packet structure}}{12}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces FastIC+ counter extension and event counter packet structure}}{13}{figure.4.3}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces FastIC+ counter extension and event counter packet structure}}{14}{figure.4.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Alignment of the sampling clock and data stream}}{19}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Schematic of the FastIC+}}{19}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Schematic of the voltage monitoring amplifier}}{20}{figure.6.3}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Schematic of the FastIC+}}{20}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Schematic of the voltage monitoring amplifier}}{21}{figure.6.3}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Voltage definition for SLVS transmitter.}}{21}{figure.6.4}%
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Schematic of the FastIC+ trigger circuitry}}{22}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Schematic of the USB connector with ESD protection}}{22}{figure.6.6}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Schematic of the USB}}{23}{figure.6.7}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Schematic of the USB connector with ESD protection}}{23}{figure.6.6}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Schematic of the USB}}{24}{figure.6.7}%
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Schematic of the USB}}{24}{figure.6.8}%
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Schematic of the clock generator}}{25}{figure.6.9}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Divider for the LVDS to SLVS conversion}}{25}{figure.6.10}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces High voltage power supply schematic}}{26}{figure.6.11}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Sensing of the high voltage and current}}{27}{figure.6.12}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Step down regulator schematic}}{28}{figure.6.13}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces FastIC+ power domain sequencing}}{28}{figure.6.14}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Divider for the LVDS to SLVS conversion}}{26}{figure.6.10}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces High voltage power supply schematic}}{27}{figure.6.11}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Sensing of the high voltage and current}}{28}{figure.6.12}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Step down regulator schematic}}{29}{figure.6.13}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces FastIC+ power domain sequencing}}{29}{figure.6.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Readout PCB}}{32}{figure.8.1}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Userboard PCB}}{32}{figure.8.2}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Readout PCB}}{34}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Userboard PCB}}{34}{figure.8.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Readout PCB}}{33}{figure.9.1}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Readout PCB}}{34}{figure.9.2}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Readout PCB}}{35}{figure.9.1}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Readout PCB}}{36}{figure.9.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Setup packet structure}}{37}{figure.10.1}%
-\contentsline {figure}{\numberline {10.2}{\ignorespaces EEPROM configuration header structure}}{40}{figure.10.2}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Setup packet structure}}{39}{figure.10.1}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces EEPROM configuration header structure}}{42}{figure.10.2}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
