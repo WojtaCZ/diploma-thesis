@@ -71,8 +71,17 @@ The delay could be implemented by a variable delay line. However it turns out th
 \FloatBarrier
 
 \section{FastIC+}
-As mentioned above, the FastIC+ requires almost no additional components aside from \SI{1.2}{\volt} power source and the \SI{40}{\mega\hertz} reference clock. The XVDD (PLL) power domain has been isolated from the TVDD (treshold circuitry) by a ferrite bead, to reduce noise coupling between the two. However, the PLL is only expected to produce noise at startup, while the treshold circuitry is used only after the PLL has locked, so any noise coupling between the two domains should have little to no impact. All of the power domains have been thourougly decoupled.
-
+As mentioned above, the FastIC+ requires almost no additional components aside from \SI{1.2}{\volt} power source and the \SI{40}{\mega\hertz} reference clock. The XVDD (PLL) power domain has been isolated from the TVDD (treshold circuitry) by a ferrite bead, to reduce noise coupling between the two. However, the PLL is only expected to produce noise at startup, while the treshold circuitry is used only after the PLL has locked, so any noise coupling between the two domains should have little to no impact. All of the power domains have been thourougly decoupled as seen in figure \ref{fig:fastic_power}.
+%
+\FloatBarrier
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[scale=0.6]{schematic/fastic_power.eps}
+    \caption{Schematic of the FastIC+ power}
+    \label{fig:fastic_power}
+\end{figure}
+\FloatBarrier
+%
 To increase the stability of the internal band gap reference, a \SI{10}{\nano\farad} capacitor has been added to the \verb|VBG| pin.
 
 Both \verb|nRST| (reset of the FastIC+) and \verb|SRST| (reset of the synchronous counter) have been pulled up to the digital supply so that the microcontroller pins in open drain mode can be used to control these pins without the need for voltage translation. 
@@ -81,7 +90,7 @@ Both \verb|nRST| (reset of the FastIC+) and \verb|SRST| (reset of the synchronou
 \begin{figure}[htp!]
     \centering
     \includegraphics[scale=0.6]{schematic/fastic.eps}
-    \caption{Schematic of the FastIC+}
+    \caption{Schematic of the FastIC+ logic}
     \label{fig:fastic}
 \end{figure}
 \FloatBarrier
@@ -96,7 +105,13 @@ The FastIC+ features a \verb|CAL| input pin used for injecting a test pulse into
 %
 \subsection{Voltage monitoring}
 %
-The \verb|VMON| pin on the ASIC serves for monitoring of the internal analog tresholds and DAC outputs. Since the microcontrollers internal voltage reference has been selected to run at \SI{1.8}{\volt}, a simple non inverting amplifier has been implemented to amplify the \SI{1.2}{\volt} output to the microcontrollers full-scale range and improve the performance. Because the \verb|VMON| output is used only for treshold monitoring, thus only DC voltages, a slow RC filter has been used to reduce the noise coupled to the analog signal.
+The \verb|VMON| pin on the ASIC serves for monitoring of the internal analog tresholds and DAC outputs. Since the microcontrollers internal voltage reference has been selected to run at \SI{1.8}{\volt}, a simple non inverting amplifier, with a voltage gain of
+%
+\begin{equation}
+    A_V = \left( 1 + \frac{R41}{R44}\right) = \left( 1 + \frac{\SI{10}{\kilo\ohm}}{\SI{20}{\kilo\ohm}}\right) = 1.5
+\end{equation}
+%
+has been implemented to amplify the \SI{1.2}{\volt} output to the microcontrollers full-scale range and improve the performance. Because the \verb|VMON| output is used only for treshold monitoring, thus only DC voltages, a slow RC filter has been used to reduce the noise coupled to the analog signal.
 %
 \FloatBarrier
 \begin{figure}[htp!]
@@ -109,7 +124,7 @@ The \verb|VMON| pin on the ASIC serves for monitoring of the internal analog tre
 %
 \subsection{High speed outputs}
 %
-The FastIC+ outputs are realized using the Scalable Low Voltage Signaling standard. SLVS is a alternative to LVDS, utilizing lower voltages, the transmitter common mode voltage $V_{CMTX}$ being \SI{0.6}{\volt} and the differential voltage $|V_{OD}|$ being \SI{0.2}{\volt} as seen in figure \ref{fig:slvs_voltages}.
+The FastIC+ outputs are realized using the Scalable Low Voltage Signaling standard. SLVS is a alternative to the LVDS, utilizing lower voltages. The transmitter common mode voltage $V_{CMTX}$ being \SI{0.6}{\volt} and the differential voltage $|V_{OD}|$ being \SI{0.2}{\volt} as seen in figure \ref{fig:slvs_voltages}.
 
 \begin{figure}[ht]
 	\begin{center}
@@ -122,7 +137,7 @@ The FastIC+ outputs are realized using the Scalable Low Voltage Signaling standa
 
 A differential output capable of transmitting a pulse whos beginning timestamps the ToA of a photon and length resembles the ToT is present for each channel separately. However, as the readout uses the data digitalized by the internal TDC, these channels are left unconnected and disabled in the chip.
 
-The \verb|TIME| output can either be used to generate a digital pulse whenever any input is received on any of the channels or can be internally connected to the trigger comparator and used for trigger calibration routine, the latter being used in this case. When the pin is not used for calibration, it should be disabled to reduce any EMI generated by the high speed edges. The \verb|TDCOUT| is the output of the Aurora stream from the transmitter.
+The \verb|TIME| output can either be used to generate a digital pulse whenever any input is received on any of the channels or can be internally connected to the trigger comparator and used for trigger calibration routine, the latter being used in this case. When the pin is not used for calibration, it is disabled to reduce any EMI generated by the fast edges. The \verb|TDCOUT| is the output of the Aurora stream from the transmitter.
 
 Both of the above mentioned pins are connected to the DS90LVRA2 dual channel differential line receiver and terminated by a \SI{100}{\ohm} resistance. This receiver, used to convert the SLVS output to CMOS, has been chosen specifically for its small size, high enough speed but also for its typical propagation delay $t_{pd}$ = \SI{4.4}{\nano\second} to correctly align the data to the sampling clock. Even though it is made to convert LVDS signals, the treshold voltage levels work well with the SLVS standard mentioned above, thus no other special circuitry is needed. 
 
@@ -172,7 +187,7 @@ A FUSB302 chip was added to allow for power limit negotiation with a UCPD capabl
 \end{figure}
 \FloatBarrier
 \subsection{Clock generation}
-For generating the \SI{40}{\mega\hertz} reference clock for both of the FastIC+ chips and the \SI{80}{\mega\hertz} sampling clock for the SPI peripherals, the SI5340 clock synthetizer has been used. It features four outputs with \SI{90}{\femto\second} RMS jitter, supporting both CMOS and differential output. Additionally, each output can be powered by an independent power supply allowing for mixing the \SI{3.3}{\volt} CMOS signals for the microcontroller and \SI{1.8}{\volt} LVDS signals for the FastIC+. A precise \SI{48}{\mega\hertz} crystal oscillator has been used as the reference clock. The chip features both I2C and SPI interface for configuration. I2C was selected to be used in this design.
+For generating the \SI{40}{\mega\hertz} reference clock for both of the FastIC+ chips and the \SI{80}{\mega\hertz} sampling clock for the SPI peripherals, the SI5340 clock synthetizer has been used. It features four outputs with \SI{90}{\femto\second} RMS jitter, supporting both CMOS and differential output. Additionally, each output can be powered by an independent power supply allowing for mixing the \SI{3.3}{\volt} CMOS signals for the microcontroller and differential signals for the FastIC+. A precise \SI{48}{\mega\hertz} crystal oscillator has been used as the reference clock. The chip features both I2C and SPI interface for configuration. I2C was selected to be used in this design.
 
 \FloatBarrier
 \begin{figure}[htp!]
@@ -183,7 +198,7 @@ For generating the \SI{40}{\mega\hertz} reference clock for both of the FastIC+ 
 \end{figure}
 \FloatBarrier
 
-Since the FastIC+ implements SLVS instead of LVDS, which uses voltages down to \SI{1.2}{\volt}, not supported by the generator a divider on the differential had to be implemented. This circuit was provided by the chip designers in the datasheet as a good way to lower the voltage levels while keeping the impedance of the lines well matched. 
+Since the FastIC+ requiers an SLVS input, which is not supported by the generator a signal divider had to be implemented. This circuit, shown in figure \ref{fig:schem_slvs}, was provided in the datasheet as a good way to lower the voltage levels while keeping the impedance of the lines well matched. 
 \FloatBarrier
 \begin{figure}[htp!]
     \centering
@@ -194,7 +209,7 @@ Since the FastIC+ implements SLVS instead of LVDS, which uses voltages down to \
 \FloatBarrier
 
 \subsection{High Voltage}
-All the sensors, which the FastIC+ shall interface with, like SiPMs, PMTs or MCPs need high voltage biasing for their function. To eliminate the need for an external HV supply, an internal one has been implemented using the LT3571. This DC/DC converter, intended for biasing of avalanche photodiodes, is capable of generating up to \SI{75}{\volt} \SI{2}{\milli\ampere} output from a low voltage input. It fully integrates the power switch and regulation along with soft-start and variable switching frequency. This has been set to approximately \SI{1}{\mega\hertz} via \verb|R61|. Higher switching frequency than allows for use of smaller inductance and thus keep the size of the device small. 
+All the sensors, which the FastIC+ shall interface with, like SiPMs, PMTs or MCPs need high voltage biasing for their function. To eliminate the need for an external HV supply, an internal one has been implemented using the LT3571. This DC/DC converter, intended for biasing of avalanche photodiodes, is capable of generating up to \SI{75}{\volt} output from a low voltage input. It fully integrates the power switch and regulation along with soft-start and variable switching frequency. This has been set to approximately \SI{1}{\mega\hertz} via \verb|R61|. Higher switching frequency than allows for use of smaller inductance and thus keep the size of the device small. 
 
 \FloatBarrier
 \begin{figure}[htp!]
@@ -260,10 +275,10 @@ Power sequencing has been implemented for all the three FastIC+ voltage domains.
 For interfacing with the user board, the \SI{9}{\milli\meter} high version of ERM8-020 has been used for its durability, up to 1000 connection cycles, good high speed performance and suitable pin count. This connector carries all the sixteen input channels alongside the high voltage biasing supply. The \SI{3.3}{\volt} supply is also exposed and four pins are dedicated to the user board identification.
 %
 \subsubsection{Identification pins}
-The identification pins serve as an easy way to assign a four bit short ID to a specific user board. This ID can than be used by the software to load a configuration preset defined for the user board. If the userboard designer decides to, the pins ID0 and ID1 can be used as I2C communication lines. A compatible EEPROM can than be assembled on the user board, saving the full configuration on the user board itself, as well as additional data such as name or a unique ID. If the I2C interface is to be used, all of the ID pins need to be pulled up high by a suitable resistor. At least one of the ID pins has to be high at all times, this means that an ID of \verb|0b0000| is not allowed and in this case, the readout will not recognize a valid user board. 
+The identification pins serve as an easy way to assign a four bit short ID to a specific user board. This ID can than be used by the software to load a configuration preset defined for the user board. If the userboard designer decides to, the pins ID0 and ID1 can be used as I2C communication lines. A compatible EEPROM can than be assembled on the user board, making it possible to save the full configuration on the user board itself, as well as additional data such as name or a unique ID. If the I2C interface is to be used, all of the ID pins need to be pulled up high by a suitable resistor. At least one of the ID pins has to be high at all times, this means that an ID of \verb|0b0000| is not allowed and in this case, the readout will not recognize a valid user board. 
 %
-\chapter{User Board}
-The user board has been developed as a template for the users to get easily started with the readout system. It contains a matrix of 4 $\times$ 4 SiPM sensors as well as an EEPROM for storing the board configuration. The \SI{9}{\milli\meter} high ERF8-020 connector has been chosen for the user board to match the counterpart present on the readout and allow enough clearance between the assembled readout board and user board.
+\chapter{Userboard}
+The userboard has been developed as a template for the users to get easily started with the readout system. It contains a matrix of 4 $\times$ 4 SiPM sensors as well as an EEPROM for storing the board configuration. The \SI{9}{\milli\meter} high ERF8-020 connector has been chosen for the user board to match the counterpart present on the readout and allow enough clearance between the assembled readout board and user board.
 
 \section{Sensors}
 The footprint for a generic THT SiMPs has been implemented on the board. Each SiPM is powered from the HV plane and the input is filtered with a dual RC low pass to eliminate a possibility of cross triggering of the sensors. 
@@ -283,8 +298,50 @@ The 24AA04T-I/OT \SI{4}{\kilo\bit} EEPROM has been used on the user board for th
 
 \newpage
 \chapter{PCB design}
-\section{BGA fanout}
+Special care had to be taken when designing the PCB to keep in mind the correct design practices for propper power integrity, signal integrity and high speed design.
+
+First a suitable stackup was chosen. In this case, it was decided to proceed with an eight layer stackup as shown in table \ref{tab:stackup}. 
+\FloatBarrier
+\begin{table}[]
+    \caption{PCB stackup}
+    \begin{tabular}{|l|l|l|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{Layer}} & \multicolumn{1}{c|}{\textbf{Name}} & \multicolumn{1}{c|}{\textbf{Thickness}} \\ \hline
+    1                                    & L1 - Top copper                    & \SI{0.018}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - PR2116                & \SI{0.120}{\milli\meter}                                   \\ \hline
+    2                                    & L2 - Ground plane                  & \SI{0.035}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - FR4 core              & \SI{0.200}{\milli\meter}                                   \\ \hline
+    3                                    & L3 - Power plane                   & \SI{0.035}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - PR2116                & \SI{0.120}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - PR2116                & \SI{0.120}{\milli\meter}                                   \\ \hline
+    4                                    & L4 - Signal layer                  & \SI{0.035}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - FR4 core              & \SI{0.200}{\milli\meter}                                   \\ \hline
+    5                                    & L5 - Signal layer                  & \SI{0.035}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - PR2116                & \SI{0.120}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - PR2116                & \SI{0.120}{\milli\meter}                                   \\ \hline
+    6                                    & L6 - Power plane                   & \SI{0.035}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - FR4 core              & \SI{0.200}{\milli\meter}                                   \\ \hline
+    7                                    & L7 - Ground plane                  & \SI{0.035}{\milli\meter}                                   \\ \hline
+                                         & Dielectric - PR2116                & \SI{0.120}{\milli\meter}                                   \\ \hline
+    8                                    & L8 - Bottom copper                 & \SI{0.018}{\milli\meter}                                   \\ \hline
+    \end{tabular}
+    \label{tab:stackup}
+\end{table}
+\FloatBarrier
+The layers 2 and 3 and layers 6 and 7 were completly dedicated as ground and power planes. This, in combination with relatively thin dielectric in between, creates an inherent capacitive coupling between the planes proportional to the plane area and spacing which helps the power integrity of the device. For a board of size $\SI{50}{\milli\meter} \times \SI{50}{\milli\meter}$, which is the case for the readout, and the stackup mentioned, this capacitance can be estimated with an equation for a parallel plate capacitor to be
+%
+\begin{equation}
+C = \varepsilon_0 \cdot \varepsilon_r \cdot \frac{S}{d} = \SI{8.85e-12}{\farad\per\meter} \cdot 4.2 \cdot \frac{\SI{2500}{\milli\meter\squared}}{\SI{0.2}{\milli\meter}} = \SI{46.5}{\pico\farad}
+\end{equation}
+%
+Leaving the planes for solid planes only also keeps the impedance of the planes minimal which reduces the voltage drops in the planes. The layers 4 and 5 were also mostly kept as planes, although some connections needed to be routed through these because of the very high board density. While routing in these layers, care was taken not to cross possible return current paths of the planes with another trace, which could result in a much bigger current loop and an increase in EMI. Layers 1 and 8, the top and bottom copper, were used mainly for routing of all the signals. Since both of the layers have a ground reference underneath, both of them can and were used for routing of the high speed lines with defined impedance. 
+%
 \section{High speed signals}
+To mitigate any possible reflections on the high speed lines which carry high frequency signals, the charasteristic impedance of all of these was calculated to match the driver impedance. In case of the differential signals, the differential impedance of the lines was optimized to be \SI{100}{\ohm}, aside from the USB which requires a \SI{90}{\ohm} differential impedance. For the single ended lines, the target impedance was \SI{50}{\ohm}. The widths of the lines along with the spacing for the differential lines were calculated using the Altium Designer impedance calculation tool and double checked using the manufacturers impedance calculation tool. These calculations yilded the width $W_{USB} = \SI{11111}{\milli\meter}$ and spacing $S_{USB} = \SI{11111}{\milli\meter}$ for the USB differential pair, the width $W_{DIFF} = \SI{0.15}{\milli\meter}$ and spacing $S_{DIFF} = \SI{0.2}{\milli\meter}$ for the rest of the differential pairs and the width $W_{SE} = \SI{0.182}{\milli\meter}$ for all of the single-ended high speed lines. The widths and spacings were obeyed during the routing to keep the tracks impedance as close to the target impedance as possible.
+
+\section{BGA fanout}
+
+
 \section{Power integrity}
 
 The two concepts described above were designed and manufactured keeping in mind the required performance. The final PCBs can be seen on the images bellow. 

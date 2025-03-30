@@ -636,6 +636,16 @@ INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./images/schematic/fastic_power.eps
+INPUT ./images/schematic/fastic_power.eps
+INPUT ./images/schematic/fastic_power.eps
+INPUT ./images/schematic/fastic_power.eps
+INPUT ./images/schematic/fastic_power-eps-converted-to.pdf
+INPUT ./images/schematic/fastic_power-eps-converted-to.pdf
+INPUT ./images/schematic/fastic_power.eps
+INPUT ./images/schematic/fastic_power-eps-converted-to.pdf
+INPUT ./images/schematic/fastic_power-eps-converted-to.pdf
+INPUT ./images/schematic/fastic_power-eps-converted-to.pdf
 INPUT ./images/schematic/fastic.eps
 INPUT ./images/schematic/fastic.eps
 INPUT ./images/schematic/fastic.eps
@@ -656,6 +666,7 @@ INPUT ./images/schematic/fastic_vmon.eps
 INPUT ./images/schematic/fastic_vmon-eps-converted-to.pdf
 INPUT ./images/schematic/fastic_vmon-eps-converted-to.pdf
 INPUT ./images/schematic/fastic_vmon-eps-converted-to.pdf
+INPUT /opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
 INPUT ./images/06_SLVS_specs.pdf
 INPUT ./images/06_SLVS_specs.pdf
 INPUT ./images/06_SLVS_specs.pdf
@@ -869,6 +880,8 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
+INPUT /opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
+INPUT /opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb
 INPUT /opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
 INPUT /opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
