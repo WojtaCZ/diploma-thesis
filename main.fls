@@ -584,6 +584,13 @@ OUTPUT fastic.aux
 INPUT ./fastic.tex
 INPUT ./fastic.tex
 INPUT fastic.tex
+INPUT ./images/05_FASTICPLUS_BLOCK.pdf
+INPUT ./images/05_FASTICPLUS_BLOCK.pdf
+INPUT ./images/05_FASTICPLUS_BLOCK.pdf
+INPUT ./images/05_FASTICPLUS_BLOCK.pdf
+INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
+INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /opt/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /opt/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /opt/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -592,6 +599,7 @@ INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr8.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmr6.tfm
+INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
@@ -603,11 +611,7 @@ INPUT ./aurora.tex
 INPUT ./aurora.tex
 INPUT aurora.tex
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt9.tfm
-INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
-INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
-INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
-INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
 INPUT /opt/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmtt8.tfm
 INPUT ./fastic_com.tex

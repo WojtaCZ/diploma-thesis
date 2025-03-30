@@ -17,6 +17,7 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Top-level architecture block diagram}}{5}{figure.2.1}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Example Aurora block structure}}{7}{figure.3.1}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Data block structure}}{8}{figure.3.2}%
@@ -27,7 +28,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces FastIC+ data packet structure}}{11}{figure.4.1}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces FastIC+ statistics packet structure}}{12}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces FastIC+ counter extension and event counter packet structure}}{14}{figure.4.3}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces FastIC+ counter extension and event counter packet structure}}{13}{figure.4.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Alignment of the sampling clock and data stream}}{19}{figure.6.1}%

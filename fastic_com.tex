@@ -7,7 +7,7 @@ Each detection event on each channel of the FastIC+ is represented by a 48 bit d
 \FloatBarrier
 \begin{figure}[tph!]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=4em]{8}
+        \begin{bytefield}[endianness=little,bitwidth=4em, bitheight=1.2em]{8}
             \bitheader{0,1,2,3,4,5,6,7} \\
             \bitbox{4}{\texttt{\footnotesize CHANNEL}} & \bitbox{2}{\texttt{\footnotesize TYPE}} & \bitbox[ltr]{2}{} \\
             \bitbox[lr]{8}{\texttt{\footnotesize TIMESTAMP}} \\
@@ -45,7 +45,7 @@ In addition to the data packets, FastIC+ also periodically transmits a statistic
 \FloatBarrier
 \begin{figure}[tph!]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=4em]{8}
+        \begin{bytefield}[endianness=little,bitwidth=4em, bitheight=1.2em]{8}
             \bitheader{0-7} \\
             \bitbox[lrt]{8}{\texttt{\footnotesize FIFO DROP}}\\
             \bitbox[lr]{8}{\texttt{\footnotesize (20 bits)}}\\
@@ -81,7 +81,7 @@ When no detection events are processed during the \emph{Coarse Counter Extension
 \FloatBarrier
 \begin{figure}[tph!]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=4em]{8}
+        \begin{bytefield}[endianness=little,bitwidth=4em, bitheight=1.2em]{8}
             \bitheader{0-7} \\
             \bitbox[lrt]{8}{\texttt{\footnotesize PACKET COUNT}}\\
             \bitbox[lr]{8}{\texttt{\footnotesize (23 bits)}}\\

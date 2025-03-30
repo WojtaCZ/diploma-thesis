@@ -2,12 +2,12 @@
 \chapter{Aurora protocol}
 Aurora 64B/66B is a link-layer, point-to-point protocol that enables high-speed data transfers between two Aurora partners. The Aurora channel, established between the partners, can comprise one or more simplex or full-duplex lanes. Data frames are transmitted in 66-bit blocks, consisting of a two-bit synchronization preamble and 64 bits of data. The channel is shared for both data and control messages. 
 \section{Frame notation}
-Frame notation and bit order adopted from the Aurora specification \cite{auroraSpec} citace will be used in this document. In this notation the leftmost bit is the one transmitted first onto the bus and is considered the most significant in the block. The rightmost bit is LSB. An example of a block notation can be seen in Figure \ref{fig:blockExample}.
+Frame notation and bit order adopted from the Aurora specification \cite{auroraSpec} will be used in this document. In this notation the leftmost bit is the one transmitted first onto the bus and is considered the most significant in the block. The rightmost bit is LSB. An example of a block notation can be seen in Figure \ref{fig:blockExample}.
 \\
 \FloatBarrier
 \begin{figure}[htpb]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=0.8em]{32}
+        \begin{bytefield}[endianness=little,bitwidth=0.8em, bitheight=1.2em]{32}
             \bitheader{0,1,2,9,10,17,18,25,26,33} \\
             \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{1}{\texttt{\footnotesize 1}} & \bitbox{8}{\texttt{\footnotesize MSB}} &
             \bitbox{8}{} & \bitbox{8}{} & \bitbox{8}{}\\[3ex]
@@ -38,7 +38,7 @@ A \emph{Data block}, shown in Figure \ref{fig:data}, consists of eight octets of
 \FloatBarrier
 \begin{figure}[!htpb]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=0.8em]{32}
+        \begin{bytefield}[endianness=little,bitwidth=0.8em, bitheight=1.2em]{32}
             \bitheader{0,1,2,9,10,17,18,25,26,33} \\
             \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{1}{\texttt{\footnotesize 1}} & \bitbox{8}{\texttt{\footnotesize D7}} &
             \bitbox{8}{\texttt{\footnotesize D6}} & \bitbox{8}{\texttt{\footnotesize D5}} & \bitbox{8}{\texttt{\footnotesize D4}}\\[3ex]
@@ -58,7 +58,7 @@ A \emph{Separator-7 block} is transmitted when only seven octets of data remain 
 \FloatBarrier
 \begin{figure}[!htpb]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=0.8em]{32}
+        \begin{bytefield}[endianness=little,bitwidth=0.8em, bitheight=1.2em]{32}
             \bitheader{0,1,2,9,10,17,18,25,26,33} \\
             \bitbox{1}{\texttt{\footnotesize 1}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{8}{\texttt{\footnotesize 0xE1}} &
             \bitbox{8}{\texttt{\footnotesize D6}} & \bitbox{8}{\texttt{\footnotesize D5}} & \bitbox{8}{\texttt{\footnotesize D4}}\\[3ex]
@@ -78,7 +78,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
 \FloatBarrier
 \begin{figure}[!htpb]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=0.8em]{32}
+        \begin{bytefield}[endianness=little,bitwidth=0.8em, bitheight=1.2em]{32}
             \bitheader{0,1,2,9,10,17,18,25,26,33} \\
             \bitbox{1}{\texttt{\footnotesize 1}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{8}{\texttt{\footnotesize 0x1E}} &
             \bitbox{8}{\texttt{\footnotesize VALID OCTETS}} & \bitbox{8}{\texttt{\footnotesize D5}} & \bitbox{8}{\texttt{\footnotesize D4}}\\[3ex]
@@ -99,7 +99,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
 \FloatBarrier
 \begin{figure}[!htpb]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=0.8em]{32}
+        \begin{bytefield}[endianness=little,bitwidth=0.8em, bitheight=1.2em]{32}
             \bitheader{0,1,2,9,10,17,18,25,26,33} \\
             \bitbox{1}{\texttt{\footnotesize 1}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{8}{\texttt{\footnotesize BTF}} &
             \bitbox{8}{\texttt{\footnotesize D6}} & \bitbox{8}{\texttt{\footnotesize D5}} & \bitbox{8}{\texttt{\footnotesize D4}}\\[3ex]
@@ -119,7 +119,7 @@ Figure \ref{fig:idle} shows a structure of an \emph{Idle block}. When no data is
 \FloatBarrier
 \begin{figure}[h!]
     \begin{center}
-        \begin{bytefield}[endianness=little,bitwidth=0.8em]{32}
+        \begin{bytefield}[endianness=little,bitwidth=0.8em, bitheight=1.2em]{32}
             \bitheader{0,1,2,9,10,11,12,13,14,15,16,17,18} \\
             \bitbox{1}{\texttt{\footnotesize 1}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{8}{\texttt{\footnotesize 0x78}} &
             \bitbox{1}{\texttt{\tiny CC}} & \bitbox{1}{\texttt{\tiny CB}} & \bitbox{1}{\texttt{\tiny NR}} & \bitbox{1}{\texttt{\tiny SA}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox{1}{\texttt{\footnotesize 0}} & \bitbox[ltb]{16}{\texttt{\footnotesize Don't care}}\\[3ex]
@@ -143,7 +143,6 @@ The \emph{Idle block} contains four flag bits determining the type of the block:
     \item \verb|NR| bit indicating that the block is a \emph{Not Ready} idle,
     \item \verb|SA| bit indicating that the receivers obey the \emph{Strict Alignment} rules.
 \end{itemize}
-As the Aurora interface in the FastIC+ is simplex and doesn't implement the functionality described above, all the flag bits in the block are set to zero thus only a \emph{Regular Idle} block is being transmitted. 
 
 \section{Scrambling}
 Whenever either \emph{Data Block} or \emph{Control Block} is transmitted, the eight octets in the block have to be scrambled with the polynomial shown in Equation \ref{eq:scrambler}. Note that the two bit preamble must never be scrambled.
