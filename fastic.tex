@@ -38,12 +38,11 @@ The final path, the trigger, generates either a low-level trigger per every chan
 
 \section{Digitizing}
 \label{sec:fastic_digitizing}
-The time, energy and trigger pulses from each channel are than passed to a Front-End Readout block (FERO) which interpolates the input pulse and obtains a digital representation of the rising edge (with a \SI{25}{\pico\second} time bin) and the falling edge (with a \SI{390}{\pico\second} time bin).
+The time, energy, and trigger pulses from each channel are then passed to a Front-End Readout block (FERO), which interpolates the input pulse and obtains a digital representation of the rising edge (with a \SI{25}{\pico\second} time bin) and the falling edge (with a \SI{390}{\pico\second} time bin).
 
-After the edge capture, the timing information is passed to the Back-End Readout Block (BERO) which processes the information. It corrects any signal errors, performs trigger validation and filering and encodes the timing information into a suitable binary format. In the end, it stores the encoded packet in the channels FIFO buffer. Arbiter with a MUX than handles the requests from all the channel FIFOs and stores the packets in a global FIFO. 
+After the edge capture, the timing information is passed to the Back-End Readout Block (BERO), which processes the information. It corrects any signal errors, performs trigger validation and filtering, and encodes the timing information into a suitable binary format. In the end, it stores the encoded packet in the channel's FIFO buffer. An arbiter with a multiplexer (MUX) then handles the requests from all the channel FIFOs and stores the packets in a global FIFO.
 
-As the last step, an Aurora serializer converts the packets from the FIFO into a Aurora 64B/66B serial stream and sends it over the high speed differential output lines. A statistics information and counter information is also sent if enabled. The stream can be configured to run at speeds from \SI{80}{\mega\bit\per\second} to \SI{1.28}{\giga\bit\per\second} in the accordance with the Aurora specification.
-
+As the last step, an Aurora serializer converts the packets from the FIFO into an Aurora 64B/66B serial stream and sends it over the high-speed differential output lines. Statistical and counter information is also sent if enabled. The stream can be configured to run at speeds from \SI{80}{\mega\bit\per\second} to \SI{1.28}{\giga\bit\per\second} in accordance with the Aurora specification.
 
 %\section{Configuration and testing}
 %An I2C interface has been implemented alongside the Aurora bus to allow for easy configuration of the chip parameters. This interface can run at speeds up to \SI{1}{\mega\hertz} and can be shared between multiple FastIC+ chips. 

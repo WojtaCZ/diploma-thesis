@@ -68,7 +68,7 @@
 \contentsline {section}{\numberline {8.1}High speed signals}{34}{section.8.1}%
 \contentsline {section}{\numberline {8.2}BGA fanout}{35}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Power integrity}{35}{section.8.3}%
-\contentsline {chapter}{\numberline {9}Enclosure design}{37}{chapter.9}%
+\contentsline {chapter}{\numberline {9}Enclosure Design}{37}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Firmware}{39}{chapter.10}%
 \contentsline {section}{\numberline {10.1}USB}{39}{section.10.1}%
 \contentsline {subsection}{\numberline {10.1.1}CDC interface}{39}{subsection.10.1.1}%
@@ -82,9 +82,6 @@
 \contentsline {subsection}{\numberline {10.4.2}Pulse injection}{43}{subsection.10.4.2}%
 \contentsline {section}{\numberline {10.5}Userboard}{44}{section.10.5}%
 \contentsline {chapter}{\numberline {11}Software}{45}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Device control}{45}{section.11.1}%
-\contentsline {section}{\numberline {11.2}Stream reception}{45}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Packet parsing}{45}{section.11.3}%
 \contentsline {chapter}{\numberline {12}Measurements}{47}{chapter.12}%
 \contentsline {section}{\numberline {12.1}Power supplies}{47}{section.12.1}%
 \contentsline {section}{\numberline {12.2}ADC precision}{47}{section.12.2}%
