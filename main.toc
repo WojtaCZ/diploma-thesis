@@ -82,13 +82,9 @@
 \contentsline {subsection}{\numberline {10.4.2}Pulse injection}{43}{subsection.10.4.2}%
 \contentsline {section}{\numberline {10.5}Userboard}{44}{section.10.5}%
 \contentsline {chapter}{\numberline {11}Software}{45}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Measurements}{47}{chapter.12}%
+\contentsline {chapter}{\numberline {12}Functional tests}{47}{chapter.12}%
 \contentsline {section}{\numberline {12.1}Power supplies}{47}{section.12.1}%
-\contentsline {section}{\numberline {12.2}ADC precision}{47}{section.12.2}%
-\contentsline {section}{\numberline {12.3}High speed signals}{47}{section.12.3}%
-\contentsline {section}{\numberline {12.4}High Voltage power supply}{47}{section.12.4}%
-\contentsline {section}{\numberline {12.5}Detection emulation test}{47}{section.12.5}%
-\contentsline {subsection}{\numberline {12.5.1}Pulse injection}{47}{subsection.12.5.1}%
-\contentsline {subsection}{\numberline {12.5.2}Data analysis}{47}{subsection.12.5.2}%
-\contentsline {subsection}{\numberline {12.5.3}Results}{47}{subsection.12.5.3}%
+\contentsline {section}{\numberline {12.2}High Voltage power supply}{47}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Detection emulation test}{47}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Results}{47}{subsection.12.3.1}%
 \contentsline {chapter}{Bibliography}{49}{chapter*.9}%

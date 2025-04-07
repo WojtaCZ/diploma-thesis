@@ -1,0 +1,11 @@
+\chapter{Functional tests}
+To verify the functionality of the device, a serie of basic measurements was performed. Later on a more complex test - injecting synthetised pulses to the fastic - was performed and the functionality of the whole device was thus verified.
+\section{Power supplies}
+The power supply noise was measured using an \SI{200}{\mega\hertz} bandwith oscilloscope with a \SI{350}{\mega\hertz} probe. Measurement was done as close to the supply output as possible. A spring was used to contact the ground of the probe to minimize the loop inductance of the probe. Using this technique, the output noise of the step down DC/DC converter was measured to be \SI{26}{\milli\volt} peak-to-peak. For the \SI{1.2}{\volt} LDOs, the noise was measured to be \SI{16}{\milli\volt}. The \SI{1.8}{\volt} LDO exhibited a little higher noise at \SI{18}{\milli\volt} peak-to-peak.
+
+\section{High Voltage power supply}
+Next, the output voltage ripple of the high voltage power supply was measured at \SI{20}{\volt} output both without and with a \SI{100}{\kilo\ohm} load. The transient response to this load was also measured. The performance of the PID regulator was also evaluated.
+
+\section{Detection emulation test}
+For the detection emulation test, the FastIC 1 was configured to enable the injection signal routing into channel 0. The injection pulse generator was than enabled to generate the injection signal (pulses of \SI{10}{\nano\second} width with frequency of \SI{500}{\kilo\hertz}). Streaming of the aurora data to the USB was than started and a five second sample of the data was captured. The python library was than used to parse the raw data into packets.
+\subsection{Results}

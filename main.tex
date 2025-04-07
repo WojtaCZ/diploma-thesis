@@ -214,8 +214,9 @@ Prague, \monthinlanguage{second} \ctufield{day}, \ctufield{year}
 \pagebreak
 
 \chapter{Introduction}
-In order to enhance the time measurement of the ToA and ToT analog pulses, FastIC+ has added a picosecond TDC for digitizing the pulses on the chip itself. This, in turn, has necessitated the need for a high-speed communication channel capable of transferring the resulting data stream. The Aurora 64B/66B protocol was chosen for its sufficient speed and easy interfacing with FPGAs.
+The development of devices for particle detectors at CERN has often found applications beyond high-energy physics, particularly in the medical field. One such example is the FastIC chip, which was designed for fast timing applications and has been utilized in positron emission tomography (PET) to improve imaging precision. Building on the success of the FastIC chip, a new version, FastIC+, has been developed. This updated version integrates a picosecond Time-to-Digital Converter (TDC) for enhanced time measurement capabilities and higher integration. To facilitate the evaluation of the FastIC+ chip's performance, a miniature evaluation board had to be designed to provide a compact and accessible platform for researchers and engineers to test and analyze the chip's capabilities in various applications.
 
+This work describes the design of the evaluation board denoted as the readout system. First, the FastIC+ is described in detail along with the communication protocol. Later, the hardware concept is proposed and key parts are described in detail. The hardware is than designed and a firmware along with a host PC software is written to allow for easy control of the device. As the last step, functional tests are performed and the performance of the device is evaluated.
 
 \include{fastic}
 \include{aurora}
@@ -224,7 +225,7 @@ In order to enhance the time measurement of the ToA and ToT analog pulses, FastI
 \include{mechanical}
 \include{firmware}
 \include{software}
-\include{measurements}
+\include{tests}
 
 
 

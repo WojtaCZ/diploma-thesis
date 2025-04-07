@@ -91,12 +91,7 @@ A closed control loop was implemented, using the ADC inputs and DAC output calle
 \end{equation}
 where $O$ is the output value and $K_P$, $K_I$ and $K_D$ are the progressive, integral and derivative constants respectively.
 
-The afformentioned constants can either be determined analytically after modelling the control loops transfer function or they can be determined heuristically. A heuristical method, namely the Ziegler-Nichols method was used in this case.
-
-The tuning of the constants begins with setting $K_I$ and $K_D$ both equal to zero. $K_P$ is than increased until the output of the PID controller starts to oscillate consistantly. The value of $K_P$ at this point is called the ultimate gain $K_U$ and the period of oscillations is called $T_U$. Based on the acquired constants, the values of $K_P$, $K_I$ and $K_D$ are than set.
-
-For a classic PID, the values of the constants should be set to $K_P = 0.6 \cdot K_U$, $K_I = 1.2 \cdot \frac{K_U}{T_U}$ and $K_D = 0.075 \cdot K_U \cdot T_U$
-
+The afformentioned constants can either be determined analytically after modelling the control loops transfer function, heuristically, for example by the Ziegler-Nichols method or manually which was chosen in this case. First, the proportional constant was set to a value that would bring the output close to the desired value while not causing any oscilations. Than, the integral part was increased to minimize the steady state error but kept safe bellow any oscillation treshold. Overshoots and undershoots of the regulator were examined with every change. Finally, the derivative part was added to improve the dynamic response and the performance was tested. The values of $K_P = 150$, $K_I = 3$ and $K_D = 10$ were fond to be suitable for the regulator.
 \section{FastIC+}
 Both of the FastIC+ chips are mainly controlled over the I2C interface. Only a very basic configuration is done by the software, setting the propper clock dividers to be able to receive the Aurora stream. Rest of the settings are left for the user to modify, as the registers of the FastIC+ can be accessed directly over the communication interface and most of them need to be tuned for a specific application of the readout.
 
