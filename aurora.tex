@@ -1,13 +1,13 @@
 
 \chapter{Aurora protocol}
-\emph{Aurora 64B/66B} is a link-layer, point-to-point protocol that enables high-speed data transfers between two \emph{Aurora} partners. The \emph{Aurora channel}, established between the partners, can comprise one or more simplex or full-duplex lanes. Data frames are transmitted in 66-bit blocks, consisting of a two-bit synchronization preamble and 64 bits of data. The channel is shared for both data and control messages. 
+\emph{Aurora 64B/66B} is a link-layer, point-to-point protocol that enables high-speed data transfers between two \emph{Aurora} partners. The \emph{Aurora channel}, established between the partners, can comprise one or more simplex or full-duplex lanes. Data frames are transmitted in 66-bit blocks, consisting of a two-bit synchronization preamble and 64 bits of data. The channel is shared for both data and control messages. \cite{auroraSpec}
 
 Frame notation and bit order adopted from the \emph{Aurora} specification \cite{auroraSpec} is used in this chapter, the leftmost bit being the first one transmitted to the bus is considered \emph{MSB}. The rightmost one \emph{LSB}.
 %
 \section{Encoding}
-As mentioned above, the \emph{Aurora} protocol utilizes the commonly used \emph{64B/66B encoding}. This encoding scheme converts 64 bits of data into a 66-bit block by appending a two-bit preamble. The \verb|0b01| preamble signifies that the block contains 8 octets of data and is therefore called a \emph{Data block}. If the preamble is \verb|0b10|, the block is recognized as \emph{Control block} with the most significant octet in the block being a \emph{BTF} (Block Type Field). The remaining 7 octets are data. Preambles \verb|0b00| and \verb|0b11| are interpreted as errors. These preambles are than used by the receiver to synchronize to the data stream.
+As mentioned above, the \emph{Aurora} protocol utilizes the commonly used \emph{64B/66B encoding}. This encoding scheme converts 64 bits of data into a 66-bit block by appending a two-bit preamble. The \verb|0b01| preamble signifies that the block contains 8 octets of data and is therefore called a \emph{Data block}. If the preamble is \verb|0b10|, the block is recognized as \emph{Control block} with the most significant octet in the block being a \emph{BTF} (Block Type Field). The remaining 7 octets are data. Preambles \verb|0b00| and \verb|0b11| are interpreted as errors. These preambles are than used by the receiver to synchronize to the data stream. \cite{auroraSpec}
 \newline\newline
-FastIC+ is capable of transmitting the \emph{Data block} and four of the \emph{Control block} types:
+FastIC+ is capable of transmitting the \emph{Data block} and four of the \emph{Control block} types: \cite{ficDatasheet}
 \begin{itemize}
     \item \emph{Separator-7} block indicated by the \emph{BTF} value \verb|0xE1|,
     \item \emph{Separator} block indicated by the \emph{BTF} value \verb|0x1E|,
@@ -16,7 +16,7 @@ FastIC+ is capable of transmitting the \emph{Data block} and four of the \emph{C
 \end{itemize}
 
 \subsection{Data block}
-A \emph{Data block}, shown in Figure \ref{fig:data}, consists of eight octets of raw data. Data blocks are transmitted only when eight or more octets of data are available. For smaller packets, the \emph{Separator-7} and \emph{Separator} blocks are used.
+A \emph{Data block}, shown in Figure \ref{fig:data}, consists of eight octets of raw data. Data blocks are transmitted only when eight or more octets of data are available. For smaller packets, the \emph{Separator-7} and \emph{Separator} blocks are used. \cite{auroraSpec}
 \\
 \FloatBarrier
 \begin{figure}[!htpb]
@@ -36,7 +36,7 @@ A \emph{Data block}, shown in Figure \ref{fig:data}, consists of eight octets of
 \end{figure}
 
 \subsection{Separator-7 block}
-A \emph{Separator-7 block} is transmitted when only seven octets of data remain to be sent over the interface. The block consists of the \emph{BTF} indicating the  \emph{Separator-7} type and seven valid octets of data as shown in Figure \ref{fig:sep7}.
+A \emph{Separator-7 block} is transmitted when only seven octets of data remain to be sent over the interface. The block consists of the \emph{BTF} indicating the  \emph{Separator-7} type and seven valid octets of data as shown in Figure \ref{fig:sep7}. \cite{auroraSpec}
 \\
 \FloatBarrier
 \begin{figure}[!htpb]
@@ -56,7 +56,7 @@ A \emph{Separator-7 block} is transmitted when only seven octets of data remain 
 \end{figure}
 \newpage
 \subsection{Separator block}
-A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sent. The block, shown in Figure \ref{fig:sep}, consists of the \emph{BTF} indicating the \emph{Separator} type and a field indicating the number of valid data octets. The order of the valid octets is from \emph{LSB} to \emph{MSB}. 
+A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sent. The block, shown in Figure \ref{fig:sep}, consists of the \emph{BTF} indicating the \emph{Separator} type and a field indicating the number of valid data octets. The order of the valid octets is from \emph{LSB} to \emph{MSB}. \cite{auroraSpec}
 \\
 \FloatBarrier
 \begin{figure}[!htpb]
@@ -77,7 +77,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
 
 \subsection{User K-block}
 \label{sec:kblock}
-\emph{User K-Blocks} are provided by the Aurora specification to allow the user application to send specific control messages separately from the data. Figure \ref{fig:kblock} shows the \emph{K-Block} comprising the \emph{BTF} and seven data octets. There are nine \emph{K-Blocks} available with IDs 0 to 8, corresponding to \emph{BTFs} \verb|0xD2|, \verb|0x99|, \verb|0x55|, \verb|0xB4|, \verb|0xCC|, \verb|0x66|, \verb|0x33|, \verb|0x4B| and \verb|0x87|, respectively.
+\emph{User K-Blocks} are provided by the Aurora specification to allow the user application to send specific control messages separately from the data. Figure \ref{fig:kblock} shows the \emph{K-Block} comprising the \emph{BTF} and seven data octets. There are nine \emph{K-Blocks} available with IDs 0 to 8, corresponding to \emph{BTFs} \verb|0xD2|, \verb|0x99|, \verb|0x55|, \verb|0xB4|, \verb|0xCC|, \verb|0x66|, \verb|0x33|, \verb|0x4B| and \verb|0x87|, respectively. \cite{auroraSpec}
 \\
 \\
 \FloatBarrier
@@ -98,7 +98,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
 \end{figure}
 \newpage
 \subsection{Idle block}
-Figure \ref{fig:idle} shows a structure of an \emph{Idle block}. When no data is available for transmission, \emph{Idle blocks} are transmitted instead to maintain the receivers ability to remain in sync and recover the data clock.
+Figure \ref{fig:idle} shows a structure of an \emph{Idle block}. When no data is available for transmission, \emph{Idle blocks} are transmitted instead to maintain the receivers ability to remain in sync and recover the data clock. \cite{auroraSpec}
 \\
 \FloatBarrier
 \begin{figure}[h!]
@@ -129,7 +129,7 @@ The \emph{Idle block} contains four flag bits determining the type of the block:
 \end{itemize}
 
 \section{Scrambling}
-Whenever either \emph{Data Block} or \emph{Control Block} is transmitted, the eight octets in the block have to be scrambled with the polynomial shown in Equation \ref{eq:scrambler}. The scrambling serves as a way to randomize the data stream so that a receive can later recover the clock from the bit transitions and synchronize to the stream. Note that the two bit preamble is never scrambled, otherwise, the synchronization could not be acquired.
+Whenever either \emph{Data Block} or \emph{Control Block} is transmitted, the eight octets in the block have to be scrambled with the polynomial shown in Equation \ref{eq:scrambler}. The scrambling serves as a way to randomize the data stream so that a receive can later recover the clock from the bit transitions and synchronize to the stream. Note that the two bit preamble is never scrambled, otherwise, the synchronization could not be acquired. \cite{auroraSpec}
 \begin{equation}
     P(x) = 1 + x^{39} + x^{58}
     \label{eq:scrambler}

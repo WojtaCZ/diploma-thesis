@@ -19,6 +19,30 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{ficDatasheet}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=a4672cf3aa2714fde297d667229c41c1}{%
+           family={ICC-UB},
+           familyi={I\bibinithyphendelim U\bibinitperiod},
+           given={Technological\bibnamedelima Unit},
+           giveni={T\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4672cf3aa2714fde297d667229c41c1}
+      \strng{fullhash}{a4672cf3aa2714fde297d667229c41c1}
+      \strng{fullhashraw}{a4672cf3aa2714fde297d667229c41c1}
+      \strng{bibnamehash}{a4672cf3aa2714fde297d667229c41c1}
+      \strng{authorbibnamehash}{a4672cf3aa2714fde297d667229c41c1}
+      \strng{authornamehash}{a4672cf3aa2714fde297d667229c41c1}
+      \strng{authorfullhash}{a4672cf3aa2714fde297d667229c41c1}
+      \strng{authorfullhashraw}{a4672cf3aa2714fde297d667229c41c1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{A configurable ASIC for Fast Timing Applications}
+      \field{title}{FastIC+ Datasheet}
+      \field{year}{2023}
+    \endentry
     \entry{auroraSpec}{misc}{}{}
       \list{institution}{1}{%
         {Xilinx}%
@@ -29,6 +53,699 @@
       \field{howpublished}{\url{https://docs.xilinx.com/v/u/en-US/aurora_64b66b_protocol_spec_sp011}}
       \field{title}{Aurora 64B/66B Protocol Specification}
       \field{year}{2014}
+    \endentry
+    \entry{stm32h753xih6_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={{STMicroelectronics}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Revision 7, DS12195}
+      \field{title}{{STM32H753xI Advanced Arm\textsuperscript{®} Cortex\textsuperscript{®}-M7 32-bit MCUs Datasheet}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.st.com/resource/en/datasheet/stm32h753xih6.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/resource/en/datasheet/stm32h753xih6.pdf
+      \endverb
+    \endentry
+    \entry{stm32h753xih6_ref_manual}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={{STMicroelectronics}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Revision 7, RM0433}
+      \field{title}{{RM0433: STM32H7 Series Advanced Arm\textsuperscript{®} Cortex\textsuperscript{®}-M7 Microcontrollers Reference Manual}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.st.com/resource/en/reference_manual/dm00314099-stm32h7-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/resource/en/reference_manual/dm00314099-stm32h7-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
+      \endverb
+    \endentry
+    \entry{ds90lvra2_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=67e54b1ee931f3f4bddfefa5fbde5fd8}{%
+           family={{Texas Instruments}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{fullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{fullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{bibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorbibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authornamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorfullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorfullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Rev. A, SNLS462A}
+      \field{title}{{DS90LVRA2: Dual LVDS Repeater/Redriver Datasheet}}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/ds/symlink/ds90lvra2.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/ds/symlink/ds90lvra2.pdf
+      \endverb
+    \endentry
+    \entry{pca9306dqer_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=67e54b1ee931f3f4bddfefa5fbde5fd8}{%
+           family={{Texas Instruments}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{fullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{fullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{bibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorbibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authornamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorfullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorfullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Rev. J, SLVAV94J}
+      \field{title}{{PCA9306: Dual Bidirectional I\textsuperscript{2}C-Bus and SMBus Voltage-Level Translator Datasheet}}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/ds/symlink/pca9306.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/ds/symlink/pca9306.pdf
+      \endverb
+    \endentry
+    \entry{an2834_adc_accuracy}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={{STMicroelectronics}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {STMicroelectronics}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{AN2834 Rev 9}
+      \field{title}{{AN2834: How to Optimize the ADC Accuracy in STM32 Microcontrollers}}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.st.com/resource/en/application_note/dm00037051-how-to-optimize-the-adc-accuracy-in-the-stm32-mcus-stmicroelectronics.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/resource/en/application_note/dm00037051-how-to-optimize-the-adc-accuracy-in-the-stm32-mcus-stmicroelectronics.pdf
+      \endverb
+    \endentry
+    \entry{pesd1v2y1bsf_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed12702f830dd2b0fabe23c1d36e1c6d}{%
+           family={{Nexperia}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{fullhash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{fullhashraw}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{bibnamehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authorbibnamehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authornamehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authorfullhash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authorfullhashraw}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{PESD1V2Y1BSF: Extremely Low Clamping Bidirectional ESD Protection Diode Datasheet}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.nexperia.com/product/PESD1V2Y1BSF
+      \endverb
+      \verb{url}
+      \verb https://www.nexperia.com/product/PESD1V2Y1BSF
+      \endverb
+    \endentry
+    \entry{bav99_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=ed12702f830dd2b0fabe23c1d36e1c6d}{%
+           family={{Nexperia}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{fullhash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{fullhashraw}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{bibnamehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authorbibnamehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authornamehash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authorfullhash}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \strng{authorfullhashraw}{ed12702f830dd2b0fabe23c1d36e1c6d}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{BAV99: High-Speed Switching Diode Datasheet}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.nexperia.com/product/BAV99
+      \endverb
+      \verb{url}
+      \verb https://www.nexperia.com/product/BAV99
+      \endverb
+    \endentry
+    \entry{usb11_spec}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=9cd4a9b68fc384ecf80f1e731d3988eb}{%
+           family={{Compaq, Intel, Microsoft, NEC, Nortel}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {USB Implementers Forum}%
+      }
+      \strng{namehash}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \strng{fullhash}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \strng{fullhashraw}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \strng{bibnamehash}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \strng{authorbibnamehash}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \strng{authornamehash}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \strng{authorfullhash}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \strng{authorfullhashraw}{9cd4a9b68fc384ecf80f1e731d3988eb}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Universal Serial Bus Specification Revision 1.1}}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb http://esd.cs.ucr.edu/webres/usb11.pdf
+      \endverb
+      \verb{url}
+      \verb http://esd.cs.ucr.edu/webres/usb11.pdf
+      \endverb
+    \endentry
+    \entry{usb20_spec}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=2336bd3a632bc865dfa55dc96a1325a0}{%
+           family={{Compaq and Hewlett-Packard and Intel and Lucent and Microsoft and NEC and Philips}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {USB Implementers Forum}%
+      }
+      \strng{namehash}{2336bd3a632bc865dfa55dc96a1325a0}
+      \strng{fullhash}{2336bd3a632bc865dfa55dc96a1325a0}
+      \strng{fullhashraw}{2336bd3a632bc865dfa55dc96a1325a0}
+      \strng{bibnamehash}{2336bd3a632bc865dfa55dc96a1325a0}
+      \strng{authorbibnamehash}{2336bd3a632bc865dfa55dc96a1325a0}
+      \strng{authornamehash}{2336bd3a632bc865dfa55dc96a1325a0}
+      \strng{authorfullhash}{2336bd3a632bc865dfa55dc96a1325a0}
+      \strng{authorfullhashraw}{2336bd3a632bc865dfa55dc96a1325a0}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{{Universal Serial Bus Specification Revision 2.0}}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb https://www.usb.org/document-library/usb-20-specification
+      \endverb
+      \verb{url}
+      \verb https://www.usb.org/document-library/usb-20-specification
+      \endverb
+    \endentry
+    \entry{usb3320_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=ca5591180cbfb45e6d0a8fa635b35084}{%
+           family={{Microchip Technology Inc.}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca5591180cbfb45e6d0a8fa635b35084}
+      \strng{fullhash}{ca5591180cbfb45e6d0a8fa635b35084}
+      \strng{fullhashraw}{ca5591180cbfb45e6d0a8fa635b35084}
+      \strng{bibnamehash}{ca5591180cbfb45e6d0a8fa635b35084}
+      \strng{authorbibnamehash}{ca5591180cbfb45e6d0a8fa635b35084}
+      \strng{authornamehash}{ca5591180cbfb45e6d0a8fa635b35084}
+      \strng{authorfullhash}{ca5591180cbfb45e6d0a8fa635b35084}
+      \strng{authorfullhashraw}{ca5591180cbfb45e6d0a8fa635b35084}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Document Number: DS00001792E}
+      \field{title}{{USB3320: Highly Integrated Full Featured Hi-Speed USB 2.0 ULPI Transceiver Datasheet}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.microchip.com/en-us/product/USB3320
+      \endverb
+      \verb{url}
+      \verb https://www.microchip.com/en-us/product/USB3320
+      \endverb
+    \endentry
+    \entry{fusb302b_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=04d6d002c53dc55a907e40f8c47a640e}{%
+           family={{onsemi}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{04d6d002c53dc55a907e40f8c47a640e}
+      \strng{fullhash}{04d6d002c53dc55a907e40f8c47a640e}
+      \strng{fullhashraw}{04d6d002c53dc55a907e40f8c47a640e}
+      \strng{bibnamehash}{04d6d002c53dc55a907e40f8c47a640e}
+      \strng{authorbibnamehash}{04d6d002c53dc55a907e40f8c47a640e}
+      \strng{authornamehash}{04d6d002c53dc55a907e40f8c47a640e}
+      \strng{authorfullhash}{04d6d002c53dc55a907e40f8c47a640e}
+      \strng{authorfullhashraw}{04d6d002c53dc55a907e40f8c47a640e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Supports USB Type-C 1.2 and USB PD 2.0}
+      \field{title}{{FUSB302B: Programmable USB Type-C Controller with Power Delivery (PD)}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.onsemi.com/products/interfaces/usb-type-c/FUSB302B
+      \endverb
+      \verb{url}
+      \verb https://www.onsemi.com/products/interfaces/usb-type-c/FUSB302B
+      \endverb
+    \endentry
+    \entry{si5340_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=ba91bd0d736a27a89f8c2aff355613a5}{%
+           family={{Skyworks Solutions Inc.}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba91bd0d736a27a89f8c2aff355613a5}
+      \strng{fullhash}{ba91bd0d736a27a89f8c2aff355613a5}
+      \strng{fullhashraw}{ba91bd0d736a27a89f8c2aff355613a5}
+      \strng{bibnamehash}{ba91bd0d736a27a89f8c2aff355613a5}
+      \strng{authorbibnamehash}{ba91bd0d736a27a89f8c2aff355613a5}
+      \strng{authornamehash}{ba91bd0d736a27a89f8c2aff355613a5}
+      \strng{authorfullhash}{ba91bd0d736a27a89f8c2aff355613a5}
+      \strng{authorfullhashraw}{ba91bd0d736a27a89f8c2aff355613a5}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Ultra-low jitter (90 fs RMS), 4-input, 4-output, 44-QFN 7x7 mm package}
+      \field{title}{{Si5340: Low-Jitter, 4-Output, Any-Frequency, Any-Output Clock Generator}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.skyworksinc.com/en/Products/Timing/Ultra-Low-Jitter-Clock-Generators/Si5340D
+      \endverb
+      \verb{url}
+      \verb https://www.skyworksinc.com/en/Products/Timing/Ultra-Low-Jitter-Clock-Generators/Si5340D
+      \endverb
+    \endentry
+    \entry{lt3571_datasheet}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=a12ff886a2379a9ee6efaa9acfb54df4}{%
+           family={{Analog Devices}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{fullhash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{fullhashraw}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{bibnamehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{authorbibnamehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{authornamehash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{authorfullhash}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \strng{authorfullhashraw}{a12ff886a2379a9ee6efaa9acfb54df4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Document Number: 3571fa}
+      \field{title}{{LT3571: 75V DC/DC Converter for APD Bias Datasheet}}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://www.analog.com/en/products/lt3571.html
+      \endverb
+      \verb{url}
+      \verb https://www.analog.com/en/products/lt3571.html
+      \endverb
+    \endentry
+    \entry{samtec_erm8_020_cycles}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d4d5539d90f4481d1f266995474b2bd}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Samtec},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d4d5539d90f4481d1f266995474b2bd}
+      \strng{fullhash}{5d4d5539d90f4481d1f266995474b2bd}
+      \strng{fullhashraw}{5d4d5539d90f4481d1f266995474b2bd}
+      \strng{bibnamehash}{5d4d5539d90f4481d1f266995474b2bd}
+      \strng{authorbibnamehash}{5d4d5539d90f4481d1f266995474b2bd}
+      \strng{authornamehash}{5d4d5539d90f4481d1f266995474b2bd}
+      \strng{authorfullhash}{5d4d5539d90f4481d1f266995474b2bd}
+      \strng{authorfullhashraw}{5d4d5539d90f4481d1f266995474b2bd}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Up to 1,000 mating cycles, suitable for high-speed systems requiring rugged and high-reliability connections.}
+      \field{title}{ERM8-020: 0.80 mm Edge Rate\textsuperscript{®} Rugged High-Speed Terminal}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.samtec.com/products/erm8-020-02.0-s-dv-p-fr
+      \endverb
+      \verb{url}
+      \verb https://www.samtec.com/products/erm8-020-02.0-s-dv-p-fr
+      \endverb
+    \endentry
+    \entry{microchip_24aa04t_i_ot}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=5301ee8f9771cf5690902872e87f63b8}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Microchip\bibnamedelima Technology},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{5301ee8f9771cf5690902872e87f63b8}
+      \strng{fullhash}{5301ee8f9771cf5690902872e87f63b8}
+      \strng{fullhashraw}{5301ee8f9771cf5690902872e87f63b8}
+      \strng{bibnamehash}{5301ee8f9771cf5690902872e87f63b8}
+      \strng{authorbibnamehash}{5301ee8f9771cf5690902872e87f63b8}
+      \strng{authornamehash}{5301ee8f9771cf5690902872e87f63b8}
+      \strng{authorfullhash}{5301ee8f9771cf5690902872e87f63b8}
+      \strng{authorfullhashraw}{5301ee8f9771cf5690902872e87f63b8}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Datasheet available at \url{https://www.microchip.com/en-us/product/24aa04}}
+      \field{title}{{24AA04T-I/OT: 4Kbit I2C Serial EEPROM in SOT-23-5 Package}}
+      \field{year}{2023}
+    \endentry
+    \entry{highSpeedGuidlines}{article}{}{}
+      \list{publisher}{1}{%
+        {Texas Instruments Incorporated}%
+      }
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{title}{High-Speed Interface Layout Guidelines}
+      \field{urlday}{4}
+      \field{urlmonth}{4}
+      \field{urlyear}{2023}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/an/spraar7j/spraar7j.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/an/spraar7j/spraar7j.pdf
+      \endverb
+    \endentry
+    \entry{HighSpeedDesign}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=cc5403a14cad1460ab3c3c6d41fb5112}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Howard},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9bca652efccce84e1c6a834432b66a29}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{ade85a85daa5edd87bff0c96df49b97a}
+      \strng{fullhash}{ade85a85daa5edd87bff0c96df49b97a}
+      \strng{fullhashraw}{ade85a85daa5edd87bff0c96df49b97a}
+      \strng{bibnamehash}{ade85a85daa5edd87bff0c96df49b97a}
+      \strng{authorbibnamehash}{ade85a85daa5edd87bff0c96df49b97a}
+      \strng{authornamehash}{ade85a85daa5edd87bff0c96df49b97a}
+      \strng{authorfullhash}{ade85a85daa5edd87bff0c96df49b97a}
+      \strng{authorfullhashraw}{ade85a85daa5edd87bff0c96df49b97a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st ed.}
+      \field{isbn}{978-0133957242}
+      \field{title}{High Speed Digital Design: A Handbook of Black Magic}
+      \field{year}{1993}
+    \endentry
+    \entry{wojtacz_fastic_readout_hw}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=cc00937223ec5677b4445824d6e3e5f8}{%
+           family={WojtaCZ},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{fullhash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{fullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{bibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authorbibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authornamehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authorfullhash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authorfullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
+      \field{extraname}{1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-04-17}
+      \field{title}{fastic-readout-hw}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/WojtaCZ/fastic-readout-hw
+      \endverb
+      \verb{url}
+      \verb https://github.com/WojtaCZ/fastic-readout-hw
+      \endverb
+    \endentry
+    \entry{tinyusb}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=aa808efc88a96b6a19624e8328f59203}{%
+           family={(hathach)},
+           familyi={(\bibinitperiod},
+           given={Hieu\bibnamedelima Hoang},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa808efc88a96b6a19624e8328f59203}
+      \strng{fullhash}{aa808efc88a96b6a19624e8328f59203}
+      \strng{fullhashraw}{aa808efc88a96b6a19624e8328f59203}
+      \strng{bibnamehash}{aa808efc88a96b6a19624e8328f59203}
+      \strng{authorbibnamehash}{aa808efc88a96b6a19624e8328f59203}
+      \strng{authornamehash}{aa808efc88a96b6a19624e8328f59203}
+      \strng{authorfullhash}{aa808efc88a96b6a19624e8328f59203}
+      \strng{authorfullhashraw}{aa808efc88a96b6a19624e8328f59203}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-04-17}
+      \field{title}{TinyUSB: Open-source USB Host/Device Stack for Embedded Systems}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/hathach/tinyusb
+      \endverb
+      \verb{url}
+      \verb https://github.com/hathach/tinyusb
+      \endverb
+    \endentry
+    \entry{usb_cdc_spec}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=f6642523b2dedbf31fbe209f05835959}{%
+           family={Forum},
+           familyi={F\bibinitperiod},
+           given={USB\bibnamedelima Implementers},
+           giveni={U\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{f6642523b2dedbf31fbe209f05835959}
+      \strng{fullhash}{f6642523b2dedbf31fbe209f05835959}
+      \strng{fullhashraw}{f6642523b2dedbf31fbe209f05835959}
+      \strng{bibnamehash}{f6642523b2dedbf31fbe209f05835959}
+      \strng{authorbibnamehash}{f6642523b2dedbf31fbe209f05835959}
+      \strng{authornamehash}{f6642523b2dedbf31fbe209f05835959}
+      \strng{authorfullhash}{f6642523b2dedbf31fbe209f05835959}
+      \strng{authorfullhashraw}{f6642523b2dedbf31fbe209f05835959}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-04-17}
+      \field{title}{USB Communications Device Class Specification}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://usb.org/sites/default/files/CDC1.2_WMC1.1_012011.zip
+      \endverb
+      \verb{url}
+      \verb https://usb.org/sites/default/files/CDC1.2_WMC1.1_012011.zip
+      \endverb
+    \endentry
+    \entry{wojtacz_fastic_readout}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=cc00937223ec5677b4445824d6e3e5f8}{%
+           family={WojtaCZ},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{fullhash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{fullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{bibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authorbibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authornamehash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authorfullhash}{cc00937223ec5677b4445824d6e3e5f8}
+      \strng{authorfullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-04-17}
+      \field{title}{fastic-readout}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/WojtaCZ/fastic-readout
+      \endverb
+      \verb{url}
+      \verb https://github.com/WojtaCZ/fastic-readout
+      \endverb
+    \endentry
+    \entry{ogata2010modern}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=72cb1e667ce543119df1b777c0db24de}{%
+           family={Ogata},
+           familyi={O\bibinitperiod},
+           given={Katsuhiko},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{fullhash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{fullhashraw}{72cb1e667ce543119df1b777c0db24de}
+      \strng{bibnamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authorbibnamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authornamehash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authorfullhash}{72cb1e667ce543119df1b777c0db24de}
+      \strng{authorfullhashraw}{72cb1e667ce543119df1b777c0db24de}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5th}
+      \field{isbn}{978-0136156734}
+      \field{title}{Modern Control Engineering}
+      \field{year}{2010}
+    \endentry
+    \entry{pyusb}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0eccb5ed308e4b20bfd352483bf08116}{%
+           family={Malaco},
+           familyi={M\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0eccb5ed308e4b20bfd352483bf08116}
+      \strng{fullhash}{0eccb5ed308e4b20bfd352483bf08116}
+      \strng{fullhashraw}{0eccb5ed308e4b20bfd352483bf08116}
+      \strng{bibnamehash}{0eccb5ed308e4b20bfd352483bf08116}
+      \strng{authorbibnamehash}{0eccb5ed308e4b20bfd352483bf08116}
+      \strng{authornamehash}{0eccb5ed308e4b20bfd352483bf08116}
+      \strng{authorfullhash}{0eccb5ed308e4b20bfd352483bf08116}
+      \strng{authorfullhashraw}{0eccb5ed308e4b20bfd352483bf08116}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-04-17}
+      \field{title}{PyUSB: Python USB Access Module}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://pyusb.github.io/pyusb/
+      \endverb
+      \verb{url}
+      \verb https://pyusb.github.io/pyusb/
+      \endverb
+    \endentry
+    \entry{diodes_ap62201}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=800c1b26873a5ebb93b90393c92c9fb3}{%
+           family={Incorporated},
+           familyi={I\bibinitperiod},
+           given={Diodes},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{800c1b26873a5ebb93b90393c92c9fb3}
+      \strng{fullhash}{800c1b26873a5ebb93b90393c92c9fb3}
+      \strng{fullhashraw}{800c1b26873a5ebb93b90393c92c9fb3}
+      \strng{bibnamehash}{800c1b26873a5ebb93b90393c92c9fb3}
+      \strng{authorbibnamehash}{800c1b26873a5ebb93b90393c92c9fb3}
+      \strng{authornamehash}{800c1b26873a5ebb93b90393c92c9fb3}
+      \strng{authorfullhash}{800c1b26873a5ebb93b90393c92c9fb3}
+      \strng{authorfullhashraw}{800c1b26873a5ebb93b90393c92c9fb3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-04-17}
+      \field{title}{AP62201: 4.2V to 18V Input, 2A Low IQ Synchronous Buck Converter}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.diodes.com/part/view/AP62201/
+      \endverb
+      \verb{url}
+      \verb https://www.diodes.com/part/view/AP62201/
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

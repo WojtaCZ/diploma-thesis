@@ -1,18 +1,18 @@
 \chapter{Firmware}
 Firmware in the C++ programming language has been developed for the readout, aiming for the best performance and reliable functionality. 
 \section{USB}
-The TinyUSB library has been used for implementing the USB stack on the device. It is an open-source cross-platform USB stack for embedded systems, designed to be memory-safe with no dynamic allocation and thread-safe. It provides support for both Host and Device roles and implements all the common USB classes such as CDC, HID, DFU, Vendor-specific, and others. On the STM32H7 series specifically, it is capable of working with the ULPI PHY in HS mode and making use of the internal DMA to allow for very high throughput and good latency. All of these specifications make it ideal for this application.
+The TinyUSB library has been used for implementing the USB stack on the device. It is an open-source cross-platform USB stack for embedded systems, designed to be memory-safe with no dynamic allocation and thread-safe. It provides support for both Host and Device roles and implements all the common USB classes such as CDC, HID, DFU, Vendor-specific, and others. On the STM32H7 series specifically, it is capable of working with the ULPI PHY in HS mode and making use of the internal DMA to allow for very high throughput and good latency. \cite{tinyusb} All of these specifications make it ideal for this application.
 
 Three interfaces have been implemented to allow for the configuration of the device via a human-readable protocol, binary protocol, and readout of the two data streams.
 \subsection{CDC interface}
-A \emph{Communication Device Class} has been implemented on the first interface (endpoints 0x81, 0x82, and 0x02). This interface emulates a COM port over USB and allows for easy, human-readable interaction with the device. A simple text protocol has been implemented to serve all the required functions of the device. The available commands were documented on the GitHub page of the project.
+A \emph{Communication Device Class} has been implemented on the first interface (endpoints 0x81, 0x82, and 0x02). This interface emulates a COM port over USB \cite{usb_cdc_spec} and allows for easy, human-readable interaction with the device. A simple text protocol has been implemented to serve all the required functions of the device. The available commands were documented on the \emph{GitHub} page of the project. \cite{wojtacz_fastic_readout} 
 
 \subsection{Vendor control}
-The USB specification describes a way to communicate with a USB device in a bursty manner by \emph{Control Transfers}. A \emph{Control Transfer} is typically a short random packet, containing up to \SI{64}{\byte} of data, which is delivered to the default endpoint with best-effort delivery (no retransmissions). These packets are, for example, used to control the flow of the \emph{CDC} interface but can be very easily adapted to transfer auxiliary vendor data and thus allow for binary communication with the device. 
+The USB specification describes a way to communicate with a USB device in a bursty manner by \emph{Control Transfers}. A \emph{Control Transfer} is typically a short random packet, containing up to \SI{64}{\byte} of data, which is delivered to the default endpoint with best-effort delivery (no retransmissions). These packets are, for example, used to control the flow of the \emph{CDC} interface but can be very easily adapted to transfer auxiliary vendor data and thus allow for binary communication with the device. \cite{usb20_spec}
 
 The same commands as in the \emph{CDC} interface have been implemented using control transfers to allow for easier interactions with the device via software on the host, as the text communication adds unnecessary overhead.
 
-A control transfer is started by an eight-byte-long \emph{Setup Packet}, which contains the following fields:
+A control transfer is started by an eight-byte-long \emph{Setup Packet}, which contains the following fields: \cite{usb20_spec}
 
 \FloatBarrier
 \begin{figure}[htpb]
@@ -37,10 +37,10 @@ The \verb|bmType| field indicates:
     \item the type, in this case, a Vendor transfer,
     \item and the recipient, in this case, a Device.
 \end{itemize}
-The \verb|bRequest| field indicates the request number. The readout text commands have each been mapped to a unique number, which is used in this field in the binary communication. \verb|wValue| and \verb|wIndex| allow for other parameters to be passed with the request, such as the index of the FastIC+ chip or the address of the selected register. If there is more data to be transferred, the \verb|wLength| field is used to specify the length of an additional data packet sent after the \emph{Setup Packet}.
+The \verb|bRequest| field indicates the request number. The readout text commands have each been mapped to a unique number, which is used in this field in the binary communication. \verb|wValue| and \verb|wIndex| allow for other parameters to be passed with the request, such as the index of the FastIC+ chip or the address of the selected register. If there is more data to be transferred, the \verb|wLength| field is used to specify the length of an additional data packet sent after the \emph{Setup Packet}. \cite{usb20_spec}
 
 \subsection{Vendor interfaces}
-For transferring the \emph{Aurora} data stream from the FastIC+ chips to the host, two vendor interfaces have been implemented, one for each FastIC+ chip. The sampled bitstream is transferred using \emph{Bulk Transfers} over these two interfaces. 
+For transferring the \emph{Aurora} data stream from the FastIC+ chips to the host, two vendor interfaces have been implemented, one for each FastIC+ chip. The sampled bitstream is transferred using \emph{Bulk Transfers} over these two interfaces. \cite{usb20_spec}
 
 \section{Clock generation}
 The configuration for the Si5340 clock synthesizer was generated using the \emph{Clock Builder application} provided by Skyworks. This software generates a register map as a C/C++ array that is later parsed by the software, and the configuration is applied to the synthesizer over \emph{I2C}.
@@ -49,14 +49,14 @@ The configuration for the Si5340 clock synthesizer was generated using the \emph
 For controlling the high-voltage power supply, a \emph{DAC} peripheral has been used to provide the control voltage. Two channels of an \emph{ADC} peripheral with 256 times oversampling, resulting in a \SI{1000}{\hertz} sample rate, were then used to acquire feedback for voltage and current monitoring. 
 
 \subsection{PID controller}
-A closed-loop \emph{PID controller} was implemented using the \emph{ADC} inputs and \emph{DAC}. This controller calculates the \emph{DAC} value to minimize the difference between a required output voltage and feedback from the ADC. On every cycle, which takes place after the ADCs finish sampling, an error value $e$ is calculated, representing the difference between the setpoint and the measured voltage. The error is then integrated into the variable $I$, and a derivative of the measured value is calculated, denoted $D$. In the end, a corrective output setting is calculated to compensate for possible error using the following equation:
+A closed-loop \emph{PID controller} was implemented using the \emph{ADC} inputs and \emph{DAC}. This controller calculates the \emph{DAC} value to minimize the difference between a required output voltage and feedback from the ADC. On every cycle, which takes place after the ADCs finish sampling, an error value $e$ is calculated, representing the difference between the setpoint and the measured voltage. The error is then integrated into the variable $I$, and a derivative of the measured value is calculated, denoted $D$. In the end, a corrective output setting is calculated to compensate for possible error using the following equation: \cite{ogata2010modern}
 
 \begin{equation}
     O = K_P \cdot e + K_I \cdot I + K_D \cdot D
 \end{equation}
 where $O$ is the output value, and $K_P$, $K_I$, and $K_D$ are the proportional, integral, and derivative constants, respectively.
 
-The aforementioned constants can either be determined analytically after modeling the control loop's transfer function, heuristically (for example, by the Ziegler-Nichols method), or manually, which was chosen in this case. First, the proportional constant was set to a value that would bring the output close to the desired value while not causing any oscillations. Then, the integral part was increased to minimize the steady-state error but kept safely below any oscillation threshold. Overshoots and undershoots of the regulator were examined with every change. Finally, the derivative part was added to improve the dynamic response, and the performance was tested. The values of $K_P = 150$, $K_I = 3$, and $K_D = 10$ were found to be suitable for the regulator.
+The aforementioned constants can either be determined analytically after modeling the control loop's transfer function, heuristically (for example, by the Ziegler-Nichols method) \cite{ogata2010modern}, or manually, which was chosen in this case. First, the proportional constant was set to a value that would bring the output close to the desired value while not causing any oscillations. Then, the integral part was increased to minimize the steady-state error but kept safely below any oscillation threshold. Overshoots and undershoots of the regulator were examined with every change. Finally, the derivative part was added to improve the dynamic response, and the performance was tested. The values of $K_P = 150$, $K_I = 3$, and $K_D = 10$ were found to be suitable for the regulator.
 \section{FastIC+}
 Both of the FastIC+ chips are mainly controlled over the \emph{I2C} interface. Only a very basic configuration is done by the software, setting the propper clock dividers to be able to receive the \emph{Aurora} stream. Rest of the settings are left for the user to modify, as the registers of the FastIC+ can be accessed directly over the communication interface and most of them need to be tuned for a specific application of the readout.
 \subsection{Aurora stream}

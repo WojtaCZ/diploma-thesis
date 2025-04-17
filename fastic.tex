@@ -1,8 +1,8 @@
 \chapter{FastIC+}
 \label{sec:fastic}
-The FastIC+ is a configurable ASIC for fast timing applications, featuring an 8-channel front-end for photodetectors such as \emph{SiPM}, \emph{PMT}, or \emph{MCP}, capable of precisely measuring the Time-of-Arrival (\emph{ToA}) and Time-over-Threshold (\emph{ToT}) of photons hitting the detectors. This feature set finds its use in applications that require precise photon timestamping, such as Time-of-Flight Positron Emission Tomography, high-energy physics, mass spectrometry, or LIDAR applications. The ASIC is developed in the \SI{65}{\nano\meter} technology by the Institut de Ciències del Cosmos of the University of Barcelona in close collaboration with CERN. 
+The FastIC+ is a configurable ASIC for fast timing applications, featuring an 8-channel front-end for photodetectors such as \emph{SiPM}, \emph{PMT}, or \emph{MCP}, capable of precisely measuring the Time-of-Arrival (\emph{ToA}) and Time-over-Threshold (\emph{ToT}) of photons hitting the detectors. This feature set finds its use in applications that require precise photon timestamping, such as Time-of-Flight Positron Emission Tomography, high-energy physics, mass spectrometry, or LIDAR applications. The ASIC is developed in the \SI{65}{\nano\meter} technology by the Institut de Ciències del Cosmos of the University of Barcelona in close collaboration with CERN. \cite{ficDatasheet}
 
-The ASIC can mostly be used without any additional circuitry. Only power and a \SI{40}{\mega\hertz} low-jitter reference clock need to be provided for correct operation. The chip is configured over an \emph{I2C} interface.
+The ASIC can mostly be used without any additional circuitry. Only power and a \SI{40}{\mega\hertz} low-jitter reference clock need to be provided for correct operation. The chip is configured over an I2C interface. \cite{ficDatasheet}
 
 \FloatBarrier
 \begin{figure}[htp!]
@@ -16,16 +16,16 @@ The ASIC can mostly be used without any additional circuitry. Only power and a \
 
 
 \section{Detection}
-Each channel of the ASIC consists of a low-impedance input stage, working with both positive and negative polarity sensors with a dynamic range of \SI{5}{\micro\ampere} to \SI{20}{\milli\ampere} and stability across sensor capacitances from \SI{10}{\pico\farad} to \SI{1}{\nano\farad}. This stage generates three differently scaled replicas of the input current pulse and forwards them to the three signal paths: time, energy, and trigger.
+Each channel of the ASIC consists of a low-impedance input stage, working with both positive and negative polarity sensors with a dynamic range of \SI{5}{\micro\ampere} to \SI{20}{\milli\ampere} and stability across sensor capacitances from \SI{10}{\pico\farad} to \SI{1}{\nano\farad}. This stage generates three differently scaled replicas of the input current pulse and forwards them to the three signal paths: time, energy, and trigger. \cite{ficDatasheet}
 %
 \subsection{Time path}
-The time path acts as a simple discriminator that compares the pulse to a programmable threshold, which can be set down to a single photoelectron level. The leading edge of the comparator output pulse provides the \emph{ToA} timestamp. The logical OR of all time channels can be output via the \verb|TIME| output. 
+The time path acts as a simple discriminator that compares the pulse to a programmable threshold, which can be set down to a single photoelectron level. The leading edge of the comparator output pulse provides the \emph{ToA} timestamp. The logical OR of all time channels can be output via the \verb|TIME| output. \cite{ficDatasheet}
 %
 \subsection{Energy path}
-The energy path extracts the pulse peak to estimate the energy deposited in the sensor. The chain consists of a transimpedance amplifier, shaper, peak detector with hold, and a comparator that compares the peak detector level with a linear ramp. The length of the output pulse then directly encodes the energy of the pulse. The input can also be compared to a constant threshold to provide a non-linear \emph{ToT} instead. 
+The energy path extracts the pulse peak to estimate the energy deposited in the sensor. The chain consists of a transimpedance amplifier, shaper, peak detector with hold, and a comparator that compares the peak detector level with a linear ramp. The length of the output pulse then directly encodes the energy of the pulse. The input can also be compared to a constant threshold to provide a non-linear \emph{ToT} instead. \cite{ficDatasheet}
 
 \subsection{Trigger path}
-The final path, the trigger, generates either a low-level trigger per channel or a cluster trigger. The low-level trigger is a logical OR of all the trigger comparators for all channels, whereas the cluster trigger results from an analog summation of the input pulses passed through a single comparator. This trigger can be used internally to trigger the conversion \emph{FSM} or output on a pin. An external trigger can also be injected through a pin.
+The final path, the trigger, generates either a low-level trigger per channel or a cluster trigger. The low-level trigger is a logical OR of all the trigger comparators for all channels, whereas the cluster trigger results from an analog summation of the input pulses passed through a single comparator. This trigger can be used internally to trigger the conversion \emph{FSM} or output on a pin. An external trigger can also be injected through a pin. \cite{ficDatasheet}
 
 %Three different measurement modes, 
 %\begin{itemize}
@@ -38,11 +38,11 @@ The final path, the trigger, generates either a low-level trigger per channel or
 
 \section{Digitizing}
 \label{sec:fastic_digitizing}
-The time, energy, and trigger pulses from each channel are passed to a Front-End Readout block (\emph{FERO}), which interpolates the input pulse and generates a digital representation of the rising edge (with a \SI{25}{\pico\second} time bin) and the falling edge (with a \SI{390}{\pico\second} time bin).
+The time, energy, and trigger pulses from each channel are passed to a Front-End Readout block (\emph{FERO}), which interpolates the input pulse and generates a digital representation of the rising edge (with a \SI{25}{\pico\second} time bin) and the falling edge (with a \SI{390}{\pico\second} time bin). \cite{ficDatasheet}
 
-After capturing the edges, the timing information is sent to the Back-End Readout Block (\emph{BERO}), which processes the data. It corrects signal errors, validates and filters triggers, and encodes the timing information into a suitable binary format. Finally, it stores the encoded packet in the channel's \emph{FIFO} buffer. An arbiter with a multiplexer (\emph{MUX}) then manages requests from all the channel \emph{FIFOs} and stores the packets in a global \emph{FIFO}.
+After capturing the edges, the timing information is sent to the Back-End Readout Block (\emph{BERO}), which processes the data. It corrects signal errors, validates and filters triggers, and encodes the timing information into a suitable binary format. Finally, it stores the encoded packet in the channel's \emph{FIFO} buffer. An arbiter with a multiplexer (\emph{MUX}) then manages requests from all the channel \emph{FIFOs} and stores the packets in a global \emph{FIFO}. \cite{ficDatasheet}
 
-In the final step, an \emph{Aurora} serializer converts the packets from the \emph{FIFO} into an \emph{Aurora 64B/66B} serial stream and transmits them over the high-speed \emph{SLVS} output lines. Statistical and counter information is also transmitted if enabled. The stream can be configured to operate at speeds ranging from \SI{80}{\mega\bit\per\second} to \SI{1.28}{\giga\bit\per\second}, in compliance with the \emph{Aurora} specification.
+In the final step, an \emph{Aurora} serializer converts the packets from the \emph{FIFO} into an \emph{Aurora 64B/66B} serial stream and transmits them over the high-speed \emph{SLVS} output lines. Statistical and counter information is also transmitted if enabled. The stream can be configured to operate at speeds ranging from \SI{80}{\mega\bit\per\second} to \SI{1.28}{\giga\bit\per\second}, in compliance with the \emph{Aurora} specification. \cite{ficDatasheet}
 
 %\section{Configuration and testing}
 %An I2C interface has been implemented alongside the Aurora bus to allow for easy configuration of the chip parameters. This interface can run at speeds up to \SI{1}{\mega\hertz} and can be shared between multiple FastIC+ chips. 
