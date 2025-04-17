@@ -292,7 +292,7 @@ The 24AA04T-I/OT \SI{4}{\kilo\bit} \emph{EEPROM} has been used on the user board
 
 \newpage
 \chapter{PCB design}
-Special care had to be taken when designing the \emph{PCB}, keeping in mind the correct design practices for propper power integrity, signal integrity and high speed design. 
+Special care had to be taken when designing the PCB, keeping in mind the correct design practices for propper power integrity, signal integrity and high speed design. 
 
 First a suitable stackup was chosen. In this case, it was decided to proceed with an eight layer stackup as shown in table \ref{tab:stackup}. 
 \FloatBarrier
@@ -322,28 +322,68 @@ First a suitable stackup was chosen. In this case, it was decided to proceed wit
     \label{tab:stackup}
 \end{table}
 \FloatBarrier
-The layers 2 and 3, as well as layers 6 and 7, were completely dedicated to ground and power planes. This, in combination with relatively thin dielectric in between, creates inherent capacitive coupling between the planes proportional to the plane area and spacing, which helps the power integrity of the device. For a board of size $\SI{50}{\milli\meter} \times \SI{50}{\milli\meter}$, which is the case for the readout, and the stackup mentioned, this capacitance can be estimated using the equation for a parallel plate capacitor to be
+The layers 2 and 3, as well as layers 6 and 7, were completely dedicated to ground and power planes. This, in combination with relatively thin dielectric in between, creates inherent capacitive coupling between the planes proportional to the plane area and spacing, which helps the power integrity of the device. %For a board of size $\SI{50}{\milli\meter} \times \SI{50}{\milli\meter}$, which is the case for the readout, and the stackup mentioned, this capacitance can be estimated using the equation for a parallel plate capacitor to be
 %
-\begin{equation}
-C = \varepsilon_0 \cdot \varepsilon_r \cdot \frac{S}{d} = \SI{8.85e-12}{\farad\per\meter} \cdot 4.2 \cdot \frac{\SI{2500}{\milli\meter\squared}}{\SI{0.2}{\milli\meter}} = \SI{465}{\pico\farad}
-\end{equation}
+%\begin{equation}
+%C = \varepsilon_0 \cdot \varepsilon_r \cdot \frac{S}{d} = \SI{8.85e-12}{\farad\per\meter} \cdot 4.2 \cdot \frac{\SI{2500}{\milli\meter\squared}}{\SI{0.2}{\milli\meter}} = \SI{465}{\pico\farad}
+%\end{equation}
 %
 Leaving the planes solid also keeps the impedance minimal which reduces the voltage drops. The layers 4 and 5 were also mostly kept as planes, although some connections needed to be routed through these because of the very high board density. While routing in these layers, care was taken not to cross possible return current paths of the planes with another trace, which could result in a much bigger current loop and an increase in \emph{EMI}. Layers 1 and 8, the top and bottom copper, were used mainly for routing of all the signals. Since both of the layers have a ground plane underneath, both of them were used for routing of the high speed lines with defined impedance. 
 %
 \section{High speed signals}
 To mitigate possible reflections on the high-speed lines carrying high-frequency signals, the characteristic impedance of each line was calculated to match the driver impedance. For differential signals, the differential impedance was optimized to be \SI{100}{\ohm}, except for the USB lines, which require a differential impedance of \SI{90}{\ohm}. For single-ended lines, the target impedance was \SI{50}{\ohm}.
+The line widths, as well as the spacing for differential pairs, were calculated using Altium Designer’s impedance calculator and verified using the PCB manufacturer’s impedance calculation tool. These calculations resulted in a width of $W_{USB} = \SI{0.183}{\milli\meter}$ and spacing of $S_{USB} = \SI{0.2}{\milli\meter}$ for the USB differential pair; a width of $W_{DIFF} = \SI{0.15}{\milli\meter}$ and spacing of $S_{DIFF} = \SI{0.2}{\milli\meter}$ for the remaining differential pairs; and a width of $W_{SE} = \SI{0.182}{\milli\meter}$ for all single-ended high-speed lines. The spacing from the ground plane on these was kept as large as possible to avoid affecting the impedance. These widths and spacings were followed during PCB routing to ensure the trace impedances remained as close to their respective targets as possible. Where necessary, the line lengths and skews were matched. Routing of the \emph{ULPI} interface and FastIC+ clock lines can be seen in Figure \ref{fig:highspeed}.
 
-The line widths, as well as the spacing for differential pairs, were calculated using Altium Designer’s impedance calculator and verified using the PCB manufacturer’s impedance calculation tool. These calculations resulted in a width of $W_{USB} = \SI{0.183}{\milli\meter}$ and spacing of $S_{USB} = \SI{0.2}{\milli\meter}$ for the USB differential pair; a width of $W_{DIFF} = \SI{0.15}{\milli\meter}$ and spacing of $S_{DIFF} = \SI{0.2}{\milli\meter}$ for the remaining differential pairs; and a width of $W_{SE} = \SI{0.182}{\milli\meter}$ for all single-ended high-speed lines. The spacing from the ground plane on these was kept as large as possible to not afect the impedance. These widths and spacings were followed during \emph{PCB} routing to ensure the trace impedances remained as close to their respective targets as possible.
+\FloatBarrier
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[height=8cm]{high_speed.eps}
+    \caption{High speed signal lines}
+    \label{fig:highspeed}
+\end{figure}
+\FloatBarrier
 
 \section{Microcontroller fanout}
-Care was taken to properly fan out the microcontroller pins to avoid any signal integrity issues. First, the pinout was optimized to place the high-speed lines along the perimeter of the package, allowing them to be routed as directly as possible. Decoupling capacitors were then placed on the bottom side of the \emph{PCB}, as close to the power pins as possible, in order to minimize connection inductance and current loop area. The remaining low-speed connections were routed in the leftover space.
+Care was taken to properly fan out the microcontroller pins to avoid any signal integrity issues. First, the pinout was optimized to place the high-speed lines along the perimeter of the package, allowing them to be routed as directly as possible. Decoupling capacitors were then placed on the bottom side of the PCB, as close to the power pins as possible, in order to minimize connection inductance and current loop area. The remaining low-speed connections were routed in the leftover space. Routing under the microcontroller can be seeen in Figure \ref{fig:fanout}.
+
+\FloatBarrier
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[height=8cm]{fanout.eps}
+    \caption{Microcontroller fanout}
+    \label{fig:fanout}
+\end{figure}
+\FloatBarrier
 
 \section{Power integrity}
 The power integrity of the device was ensured by using solid power and ground planes, as previously described. Capacitors were placed as close as possible to the power pins of the decoupled integrated circuits and connected to the planes using vias, in order to minimize the inductance of the current loops. The ground planes were stitched together with via array. Additional care was taken to place ground vias near locations where high-speed lines transition between the top and bottom \emph{PCB} layers. Since the current of a high-speed signal in a transmission line is concentrated in close proximity to the signal trace, the corresponding return current flows along the adjacent ground plane. By placing ground vias next to the signal vias, the return path is preserved, minimizing the loop area and reducing emitted \emph{EMI}.
 
+\section{Design files}
+Gerber files were generated using Altium Designer and were made available on the \emph{GitHub} repository. The PCB was designed to be as compact as possible, with a size of \SI{50}{\milli\meter} $\times$ \SI{50}{\milli\meter}. Top and bottom layers can be seen bellow.
+
+\FloatBarrier
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[height=8cm]{top_layers.eps}
+    \caption{Top metal layer}
+    \label{fig:metal_top}
+\end{figure}
+\FloatBarrier
+
+\FloatBarrier
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[height=8cm]{bot_layers.eps}
+    \caption{Bottom metal layer}
+    \label{fig:metal_bot}
+\end{figure}
+\FloatBarrier
+
 \section{Manufacturing}
-The two concepts described above were designed in Altium Designer. Manufacturing was done by Eurocircuits who both manufactured and assembled the device. The 3D renders as well as actual photos of the assembled \emph{PCBs} can be seen in the images bellow. 
-\newpage
+The two PCBs described above were manufactured and assembled by Eurocircuits. The 3D renders as well as actual photos of the assembled PCBs can be seen in the images bellow. 
+
+
+
 \FloatBarrier
 \begin{figure}[htp!]
     \centering
@@ -360,7 +400,29 @@ The two concepts described above were designed in Altium Designer. Manufacturing
     \includegraphics[height=5.2cm]{userboard_3d-top.png}
     \hspace{1.8cm}
     \includegraphics[height=5.2cm]{userboard_3d-bottom.png}
-    \caption{Userboard PCB}
+    \caption{User board PCB}
     \label{fig:userboard_3d}
+\end{figure}
+\FloatBarrier
+
+
+\FloatBarrier
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[height=5.3cm]{photo_readout_top.png}
+    \includegraphics[height=5.3cm]{photo_readout_bot.png}
+    \caption{Manufactured readout PCB}
+    \label{fig:photos_readout}
+\end{figure}
+\FloatBarrier
+
+\FloatBarrier
+\begin{figure}[htp!]
+    \centering
+    \includegraphics[height=5.55cm,trim={2cm 0 0 0},clip]{photo_userboard_top.png}
+    \hspace{1cm}
+    \includegraphics[height=5.55cm]{photo_userboard_bot.png}
+    \caption{Manufactured user board PCB}
+    \label{fig:photos_userboard}
 \end{figure}
 \FloatBarrier

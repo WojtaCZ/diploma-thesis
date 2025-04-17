@@ -226,12 +226,21 @@ This work describes the design of the evaluation board, referred to as the reado
 \include{software}
 \include{tests}
 
+\chapter{Conclusion}
+In conclusion, the FastIC+ chip was first presented along with its functionality. The communication protocol was described in detail to better explain the reasoning behind the harware design.
 
+A readout system concept was proposed and the miniature readout system that integrates the FastIC+ along with supporting analog and digital components was developed. A corresponding mechanical enclosure was also designed and fabricated, providing physical protection for field measurements.
+
+Custom firmware was written to enable full functionality of the system, including configuration of the FastIC+ registers, real-time data acquisition, and communication with external control software. To provide an accessible and user-friendly interface, a Python-based software was developed to communicate with the readout from host computer.
+
+The complete readout systems performance was then verified with electrical measurements. A basic pulse injection test was conducted to evaluate the whole reception chain. Finally, the system was deployed in a real-world single-photon time resolution (SPTR) experiment using a silicon photomultiplier (SiPM) at CERN. The device successfully acquired the data which was interpreted and the results presented.
+
+This work represents a comprehensive development effort, from concept to deployment, of a miniature, standalone and versatile readout system based on the FastIC+ chip, suitable for various applications in fast timing and high-energy physics. 
 
 \clearpage
 \FloatBarrier
 \printbibliography
-
+\newpage
 \chapter*{List of abbreviations}
 \noindent
 \begin{tabularx}{\linewidth}
@@ -266,23 +275,28 @@ ADC & Analog to Digital Converter\\
 DAC & Digital to Analog Converter\\
 SPI & Serial Peripheral Interface\\
 DMA & Direct Memory Access\\
-TFBGA & Thin Fine Ball Grid Array\\
-MCU & Microcontroller Unit\\
-PLL & Phase Locked Loop\\
-LVDS & Low Voltage Differential Signaling\\
-CMOS & Complementary Metal-Oxide-Semiconductor\\
-EMI & Electromagnetic Interference\\
-SMA & SubMiniature version A\\
-ESD & Electrostatic Discharge\\
-PHY & Physical Layer\\
-ULPI & UTMI+ Low Pin Interface\\
-UTMI & USB Transceiver Macrocell Interface\\
-UCPD & USB Type-C Power Delivery\\
-RMS & Root Mean Square\\
-LDO & Low Dropout Regulator\\
-EEPROM & Electrically Erasable Programmable Read-Only Memory\\
-THT & Through-Hole Technology\\
-PCB & Printed Circuit Board\\
 \end{tabularx}
 
+\newpage
+\begin{tabularx}{\linewidth}
+	{ l >{\raggedright\arraybackslash}X }
+	\bfseries Abbreviation & \bfseries Explanation\\\Midrule
+	TFBGA & Thin Fine Ball Grid Array\\
+	MCU & Microcontroller Unit\\
+	PLL & Phase Locked Loop\\
+	LVDS & Low Voltage Differential Signaling\\
+	CMOS & Complementary Metal-Oxide-Semiconductor\\
+	EMI & Electromagnetic Interference\\
+	SMA & SubMiniature version A\\
+	ESD & Electrostatic Discharge\\
+	PHY & Physical Layer\\
+	ULPI & UTMI+ Low Pin Interface\\
+	UTMI & USB Transceiver Macrocell Interface\\
+	UCPD & USB Type-C Power Delivery\\
+	RMS & Root Mean Square\\
+	LDO & Low Dropout Regulator\\
+	EEPROM & Electrically Erasable Programmable Read-Only Memory\\
+	THT & Through-Hole Technology\\
+	PCB & Printed Circuit Board\\
+\end{tabularx}
 \end{document}

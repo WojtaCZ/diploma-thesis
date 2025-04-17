@@ -1,8 +1,10 @@
 \chapter{Software}
-A simple Python-based software application was developed to handle basic user tasks. Python was chosen for its simplicity, ease of use, and widespread adoption within the scientific community. However, this choice comes with certain drawbacks, such as reduced performance, which becomes noticeable when processing large amounts of data, such as binary streams. To address this, efforts were made to optimize the code for speed wherever possible.
-
+A simple Python-based software application was developed to handle basic user tasks. Python was chosen for its simplicity, ease of use, and widespread adoption within the scientific community. However, this choice comes with certain drawbacks, such as reduced performance, which becomes noticeable when processing large amounts of data, such as binary streams from the FastIC+. To address this, efforts were made to optimize the code for speed wherever possible.
+\section{Device communication}
 The first component of the software is a library of functions for communicating with the device via vendor control transfers and for reading FastIC+ data streams into binary files. The `pyusb` library was utilized for both vendor control transfers and bulk data transfers.
 
+\section{Stream processing}
 The second component is a library designed to process the captured data. This library handles synchronization, decoding, and parsing of the data, ultimately outputting FastIC+ packets as objects. It aligns the bitstream using detected Aurora synchronization preambles, reads the block data, descrambles it, and assembles it into packets.
 
-Finally, these two components were integrated into a simple example script. This script configures the FastIC+ parameters, sets up the HV bias, captures a sample data stream, and decodes it. Additional functionality, such as the comparator calibration procedure, remains to be implemented. These tasks are left either to the users or to the FastIC+ researchers, who, with their in-depth knowledge of the chip, can provide the most efficient implementations.
+\section{Example scripts}
+Finally, these two components were integrated into a simple example script. This script configures the FastIC+ parameters, sets up the HV bias, captures a sample data stream, and decodes it and exports the decoded packets to the user. Additional functionality, such as the comparator calibration procedure, remains to be implemented. These tasks are left either to the users or to the FastIC+ researchers, who, with their in-depth knowledge of the chip, can provide the most efficient implementations.

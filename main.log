@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  17 APR 2025 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  17 APR 2025 20:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1828,7 +1828,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<ctu_logo_black.pdf, id=264, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=292, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 <use ctu_logo_black.pdf>
 Package pdftex.def Info: ctu_logo_black.pdf  used on input line 205.
@@ -1988,7 +1988,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<images/05_FASTICPLUS_BLOCK.pdf, id=445, 1195.5867pt x 456.74638pt>
+<images/05_FASTICPLUS_BLOCK.pdf, id=500, 1195.5867pt x 456.74638pt>
 File: images/05_FASTICPLUS_BLOCK.pdf Graphic file (type pdf)
 <use images/05_FASTICPLUS_BLOCK.pdf>
 Package pdftex.def Info: images/05_FASTICPLUS_BLOCK.pdf  used on input line 10.
@@ -2483,7 +2483,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic_power.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic_power-eps-converted-to.pdf images/schematic/fastic_power.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic_power-eps-converted-to.pdf, id=557, 561.09625pt x 199.74625pt>
+<images/schematic/fastic_power-eps-converted-to.pdf, id=613, 561.09625pt x 199.74625pt>
 File: images/schematic/fastic_power-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic_power-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic_power-eps-converted-to.pdf  used on input line 78.
@@ -2497,7 +2497,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic-eps-converted-to.pdf images/schematic/fastic.eps>
 (epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic-eps-converted-to.pdf, id=558, 587.19376pt x 259.97125pt>
+<images/schematic/fastic-eps-converted-to.pdf, id=614, 587.19376pt x 259.97125pt>
 File: images/schematic/fastic-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic-eps-converted-to.pdf  used on input line 91.
@@ -2514,7 +2514,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic_vmon.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic_vmon-eps-converted-to.pdf images/schematic/fastic_vmon.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic_vmon-eps-converted-to.pdf, id=567, 167.62625pt x 93.34875pt>
+<images/schematic/fastic_vmon-eps-converted-to.pdf, id=623, 167.62625pt x 93.34875pt>
 File: images/schematic/fastic_vmon-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic_vmon-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic_vmon-eps-converted-to.pdf  used on input line 118.
@@ -2522,7 +2522,7 @@ Package pdftex.def Info: images/schematic/fastic_vmon-eps-converted-to.pdf  used
 
 
 [18{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./images/schematic/fastic-eps-converted-to.pdf>]
-<images/06_SLVS_specs.pdf, id=577, 404.47108pt x 123.5817pt>
+<images/06_SLVS_specs.pdf, id=633, 404.47108pt x 123.5817pt>
 File: images/06_SLVS_specs.pdf Graphic file (type pdf)
 <use images/06_SLVS_specs.pdf>
 Package pdftex.def Info: images/06_SLVS_specs.pdf  used on input line 130.
@@ -2539,7 +2539,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic_top.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic_top-eps-converted-to.pdf images/schematic/fastic_top.eps>
 (epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic_top-eps-converted-to.pdf, id=599, 215.80624pt x 140.525pt>
+<images/schematic/fastic_top-eps-converted-to.pdf, id=654, 215.80624pt x 140.525pt>
 File: images/schematic/fastic_top-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic_top-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic_top-eps-converted-to.pdf  used on input line 149.
@@ -2553,7 +2553,7 @@ Package epstopdf Info: Source file: <images/schematic/usb_con.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/usb_con-eps-converted-to.pdf images/schematic/usb_con.eps>
 (epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/usb_con-eps-converted-to.pdf, id=600, 435.6275pt x 217.81375pt>
+<images/schematic/usb_con-eps-converted-to.pdf, id=655, 435.6275pt x 217.81375pt>
 File: images/schematic/usb_con-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/usb_con-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/usb_con-eps-converted-to.pdf  used on input line 160.
@@ -2570,7 +2570,7 @@ Package epstopdf Info: Source file: <images/schematic/usb.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/usb-eps-converted-to.pdf images/schematic/usb.eps>
 (epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/usb-eps-converted-to.pdf, id=607, 526.96875pt x 400.49625pt>
+<images/schematic/usb-eps-converted-to.pdf, id=662, 526.96875pt x 400.49625pt>
 File: images/schematic/usb-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/usb-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/usb-eps-converted-to.pdf  used on input line 172.
@@ -2587,7 +2587,7 @@ Package epstopdf Info: Source file: <images/schematic/ucpd.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/ucpd-eps-converted-to.pdf images/schematic/ucpd.eps>
 (epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/ucpd-eps-converted-to.pdf, id=615, 366.36874pt x 191.71625pt>
+<images/schematic/ucpd-eps-converted-to.pdf, id=670, 366.36874pt x 191.71625pt>
 File: images/schematic/ucpd-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/ucpd-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/ucpd-eps-converted-to.pdf  used on input line 182.
@@ -2604,7 +2604,7 @@ Package epstopdf Info: Source file: <images/schematic/clock.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/clock-eps-converted-to.pdf images/schematic/clock.eps>
 (epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/clock-eps-converted-to.pdf, id=625, 545.03625pt x 416.55624pt>
+<images/schematic/clock-eps-converted-to.pdf, id=680, 545.03625pt x 416.55624pt>
 File: images/schematic/clock-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/clock-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/clock-eps-converted-to.pdf  used on input line 193.
@@ -2618,7 +2618,7 @@ Package epstopdf Info: Source file: <images/schematic/slvs.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/slvs-eps-converted-to.pdf images/schematic/slvs.eps>
 (epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/slvs-eps-converted-to.pdf, id=627, 118.4425pt x 90.3375pt>
+<images/schematic/slvs-eps-converted-to.pdf, id=682, 118.4425pt x 90.3375pt>
 File: images/schematic/slvs-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/slvs-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/slvs-eps-converted-to.pdf  used on input line 203.
@@ -2635,7 +2635,7 @@ Package epstopdf Info: Source file: <images/schematic/hv.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv-eps-converted-to.pdf images/schematic/hv.eps>
 (epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv-eps-converted-to.pdf, id=635, 521.95pt x 394.47375pt>
+<images/schematic/hv-eps-converted-to.pdf, id=690, 521.95pt x 394.47375pt>
 File: images/schematic/hv-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv-eps-converted-to.pdf  used on input line 215.
@@ -2652,7 +2652,7 @@ Package epstopdf Info: Source file: <images/schematic/hv_isense.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv_isense-eps-converted-to.pdf images/schematic/hv_isense.eps>
 (epstopdf)             \includegraphics on input line 241.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv_isense-eps-converted-to.pdf, id=644, 243.91125pt x 225.84375pt>
+<images/schematic/hv_isense-eps-converted-to.pdf, id=699, 243.91125pt x 225.84375pt>
 File: images/schematic/hv_isense-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv_isense-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv_isense-eps-converted-to.pdf  used on input line 241.
@@ -2666,7 +2666,7 @@ Package epstopdf Info: Source file: <images/schematic/hv_usense.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv_usense-eps-converted-to.pdf images/schematic/hv_usense.eps>
 (epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv_usense-eps-converted-to.pdf, id=645, 249.93375pt x 227.85126pt>
+<images/schematic/hv_usense-eps-converted-to.pdf, id=700, 249.93375pt x 227.85126pt>
 File: images/schematic/hv_usense-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv_usense-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv_usense-eps-converted-to.pdf  used on input line 242.
@@ -2683,7 +2683,7 @@ Package epstopdf Info: Source file: <images/schematic/power_dcdc.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/power_dcdc-eps-converted-to.pdf images/schematic/power_dcdc.eps>
 (epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/power_dcdc-eps-converted-to.pdf, id=654, 293.095pt x 100.375pt>
+<images/schematic/power_dcdc-eps-converted-to.pdf, id=709, 293.095pt x 100.375pt>
 File: images/schematic/power_dcdc-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/power_dcdc-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/power_dcdc-eps-converted-to.pdf  used on input line 253.
@@ -2700,7 +2700,7 @@ Package epstopdf Info: Source file: <images/schematic/power_fastic.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/power_fastic-eps-converted-to.pdf images/schematic/power_fastic.eps>
 (epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/power_fastic-eps-converted-to.pdf, id=663, 631.35875pt x 113.42375pt>
+<images/schematic/power_fastic-eps-converted-to.pdf, id=718, 631.35875pt x 113.42375pt>
 File: images/schematic/power_fastic-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/power_fastic-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/power_fastic-eps-converted-to.pdf  used on input line 264.
@@ -2722,7 +2722,7 @@ Package epstopdf Info: Source file: <images/schematic/sipm.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/sipm-eps-converted-to.pdf images/schematic/sipm.eps>
 (epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/sipm-eps-converted-to.pdf, id=677, 282.05376pt x 78.2925pt>
+<images/schematic/sipm-eps-converted-to.pdf, id=733, 282.05376pt x 78.2925pt>
 File: images/schematic/sipm-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/sipm-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/sipm-eps-converted-to.pdf  used on input line 285.
@@ -2736,90 +2736,136 @@ Package pdftex.def Info: images/schematic/sipm-eps-converted-to.pdf  used on inp
 ]
 Chapter 8.
 
-Underfull \vbox (badness 6220) has occurred while \output is active []
-
-
 
 [31]
-Underfull \vbox (badness 1755) has occurred while \output is active []
+Package epstopdf Info: Source file: <images/high_speed.eps>
+(epstopdf)                    date: 2025-04-17 17:35:46
+(epstopdf)                    size: 416558 bytes
+(epstopdf)             Output file: <images/high_speed-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-17 17:35:49
+(epstopdf)                    size: 110398 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/high_speed-eps-converted-to.pdf images/high_speed.eps>
+(epstopdf)             \includegraphics on input line 340.
+Package epstopdf Info: Output file is already uptodate.
+<images/high_speed-eps-converted-to.pdf, id=752, 167.62625pt x 109.40875pt>
+File: images/high_speed-eps-converted-to.pdf Graphic file (type pdf)
+<use images/high_speed-eps-converted-to.pdf>
+Package pdftex.def Info: images/high_speed-eps-converted-to.pdf  used on input line 340.
+(pdftex.def)             Requested size: 348.74898pt x 227.62204pt.
+
+
+[32 <./images/high_speed-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/fanout.eps>
+(epstopdf)                    date: 2025-04-17 17:22:27
+(epstopdf)                    size: 324909 bytes
+(epstopdf)             Output file: <images/fanout-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-17 17:30:41
+(epstopdf)                    size: 75779 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/fanout-eps-converted-to.pdf images/fanout.eps>
+(epstopdf)             \includegraphics on input line 352.
+Package epstopdf Info: Output file is already uptodate.
+<images/fanout-eps-converted-to.pdf, id=760, 72.27pt x 72.27pt>
+File: images/fanout-eps-converted-to.pdf Graphic file (type pdf)
+<use images/fanout-eps-converted-to.pdf>
+Package pdftex.def Info: images/fanout-eps-converted-to.pdf  used on input line 352.
+(pdftex.def)             Requested size: 227.6351pt x 227.62204pt.
+
+
+[33 <./images/fanout-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/top_layers.eps>
+(epstopdf)                    date: 2025-04-17 17:20:29
+(epstopdf)                    size: 647122 bytes
+(epstopdf)             Output file: <images/top_layers-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-17 17:42:14
+(epstopdf)                    size: 156129 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/top_layers-eps-converted-to.pdf images/top_layers.eps>
+(epstopdf)             \includegraphics on input line 367.
+Package epstopdf Info: Output file is already uptodate.
+<images/top_layers-eps-converted-to.pdf, id=767, 173.64874pt x 173.64874pt>
+File: images/top_layers-eps-converted-to.pdf Graphic file (type pdf)
+<use images/top_layers-eps-converted-to.pdf>
+Package pdftex.def Info: images/top_layers-eps-converted-to.pdf  used on input line 367.
+(pdftex.def)             Requested size: 227.6299pt x 227.62204pt.
+Package epstopdf Info: Source file: <images/bot_layers.eps>
+(epstopdf)                    date: 2025-04-17 17:28:19
+(epstopdf)                    size: 532703 bytes
+(epstopdf)             Output file: <images/bot_layers-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-17 17:42:35
+(epstopdf)                    size: 142739 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/bot_layers-eps-converted-to.pdf images/bot_layers.eps>
+(epstopdf)             \includegraphics on input line 376.
+Package epstopdf Info: Output file is already uptodate.
+<images/bot_layers-eps-converted-to.pdf, id=768, 173.64874pt x 173.64874pt>
+File: images/bot_layers-eps-converted-to.pdf Graphic file (type pdf)
+<use images/bot_layers-eps-converted-to.pdf>
+Package pdftex.def Info: images/bot_layers-eps-converted-to.pdf  used on input line 376.
+(pdftex.def)             Requested size: 227.6299pt x 227.62204pt.
+
+Underfull \vbox (badness 1112) has occurred while \output is active []
 
 
 
-[32]
-
-[33]
-<images/readout_3d-top.png, id=705, 279.444pt x 233.673pt>
+[34 <./images/top_layers-eps-converted-to.pdf> <./images/bot_layers-eps-converted-to.pdf>]
+<images/readout_3d-top.png, id=777, 279.444pt x 233.673pt>
 File: images/readout_3d-top.png Graphic file (type png)
 <use images/readout_3d-top.png>
-Package pdftex.def Info: images/readout_3d-top.png  used on input line 350.
+Package pdftex.def Info: images/readout_3d-top.png  used on input line 390.
 (pdftex.def)             Requested size: 176.93329pt x 147.95424pt.
-<images/readout_3d-bottom.png, id=707, 279.444pt x 233.673pt>
+<images/readout_3d-bottom.png, id=779, 279.444pt x 233.673pt>
 File: images/readout_3d-bottom.png Graphic file (type png)
 <use images/readout_3d-bottom.png>
-Package pdftex.def Info: images/readout_3d-bottom.png  used on input line 351.
+Package pdftex.def Info: images/readout_3d-bottom.png  used on input line 391.
 (pdftex.def)             Requested size: 176.93329pt x 147.95424pt.
-<images/userboard_3d-top.png, id=708, 228.855pt x 228.855pt>
+<images/userboard_3d-top.png, id=780, 228.855pt x 228.855pt>
 File: images/userboard_3d-top.png Graphic file (type png)
 <use images/userboard_3d-top.png>
-Package pdftex.def Info: images/userboard_3d-top.png  used on input line 360.
+Package pdftex.def Info: images/userboard_3d-top.png  used on input line 400.
 (pdftex.def)             Requested size: 147.9578pt x 147.95424pt.
-<images/userboard_3d-bottom.png, id=709, 231.264pt x 231.264pt>
+<images/userboard_3d-bottom.png, id=781, 231.264pt x 231.264pt>
 File: images/userboard_3d-bottom.png Graphic file (type png)
 <use images/userboard_3d-bottom.png>
-Package pdftex.def Info: images/userboard_3d-bottom.png  used on input line 362.
+Package pdftex.def Info: images/userboard_3d-bottom.png  used on input line 402.
 (pdftex.def)             Requested size: 147.96257pt x 147.95424pt.
+<images/photo_readout_top.png, id=782, 2812.5075pt x 2389.92876pt>
+File: images/photo_readout_top.png Graphic file (type png)
+<use images/photo_readout_top.png>
+Package pdftex.def Info: images/photo_readout_top.png  used on input line 412.
+(pdftex.def)             Requested size: 177.45499pt x 150.79968pt.
+<images/photo_readout_bot.png, id=783, 2812.5075pt x 2389.92876pt>
+File: images/photo_readout_bot.png Graphic file (type png)
+<use images/photo_readout_bot.png>
+Package pdftex.def Info: images/photo_readout_bot.png  used on input line 413.
+(pdftex.def)             Requested size: 177.45499pt x 150.79968pt.
+
+
+[35 <./images/readout_3d-top.png> <./images/readout_3d-bottom.png> <./images/userboard_3d-top.png> <./images/userboard_3d-bottom.png>]
+<images/photo_userboard_top.png, id=793, 2624.80624pt x 2537.48pt>
+File: images/photo_userboard_top.png Graphic file (type png)
+<use images/photo_userboard_top.png>
+Package pdftex.def Info: images/photo_userboard_top.png  used on input line 422.
+(pdftex.def)             Requested size: 159.7881pt x 157.91287pt.
+<images/photo_userboard_bot.png, id=795, 2624.80624pt x 2537.48pt>
+File: images/photo_userboard_bot.png Graphic file (type png)
+<use images/photo_userboard_bot.png>
+Package pdftex.def Info: images/photo_userboard_bot.png  used on input line 424.
+(pdftex.def)             Requested size: 163.32906pt x 157.91287pt.
 )
 
-[34 <./images/readout_3d-top.png> <./images/readout_3d-bottom.png> <./images/userboard_3d-top.png> <./images/userboard_3d-bottom.png>]
+[36 <./images/photo_readout_top.png> <./images/photo_readout_bot.png> <./images/photo_userboard_bot.png> <./images/photo_userboard_top.png>]
 \openout2 = `mechanical.aux'.
 
  (./mechanical.tex
 Chapter 9.
-<images/insert.png, id=719, 1254.18562pt x 572.1375pt>
+<images/insert.png, id=806, 1254.18562pt x 572.1375pt>
 File: images/insert.png Graphic file (type png)
 <use images/insert.png>
 Package pdftex.def Info: images/insert.png  used on input line 15.
 (pdftex.def)             Requested size: 249.47394pt x 113.81102pt.
-<images/mech_preview.png, id=720, 3011.25pt x 1505.625pt>
+<images/mech_preview.png, id=807, 3011.25pt x 1505.625pt>
 File: images/mech_preview.png Graphic file (type png)
 <use images/mech_preview.png>
-Package pdftex.def Info: images/mech_preview.png  used on input line 27.
+Package pdftex.def Info: images/mech_preview.png  used on input line 26.
 (pdftex.def)             Requested size: 360.5805pt x 227.62204pt.
-
-
-[35
-
-
-
-
- <./images/insert.png>]
-<images/mech_top.png, id=728, 756.8275pt x 757.83125pt>
-File: images/mech_top.png Graphic file (type png)
-<use images/mech_top.png>
-Package pdftex.def Info: images/mech_top.png  used on input line 36.
-(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
-<images/mech_bottom.png, id=729, 756.8275pt x 757.83125pt>
-File: images/mech_bottom.png Graphic file (type png)
-<use images/mech_bottom.png>
-Package pdftex.def Info: images/mech_bottom.png  used on input line 37.
-(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
-<images/mech_front.png, id=730, 756.8275pt x 757.83125pt>
-File: images/mech_front.png Graphic file (type png)
-<use images/mech_front.png>
-Package pdftex.def Info: images/mech_front.png  used on input line 38.
-(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
-<images/mech_rear.png, id=731, 756.8275pt x 757.83125pt>
-File: images/mech_rear.png Graphic file (type png)
-<use images/mech_rear.png>
-Package pdftex.def Info: images/mech_rear.png  used on input line 39.
-(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
-
-
-[36 <./images/mech_top.png> <./images/mech_bottom.png> <./images/mech_front.png> <./images/mech_rear.png> <./images/mech_preview.png>])
-\openout2 = `firmware.aux'.
-
- (./firmware.tex
-Chapter 10.
 
 
 [37
@@ -2827,15 +2873,43 @@ Chapter 10.
 
 
 
+ <./images/insert.png>]
+<images/mech_top.png, id=814, 756.8275pt x 757.83125pt>
+File: images/mech_top.png Graphic file (type png)
+<use images/mech_top.png>
+Package pdftex.def Info: images/mech_top.png  used on input line 35.
+(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
+<images/mech_bottom.png, id=815, 756.8275pt x 757.83125pt>
+File: images/mech_bottom.png Graphic file (type png)
+<use images/mech_bottom.png>
+Package pdftex.def Info: images/mech_bottom.png  used on input line 36.
+(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
+<images/mech_front.png, id=816, 756.8275pt x 757.83125pt>
+File: images/mech_front.png Graphic file (type png)
+<use images/mech_front.png>
+Package pdftex.def Info: images/mech_front.png  used on input line 37.
+(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
+<images/mech_rear.png, id=817, 756.8275pt x 757.83125pt>
+File: images/mech_rear.png Graphic file (type png)
+<use images/mech_rear.png>
+Package pdftex.def Info: images/mech_rear.png  used on input line 38.
+(pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
+
+
+[38 <./images/mech_top.png> <./images/mech_bottom.png> <./images/mech_front.png> <./images/mech_rear.png> <./images/mech_preview.png>])
+\openout2 = `firmware.aux'.
+
+ (./firmware.tex
+Chapter 10.
+
+
+[39
+
+
+
+
 
 ]
-Overfull \hbox (16.41641pt too wide) in paragraph at lines 45--45
-[]\T1/lmtt/m/n/10.95 set userboard register [1/2] {hex byte: address} {hex byte: value}[] 
- []
-
-
-
-[38]
 \width=\dimen361 (locally)
 \height=\dimen362 (locally)
 \depth=\dimen363 (locally)
@@ -2857,12 +2931,12 @@ Overfull \hbox (16.41641pt too wide) in paragraph at lines 45--45
 \depth=\dimen363 (locally)
 \totalheight=\dimen364 (locally)
 
-
-[39]
 
 [40]
 
 [41]
+
+[42]
 \width=\dimen361 (locally)
 \height=\dimen362 (locally)
 \depth=\dimen363 (locally)
@@ -2997,22 +3071,10 @@ Overfull \hbox (16.41641pt too wide) in paragraph at lines 45--45
 \totalheight=\dimen364 (locally)
 )
 
-[42]
+[43]
 \openout2 = `software.aux'.
 
  (./software.tex
-Chapter 11.
-)
-
-[43
-
-
-
-
-]
-\openout2 = `tests.aux'.
-
- (./tests.tex
 
 [44
 
@@ -3020,10 +3082,13 @@ Chapter 11.
 
 
 ]
-Chapter 12.
+Chapter 11.
 )
 
 [45]
+\openout2 = `tests.aux'.
+
+ (./tests.tex
 
 [46
 
@@ -3031,45 +3096,105 @@ Chapter 12.
 
 
 ]
+Chapter 12.
+<images/measurements/dcdc_ripple.png, id=864, 803.0pt x 504.88625pt>
+File: images/measurements/dcdc_ripple.png Graphic file (type png)
+<use images/measurements/dcdc_ripple.png>
+Package pdftex.def Info: images/measurements/dcdc_ripple.png  used on input line 11.
+(pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
+
 
 [47]
+<images/measurements/ripple.png, id=870, 803.0pt x 504.88625pt>
+File: images/measurements/ripple.png Graphic file (type png)
+<use images/measurements/ripple.png>
+Package pdftex.def Info: images/measurements/ripple.png  used on input line 23.
+(pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
+<images/measurements/hv_transient.png, id=871, 803.0pt x 504.88625pt>
+File: images/measurements/hv_transient.png Graphic file (type png)
+<use images/measurements/hv_transient.png>
+Package pdftex.def Info: images/measurements/hv_transient.png  used on input line 33.
+(pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
 
-[48
+
+[48 <./images/measurements/dcdc_ripple.png (PNG copy)> <./images/measurements/ripple.png (PNG copy)>]
+<images/measurements/injection.png, id=879, 803.0pt x 504.88625pt>
+File: images/measurements/injection.png Graphic file (type png)
+<use images/measurements/injection.png>
+Package pdftex.def Info: images/measurements/injection.png  used on input line 48.
+(pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
+
+
+[49 <./images/measurements/hv_transient.png (PNG copy)>]
+
+[50 <./images/measurements/injection.png (PNG copy)>])
+Underfull \hbox (badness 10000) in paragraph at lines 108--227
+
+ []
+
+
+Overfull \hbox (4.87393pt too wide) in paragraph at lines 108--227
+\T1/lmr/bx/n/12 (-20) TADY BUDE DALSI KO-MEN-TAR K TOMU EX-PER-I-MENTU
+ []
+
+
+
+[51]
+
+[52]
+Chapter 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 229.
+
+
+[53
+
+
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[54
+
+
+]
+
+[55]
+
+[56
+
+]
+
+[57]
+Overfull \hbox (11.2pt too wide) in paragraph at lines 301--302
+[][] 
+ []
 
 
 
-[49]
-Overfull \vbox (5.74062pt too high) has occurred while \output is active []
-
-
-
-[50] (./main.aux (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./mechanical.aux) (./firmware.aux) (./software.aux) (./tests.aux))
+[58] (./main.aux (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./mechanical.aux) (./firmware.aux) (./software.aux) (./tests.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5895B5703393A489BBEDD788FF4CF421;8319.
+(rerunfilecheck)             Checksum: 7B1222509F03C76A77C7EEA29FC209C7;9334.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48017 strings out of 473190
- 957378 string characters out of 5688193
- 1836067 words of memory out of 5000000
- 70026 multiletter control sequences out of 15000+600000
- 665516 words of font info for 247 fonts, out of 8000000 for 9000
+ 48237 strings out of 473190
+ 962770 string characters out of 5688193
+ 1836646 words of memory out of 5000000
+ 70182 multiletter control sequences out of 15000+600000
+ 680408 words of font info for 275 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,17n,101p,1469b,4095s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (58 pages, 6330012 bytes).
+</opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
+Output written on main.pdf (66 pages, 41180788 bytes).
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
- 776 compressed objects within 8 object streams
- 169 named destinations out of 1000 (max. 500000)
- 63647 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 1060 PDF objects out of 1200 (max. 8388607)
+ 881 compressed objects within 9 object streams
+ 193 named destinations out of 1000 (max. 500000)
+ 72473 words of extra memory for PDF output out of 74296 (max. 10000000)
 

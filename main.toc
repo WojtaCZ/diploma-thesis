@@ -65,27 +65,34 @@
 \contentsline {section}{\numberline {7.2}EEPROM}{29}{section.7.2}%
 \contentsline {chapter}{\numberline {8}PCB design}{31}{chapter.8}%
 \contentsline {section}{\numberline {8.1}High speed signals}{32}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Microcontroller fanout}{32}{section.8.2}%
+\contentsline {section}{\numberline {8.2}Microcontroller fanout}{33}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Power integrity}{33}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Manufacturing}{33}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Enclosure Design}{35}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Firmware}{37}{chapter.10}%
-\contentsline {section}{\numberline {10.1}USB}{37}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}CDC interface}{37}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Vendor control}{38}{subsection.10.1.2}%
-\contentsline {subsection}{\numberline {10.1.3}Vendor interfaces}{39}{subsection.10.1.3}%
-\contentsline {section}{\numberline {10.2}Clock generation}{39}{section.10.2}%
-\contentsline {section}{\numberline {10.3}HV power supply}{39}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}PID controller}{40}{subsection.10.3.1}%
-\contentsline {section}{\numberline {10.4}FastIC+}{40}{section.10.4}%
-\contentsline {subsection}{\numberline {10.4.1}Aurora stream}{40}{subsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.4.2}Pulse injection}{41}{subsection.10.4.2}%
-\contentsline {section}{\numberline {10.5}Userboard}{42}{section.10.5}%
-\contentsline {chapter}{\numberline {11}Software}{43}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Functional tests}{45}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Power supplies}{45}{section.12.1}%
-\contentsline {section}{\numberline {12.2}High Voltage power supply}{45}{section.12.2}%
-\contentsline {section}{\numberline {12.3}Detection emulation test}{45}{section.12.3}%
-\contentsline {subsection}{\numberline {12.3.1}Results}{45}{subsection.12.3.1}%
-\contentsline {chapter}{Bibliography}{47}{chapter*.8}%
-\contentsline {chapter}{List of abbreviations}{49}{chapter*.9}%
+\contentsline {section}{\numberline {8.4}Design files}{34}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Manufacturing}{35}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Enclosure Design}{37}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Firmware}{39}{chapter.10}%
+\contentsline {section}{\numberline {10.1}USB}{39}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}CDC interface}{39}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Vendor control}{39}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Vendor interfaces}{40}{subsection.10.1.3}%
+\contentsline {section}{\numberline {10.2}Clock generation}{40}{section.10.2}%
+\contentsline {section}{\numberline {10.3}HV power supply}{41}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}PID controller}{41}{subsection.10.3.1}%
+\contentsline {section}{\numberline {10.4}FastIC+}{41}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Aurora stream}{42}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Pulse injection}{42}{subsection.10.4.2}%
+\contentsline {section}{\numberline {10.5}User board}{43}{section.10.5}%
+\contentsline {chapter}{\numberline {11}Software}{45}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Device communication}{45}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Stream processing}{45}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Example scripts}{45}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Function verification}{47}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Measurements}{47}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Power supplies}{47}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}High Voltage power supply}{48}{subsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.1.3}Pulse injection}{49}{subsection.12.1.3}%
+\contentsline {section}{\numberline {12.2}Injection pulse test}{50}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}SiPM SPTR measurement}{51}{subsection.12.2.1}%
+\contentsline {chapter}{\numberline {13}Conclusion}{53}{chapter.13}%
+\contentsline {chapter}{Bibliography}{55}{chapter*.8}%
+\contentsline {chapter}{List of abbreviations}{57}{chapter*.9}%

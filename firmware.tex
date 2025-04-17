@@ -1,57 +1,18 @@
 \chapter{Firmware}
-A firware in the C++ programming language has been developped for the readout aiming for best performance and reliable functionality. 
+Firmware in the C++ programming language has been developed for the readout, aiming for the best performance and reliable functionality. 
 \section{USB}
-The TinyUSB library has been used for implementing the USB stack on the device. It is an open-source cross-platform USB stack for embedded systems, designed to be memory-safe with no dynamic allocation and thread-safe. It provides support for both Host and Device roles and implements all the common usb classes such as CDC, HID, DFU, Vendor specific and others. On the STM32H7 series specifically, it is capable of working with the ULPI PHY in HS mode and make use of the internal DMA to allow for very high throughput and good latency. All of these specification make it ideal for this application.
+The TinyUSB library has been used for implementing the USB stack on the device. It is an open-source cross-platform USB stack for embedded systems, designed to be memory-safe with no dynamic allocation and thread-safe. It provides support for both Host and Device roles and implements all the common USB classes such as CDC, HID, DFU, Vendor-specific, and others. On the STM32H7 series specifically, it is capable of working with the ULPI PHY in HS mode and making use of the internal DMA to allow for very high throughput and good latency. All of these specifications make it ideal for this application.
 
-Three interfaces have been implemented in order to allow for configuration of the device via human readable protocol, binary protocol and readout of the two data streams.
+Three interfaces have been implemented to allow for the configuration of the device via a human-readable protocol, binary protocol, and readout of the two data streams.
 \subsection{CDC interface}
-A Communication Device Class has been implemented on the first interface (endpoints 0x81, 0x82 ans 0x02). This interface emulates a COM port over USB and allows for easy, human-readable interaction with the device. A simple text protocol has been impemented to serve all the required functions of the device. 
-\newpage
-The following commands have been implemented, where square brackets indicate a choice between the options separated by slash and curly braces indicate value in the specified format:
-%
-\begin{itemize}
-    \item \verb|get readout status| - returns the status of the readout
-    \item \verb|get readout uid| - returns a UID of the readout
-    \item \verb|get hv enable| - returns the state of the HV supply
-\end{itemize}
-\begin{verbatim}
-set hv enable [true/false]
-get hv current
-get hv voltage
-set hv voltage {float: voltage}
-get fastic register [1/2] {hex byte: address}
-set fastic register [1/2] {hex byte: address} {hex byte: value}
-get fastic voltage [1/2]
-get fastic syncreset [1/2]
-set fastic syncreset [1/2] [high/low]
-set fastic calpulse [1/2] [enable/disable]
-get fastic time [1/2]
-get fastic aurora [1/2]
-set fastic aurora [1/2] [enable/disable]
-get userboard status
-get userboard uid
-get userboard name
-set userboard name {string: name}
-get userboard writeprotect
-set userboard writeprotect [true/false]
-get userboard init
-set userboard init 
-get userboard voltage 
-set userboard voltage {float: voltage}
-get userboard register [1/2] {hex byte: address}
-set userboard register [1/2] {hex byte: address} {hex byte: value}
-set userboard tomemory
-set userboard frommemory
-\end{verbatim}
-
-A detailed description of the commands and their usage is provided in the device user manual.
+A \emph{Communication Device Class} has been implemented on the first interface (endpoints 0x81, 0x82, and 0x02). This interface emulates a COM port over USB and allows for easy, human-readable interaction with the device. A simple text protocol has been implemented to serve all the required functions of the device. The available commands were documented on the GitHub page of the project.
 
 \subsection{Vendor control}
-The USB specification describes a way to communicate with a USB device in a bursty matter by Control Transfers. A control transfer is typically a short random packet, containing up to \SI{64}{\byte} of data, which is delivered to the default endpoint with the best effort delievery (no retransmissions). These packets are, for example, used to control the flow of the CDC interface but can be very easilly adopted to transfer auxilary vendor data and thus allow for binary communication with the device. 
+The USB specification describes a way to communicate with a USB device in a bursty manner by \emph{Control Transfers}. A \emph{Control Transfer} is typically a short random packet, containing up to \SI{64}{\byte} of data, which is delivered to the default endpoint with best-effort delivery (no retransmissions). These packets are, for example, used to control the flow of the \emph{CDC} interface but can be very easily adapted to transfer auxiliary vendor data and thus allow for binary communication with the device. 
 
-The same commands as in the CDC interface have been implemented using control transfers to allow for easier interactions with the device via software on the PC as the text communication adds unneccessary overhead in thios regard.
+The same commands as in the \emph{CDC} interface have been implemented using control transfers to allow for easier interactions with the device via software on the host, as the text communication adds unnecessary overhead.
 
-A control transfer is started by an eight byte long Setup Packet, which contains the following fields:
+A control transfer is started by an eight-byte-long \emph{Setup Packet}, which contains the following fields:
 
 \FloatBarrier
 \begin{figure}[htpb]
@@ -70,41 +31,43 @@ A control transfer is started by an eight byte long Setup Packet, which contains
         \label{fig:usb_control_transfer}
     \end{center}
 \end{figure}
-
-
-\verb|bmType| indicates the direction of the communication, the type, in this case a Vendor transfer, and the recipient, in this case a Device. \verb|bRequest| field indicates the request number. The readout text commands have been each mapped to a unique number which is used in this field in the binary communication. \verb|wValue| and \verb|wIndex| allow for other parameters to be passed with the request, in this case parameters such as the index of the FastIC+ chip to work with. If there is more data to be transfered, the \verb|wLength| field is used to specify the length of an additional data packet sent after the Setup Packet.
+The \verb|bmType| field indicates:
+\begin{itemize}
+    \item the direction of the communication,
+    \item the type, in this case, a Vendor transfer,
+    \item and the recipient, in this case, a Device.
+\end{itemize}
+The \verb|bRequest| field indicates the request number. The readout text commands have each been mapped to a unique number, which is used in this field in the binary communication. \verb|wValue| and \verb|wIndex| allow for other parameters to be passed with the request, such as the index of the FastIC+ chip or the address of the selected register. If there is more data to be transferred, the \verb|wLength| field is used to specify the length of an additional data packet sent after the \emph{Setup Packet}.
 
 \subsection{Vendor interfaces}
-For transfering the Aurora data stream from the FastIC+ chips to the computer, two vendor interfaces have been implemented, one for each FastIC+ chip. The sampled bitstream is transfered using Bulk Transfers over these two interfaces. 
+For transferring the \emph{Aurora} data stream from the FastIC+ chips to the host, two vendor interfaces have been implemented, one for each FastIC+ chip. The sampled bitstream is transferred using \emph{Bulk Transfers} over these two interfaces. 
 
 \section{Clock generation}
-The configuration for the Si5340 clock synthetizer was generated using the Clock Builder application provided by Skyworks. This software generates a register map as a C/C++ array that is later parsed by the software and the configuration is applied to the synthetizer over I2C.
+The configuration for the Si5340 clock synthesizer was generated using the \emph{Clock Builder application} provided by Skyworks. This software generates a register map as a C/C++ array that is later parsed by the software, and the configuration is applied to the synthesizer over \emph{I2C}.
 
 \section{HV power supply}
-For controlling the HV power supply, a DAC peripheral has been used to provide the control voltage. Two channels of an ADC peripheral with 256 times oversampling, resulting in a \SI{1000}{\hertz} sample rate, were than used to acquire feedback for voltage and current monitoring. 
+For controlling the high-voltage power supply, a \emph{DAC} peripheral has been used to provide the control voltage. Two channels of an \emph{ADC} peripheral with 256 times oversampling, resulting in a \SI{1000}{\hertz} sample rate, were then used to acquire feedback for voltage and current monitoring. 
 
 \subsection{PID controller}
-A closed control loop was implemented, using the ADC inputs and DAC output called a PID controller. This controller calculates the DAC value in order to minimize the difference between a required output voltage and a feedback from the ADC. On every cycle, which takes place after the ADCs finished sampling, an error value $e$ is calculated, which represents the difference between the setpoint and the measured voltage. The error is than integrated into variable $I$ and a derivation of the measured value is calculated, denoted $D$. In the end, a corrective output setting is calculated, to compensate for possible error, using the following equation:
+A closed-loop \emph{PID controller} was implemented using the \emph{ADC} inputs and \emph{DAC}. This controller calculates the \emph{DAC} value to minimize the difference between a required output voltage and feedback from the ADC. On every cycle, which takes place after the ADCs finish sampling, an error value $e$ is calculated, representing the difference between the setpoint and the measured voltage. The error is then integrated into the variable $I$, and a derivative of the measured value is calculated, denoted $D$. In the end, a corrective output setting is calculated to compensate for possible error using the following equation:
 
 \begin{equation}
     O = K_P \cdot e + K_I \cdot I + K_D \cdot D
 \end{equation}
-where $O$ is the output value and $K_P$, $K_I$ and $K_D$ are the progressive, integral and derivative constants respectively.
+where $O$ is the output value, and $K_P$, $K_I$, and $K_D$ are the proportional, integral, and derivative constants, respectively.
 
-The afformentioned constants can either be determined analytically after modelling the control loops transfer function, heuristically, for example by the Ziegler-Nichols method or manually which was chosen in this case. First, the proportional constant was set to a value that would bring the output close to the desired value while not causing any oscilations. Than, the integral part was increased to minimize the steady state error but kept safe bellow any oscillation treshold. Overshoots and undershoots of the regulator were examined with every change. Finally, the derivative part was added to improve the dynamic response and the performance was tested. The values of $K_P = 150$, $K_I = 3$ and $K_D = 10$ were fond to be suitable for the regulator.
+The aforementioned constants can either be determined analytically after modeling the control loop's transfer function, heuristically (for example, by the Ziegler-Nichols method), or manually, which was chosen in this case. First, the proportional constant was set to a value that would bring the output close to the desired value while not causing any oscillations. Then, the integral part was increased to minimize the steady-state error but kept safely below any oscillation threshold. Overshoots and undershoots of the regulator were examined with every change. Finally, the derivative part was added to improve the dynamic response, and the performance was tested. The values of $K_P = 150$, $K_I = 3$, and $K_D = 10$ were found to be suitable for the regulator.
 \section{FastIC+}
-Both of the FastIC+ chips are mainly controlled over the I2C interface. Only a very basic configuration is done by the software, setting the propper clock dividers to be able to receive the Aurora stream. Rest of the settings are left for the user to modify, as the registers of the FastIC+ can be accessed directly over the communication interface and most of them need to be tuned for a specific application of the readout.
-
+Both of the FastIC+ chips are mainly controlled over the \emph{I2C} interface. Only a very basic configuration is done by the software, setting the propper clock dividers to be able to receive the \emph{Aurora} stream. Rest of the settings are left for the user to modify, as the registers of the FastIC+ can be accessed directly over the communication interface and most of them need to be tuned for a specific application of the readout.
 \subsection{Aurora stream}
-The Aurora stream is continuously sampled by an SPI interface on the rising edge of the sampling clock. The SPI interface buffers the received bytes in its internal FIFO until a DMA peripheral, configured in double-buffer circular mode, transfers the data to a buffer. In the double buffer mode, the programmer provides the DMA wit two separate buffers. The DMA is than configured to switch back and forth between the buffers every time one of them is full. This allows the rest of the code to transfer data from one of the buffers while the other one is being filled, not causing any bit drops. 
+When enabled by a specific command, the \emph{Aurora} stream is continuously sampled by an \emph{SPI} interface on the rising edge of the sampling clock. The \emph{SPI} interface buffers the received bytes in its internal \emph{FIFO} until a \emph{DMA} peripheral, configured in double-buffer circular mode, transfers the data to a buffer. In double-buffer mode, the programmer provides the \emph{DMA} with two separate buffers. The \emph{DMA} is then configured to switch back and forth between the buffers every time one of them is full. This allows the rest of the code to transfer data over USB from one of the buffers while the other is being filled, preventing any bit drops.
 
 \subsection{Pulse injection}
-
-The pulse injection circuit is fed by a fast timer output. The width of the timer pulse directly influences the width and amplitude of the generated pulse which is used for testing the frontends. The size of this pulse has been fixed and the pulses are generated with a period of \SI{100}{\hertz}. 
+The pulse injection circuit is fed by a fast timer output. The width of the timer pulse directly influences the width and amplitude of the generated pulse, which is used for testing the frontends. The size of this pulse has been fixed, and the pulses are generated with a period of \SI{50}{\micro\second}.
 \newpage
-\section{Userboard}
+\section{User board}
 
-The userboard detection is achieved with the four exposed GPIO pins. When a command, such as \verb|get userboard status| tries to access the userboard, the short ID is first obtained. If the short ID equals \verb|0b1111|, the pins are switched into a I2C mode and the microcontroller checks if a configuration header is present in the EEPROM. 
+The user board detection is achieved with the four exposed GPIO pins. When a communication command tries to access the user board, the short ID is first obtained. If the short ID equals \verb|0b1111|, the pins are switched into \emph{I2C} mode, and the microcontroller checks if a configuration header is present in the \emph{EEPROM}. 
 
 The following structure of a configuration header has been implemented:
 
@@ -119,7 +82,7 @@ The following structure of a configuration header has been implemented:
             \bitbox[lrb]{32}{}\\
             \bitbox[lbr]{32}{\texttt{\footnotesize WRITE CYCLES}}\\
             \bitbox[lrb]{1}{\texttt{\tiny WP}} & \bitbox[lrb]{1}{\texttt{\tiny UI}} & \bitbox[lrb]{1}{\texttt{\tiny NI}} & \bitbox[lrb]{1}{\texttt{\tiny VI}} & \bitbox[lrb]{1}{\texttt{\tiny F1I}} & \bitbox[lrb]{1}{\texttt{\tiny F2I}} & \bitbox[lrb]{2}{\texttt{\tiny RES}} & \bitbox[lr]{24}{}\\
-            \bitbox[lr]{32}{\texttt{\footnotesize RESERVERD}}\\
+            \bitbox[lr]{32}{\texttt{\footnotesize RESERVED}}\\
             \bitbox[lr]{32}{\texttt{\footnotesize (120 bits)}}\\
             \bitbox[lr]{32}{}\\
             \bitbox[lrt]{32}{} \\
@@ -139,7 +102,6 @@ The following structure of a configuration header has been implemented:
             \bitbox[lr]{32}{}\\
             \bitbox[lrb]{32}{} \\
             \bitbox[lrb]{32}{\texttt{\footnotesize VOLTAGE}} 
-           
         \end{bytefield}
     \end{center}
     \caption{EEPROM configuration header structure}
@@ -147,5 +109,5 @@ The following structure of a configuration header has been implemented:
 \end{figure}
 \FloatBarrier
 
-where \verb|UID| is a unique ID generated on first initialization of the userboard, \verb|WRITE CYCLES| stores the number of times that the EEPROM has been written. \verb|WP| is a write protect bit and the \verb|UI|, \verb|NI|, \verb|VI|, \verb|F1I|, \verb|F2I| signal if the UID, name, voltage value, FastIC+ 1 and FastIC+ 2 registers have been initialized respectively. \verb|NAME| contains up to 64 character user name and \verb|VOLTAGE| is a floating point value that stores the high voltage preset of a given userboard.
+where \verb|UID| is a unique ID generated on the first initialization of the user board, \verb|WRITE CYCLES| stores the number of times the \emph{EEPROM} has been written. \verb|WP| is a write-protect bit, and \verb|UI|, \verb|NI|, \verb|VI|, \verb|F1I|, \verb|F2I| signal if the UID, name, voltage value, FastIC+ 1, and FastIC+ 2 registers have been initialized, respectively. \verb|NAME| contains up to a 64-character user name, and \verb|VOLTAGE| is a floating-point value that stores the high-voltage preset of a given user board.
 
