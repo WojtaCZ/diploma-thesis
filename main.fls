@@ -809,6 +809,10 @@ OUTPUT mechanical.aux
 INPUT ./mechanical.tex
 INPUT ./mechanical.tex
 INPUT mechanical.tex
+INPUT ./images/insert.png
+INPUT ./images/insert.png
+INPUT ./images/insert.png
+INPUT ./images/insert.png
 INPUT ./images/mech_preview.png
 INPUT ./images/mech_preview.png
 INPUT ./images/mech_preview.png

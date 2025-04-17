@@ -65,8 +65,9 @@
 \contentsline {section}{\numberline {7.2}EEPROM}{29}{section.7.2}%
 \contentsline {chapter}{\numberline {8}PCB design}{31}{chapter.8}%
 \contentsline {section}{\numberline {8.1}High speed signals}{32}{section.8.1}%
-\contentsline {section}{\numberline {8.2}BGA fanout}{33}{section.8.2}%
+\contentsline {section}{\numberline {8.2}Microcontroller fanout}{32}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Power integrity}{33}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Manufacturing}{33}{section.8.4}%
 \contentsline {chapter}{\numberline {9}Enclosure Design}{35}{chapter.9}%
 \contentsline {chapter}{\numberline {10}Firmware}{37}{chapter.10}%
 \contentsline {section}{\numberline {10.1}USB}{37}{section.10.1}%
