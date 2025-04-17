@@ -76,11 +76,11 @@
 	supervisor = {Ing. Vít Záhlava, CSc.},
         fieldofstudy-english = {Electronics},
 %	supervisor-address = {Ústav X, \\ Uliční 5, \\ Praha 99},
-	keywords-czech = {DPS, Internet Věcí, brána, BLE, Zigbee},
-	keywords-english = {PCB, Internet of Things, gateway, BLE, Zigbee},
+	keywords-czech = {FastIC+, Vyčítací systém, Rychlé časování, CERN, DPS},
+	keywords-english = {FastIC+, Readout system, Fast Timing, CERN, PCB},
 	day = 25,
 	month = 5,
-	year = 2023,
+	year = 2025,
 %	list-of-figures = false,
 %	list-of-tables = false,
 %	monochrome = true,
@@ -135,12 +135,12 @@
 
 % Abstract in Czech
 \begin{abstract-czech}
-Tato práce se zabývá návrhem elektronického systému určeného k vyčítání dat z integrovaných obvodů FastIC+ vyvíjených v rámci CERN. Prvně nastiňue vlastnosti zmíněných ASIC a jejich účel. Následně detailně popisuje návrh elektroniky a firmware zařízení. V neposlední řadě popisuje také návrh uživatelského rozhraní. 
+Tato práce se zabývá návrhem elektronického systému určeného k vyčítání dat z integrovaných obvodů FastIC+ vyvíjených v rámci CERN pro aplikace precizního rychlého časování. Práce nastiňue vlastnosti zmíněných ASIC, jejich účel a popisuje komunikaci s čipy. Následně detailně popisuje návrh elektroniky, firmware zařízení a jejich testování. Dále popisuje návrh ovládacího software pro měření se zařízením a interpretaci dat. V neposlední řadě pak ověřuje funkcionalitu zařízení na praktickém experimentu. 
 \end{abstract-czech}
 
 % Abstract in English
 \begin{abstract-english}
-----
+This thesis focuses on the design of an electronic system intended for data readout from FastIC+ integrated circuits developed within CERN for precise fast timing applications. The thesis outlines the properties of the mentioned ASICs, their purpose, and describes communication with the chips. Subsequently, it provides a detailed description of the electronics design, firmware development, and final testing of the device. Furthermore, it describes the development of control software for measurements with the device and data interpretation. Finally, it verifies the functionality of the device in a practical experiment.
 \end{abstract-english}
 
 % Acknowledgements / Podekovani
@@ -150,20 +150,20 @@ Tato práce se zabývá návrhem elektronického systému určeného k vyčítá
 
 % Declaration / Prohlaseni
 \begin{declaration}
+
+I declare that this work is all my own work and I have cited all sources I have
+used in the bibliography.
+\medskip
+
+Prague,  \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
+
+\vspace*{2cm}
+
 Prohlašuji, že jsem předloženou práci vypracoval samostatně, a že jsem uvedl veškerou použitou literaturu.
 
 \medskip
 
-V Praze,  \ctufield{day}.~\monthinlanguage{title}~\ctufield{year}
-
-\vspace*{2cm}
-
-I declare that this work is all my own work and I have cited all sources I have
-used in the bibliography.
-
-\medskip
-
-Prague, \monthinlanguage{second} \ctufield{day}, \ctufield{year}
+V Praze, \monthinlanguage{second} \ctufield{day}, \ctufield{year}
 \end{declaration}
 
 \usepackage{url}
@@ -208,15 +208,14 @@ Prague, \monthinlanguage{second} \ctufield{day}, \ctufield{year}
 \newpage
 \begingroup
 \color{black}
-\tableofcontents
 \endgroup
 
 \pagebreak
 
 \chapter{Introduction}
-The development of devices for particle detectors at CERN has often found applications beyond high-energy physics, particularly in the medical field. One such example is the FastIC chip, which was designed for fast timing applications and has been utilized in positron emission tomography (PET) to improve imaging precision. Building on the success of the FastIC chip, a new version, FastIC+, has been developed. This updated version integrates a picosecond Time-to-Digital Converter (TDC) for enhanced time measurement capabilities and higher integration. To facilitate the evaluation of the FastIC+ chip's performance, a miniature evaluation board had to be designed to provide a compact and accessible platform for researchers and engineers to test and analyze the chip's capabilities in various applications.
+The development of devices for particle detectors at CERN has often found applications beyond high-energy physics, particularly in the medical field. One such example is the FastIC chip, which was designed for fast timing applications but has been also utilized in positron emission tomography (\emph{PET}) to improve imaging precision. Building on the success of the FastIC chip, a new version, FastIC+, has been developed. This updated version integrates a picosecond Time-to-Digital Converter (\emph{TDC}) for enhanced time measurement capabilities and higher integration. To facilitate the evaluation of the FastIC+ chip's performance, a evaluation board had to be designed to provide a compact and accessible platform for researchers and engineers to test and analyze the chip's capabilities in various applications.
 
-This work describes the design of the evaluation board denoted as the readout system. First, the FastIC+ is described in detail along with the communication protocol. Later, the hardware concept is proposed and key parts are described in detail. The hardware is than designed and a firmware along with a host PC software is written to allow for easy control of the device. As the last step, functional tests are performed and the performance of the device is evaluated.
+This work describes the design of the evaluation board, referred to as the readout system, developed at CERN. First, the FastIC+ is detailed along with its communication protocol. Subsequently, the hardware concept is proposed, and its key components are described in detail. The hardware design process is presented, and both firmware and host software are developed to enable easy control of the device. Finally, functional tests are conducted to evaluate the device, and an experiment at CERN is performed to verify the functionality of the readout system in a real-world application.
 
 \include{fastic}
 \include{aurora}
@@ -232,5 +231,58 @@ This work describes the design of the evaluation board denoted as the readout sy
 \clearpage
 \FloatBarrier
 \printbibliography
+
+\chapter*{List of abbreviations}
+\noindent
+\begin{tabularx}{\linewidth}
+{ l >{\raggedright\arraybackslash}X }
+\bfseries Abbreviation & \bfseries Explanation\\\Midrule
+CERN & Conseil Européen pour la Recherche Nucléaire \\
+ASIC & Application Specific Integrated Circuit \\
+PET & Positron Emission Tomography\\
+TDC & Time-to-Digital Converter\\
+SiPM & Silicon Photo Multiplier\\
+PMT & Photo Multiplier Tube\\
+MCP & Micro Channel Plate\\
+ToA & Time of Arrival\\
+ToT & Time over Threshold\\
+ToF PET & Time of Flight Positron Emission Tomography\\
+LIDAR & Light Detection and Ranging\\
+I2C & Inter-Integrated Circuit\\
+FSM & Finite State Machine\\
+FERO & Front-End Readout\\
+BERO & Back-End Readout\\
+FIFO & First In First Out\\
+MUX & Multiplexer\\
+SLVS & Scalable Low Voltage Signaling\\
+MSB & Most Significant Bit\\
+LSB & Least Significant Bit\\
+BTF & Block Type Field\\
+USB & Universal Serial Bus\\
+FPGA & Field Programmable Gate Array\\
+HDL & Hardware Description Language\\
+IP cores & Intellectual Property Cores\\
+ADC & Analog to Digital Converter\\
+DAC & Digital to Analog Converter\\
+SPI & Serial Peripheral Interface\\
+DMA & Direct Memory Access\\
+TFBGA & Thin Fine Ball Grid Array\\
+MCU & Microcontroller Unit\\
+PLL & Phase Locked Loop\\
+LVDS & Low Voltage Differential Signaling\\
+CMOS & Complementary Metal-Oxide-Semiconductor\\
+EMI & Electromagnetic Interference\\
+SMA & SubMiniature version A\\
+ESD & Electrostatic Discharge\\
+PHY & Physical Layer\\
+ULPI & UTMI+ Low Pin Interface\\
+UTMI & USB Transceiver Macrocell Interface\\
+UCPD & USB Type-C Power Delivery\\
+RMS & Root Mean Square\\
+LDO & Low Dropout Regulator\\
+EEPROM & Electrically Erasable Programmable Read-Only Memory\\
+THT & Through-Hole Technology\\
+PCB & Printed Circuit Board\\
+\end{tabularx}
 
 \end{document}
