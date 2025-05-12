@@ -5,7 +5,7 @@
 Frame notation and bit order adopted from the \emph{Aurora} specification \cite{auroraSpec} is used in this chapter, the leftmost bit being the first one transmitted to the bus is considered \emph{MSB}. The rightmost one \emph{LSB}.
 %
 \section{Encoding}
-As mentioned above, the \emph{Aurora} protocol utilizes the commonly used \emph{64B/66B encoding}. This encoding scheme converts 64 bits of data into a 66-bit block by appending a two-bit preamble. The \verb|0b01| preamble signifies that the block contains 8 octets of data and is therefore called a \emph{Data block}. If the preamble is \verb|0b10|, the block is recognized as \emph{Control block} with the most significant octet in the block being a \emph{BTF} (Block Type Field). The remaining 7 octets are data. Preambles \verb|0b00| and \verb|0b11| are interpreted as errors. These preambles are than used by the receiver to synchronize to the data stream. \cite{auroraSpec}
+As seen from the name, the \emph{Aurora} protocol utilizes the commonly used \emph{64B/66B encoding}. This encoding scheme converts 64 bits of data into a 66-bit block by appending a two-bit preamble. The \verb|0b01| preamble signifies that the block contains 8 octets of data and is therefore called a \emph{Data block}. If the preamble is \verb|0b10|, the block is recognized as \emph{Control block} with the most significant octet in the block being a \emph{BTF} (Block Type Field). The remaining 7 octets are data. Preambles \verb|0b00| and \verb|0b11| are interpreted as errors. These preambles are than used by the receiver to synchronize to the data stream. \cite{auroraSpec}
 \newline\newline
 FastIC+ is capable of transmitting the \emph{Data block} and four of the \emph{Control block} types: \cite{ficDatasheet}
 \begin{itemize}
@@ -77,7 +77,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
 
 \subsection{User K-block}
 \label{sec:kblock}
-\emph{User K-Blocks} are provided by the Aurora specification to allow the user application to send specific control messages separately from the data. Figure \ref{fig:kblock} shows the \emph{K-Block} comprising the \emph{BTF} and seven data octets. There are nine \emph{K-Blocks} available with IDs 0 to 8, corresponding to \emph{BTFs} \verb|0xD2|, \verb|0x99|, \verb|0x55|, \verb|0xB4|, \verb|0xCC|, \verb|0x66|, \verb|0x33|, \verb|0x4B| and \verb|0x87|, respectively. \cite{auroraSpec}
+\emph{User K-Blocks} are provided by the \emph{Aurora} specification to allow the user application to send specific control messages separately from the data. Figure \ref{fig:kblock} shows the \emph{K-Block} comprising the \emph{BTF} and seven data octets. There are nine \emph{K-Blocks} available with IDs 0 to 8, corresponding to \emph{BTFs} \verb|0xD2|, \verb|0x99|, \verb|0x55|, \verb|0xB4|, \verb|0xCC|, \verb|0x66|, \verb|0x33|, \verb|0x4B| and \verb|0x87|, respectively. \cite{auroraSpec}
 \\
 \\
 \FloatBarrier

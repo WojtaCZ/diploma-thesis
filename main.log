@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  17 APR 2025 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  12 MAY 2025 20:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -906,12 +906,45 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@ulht=\dimen296
 ) (/opt/texlive/2025/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (/opt/texlive/2025/texmf-dist/tex/latex/float/float.sty
+)) (/opt/texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks48
+\t@pgfplots@tokb=\toks49
+\t@pgfplots@tokc=\toks50
+\pgfplots@tmpa=\dimen297
+\c@pgfplots@coordindex=\count346
+\c@pgfplots@scanlineindex=\count347
+ (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks51
+\t@pgf@tokb=\toks52
+\t@pgf@tokc=\toks53
+(/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count348
+) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count349
+\t@pgfplotstable@a=\toks54
+) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count350
+ (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/opt/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/opt/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/opt/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count351
+\pgfplots@xmin@reg=\dimen298
+\pgfplots@xmax@reg=\dimen299
+\pgfplots@ymin@reg=\dimen300
+\pgfplots@ymax@reg=\dimen301
+\pgfplots@zmin@reg=\dimen302
+\pgfplots@zmax@reg=\dimen303
+) (/opt/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/opt/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/opt/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count346
-\float@exts=\toks48
+\c@float@type=\count352
+\float@exts=\toks55
 \float@box=\box85
-\@float@everytoks=\toks49
+\@float@everytoks=\toks56
 \@floatcapt=\box86
 ) (/opt/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
@@ -921,56 +954,56 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )) (/opt/texlive/2025/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count347
+\lrq@indent=\count353
  (/opt/texlive/2025/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 )) (/opt/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count348
-\c@listtotal=\count349
-\c@listcount=\count350
-\c@liststart=\count351
-\c@liststop=\count352
-\c@citecount=\count353
-\c@citetotal=\count354
-\c@multicitecount=\count355
-\c@multicitetotal=\count356
-\c@instcount=\count357
-\c@maxnames=\count358
-\c@minnames=\count359
-\c@maxitems=\count360
-\c@minitems=\count361
-\c@citecounter=\count362
-\c@maxcitecounter=\count363
-\c@savedcitecounter=\count364
-\c@uniquelist=\count365
-\c@uniquename=\count366
-\c@refsection=\count367
-\c@refsegment=\count368
-\c@maxextratitle=\count369
-\c@maxextratitleyear=\count370
-\c@maxextraname=\count371
-\c@maxextradate=\count372
-\c@maxextraalpha=\count373
-\c@abbrvpenalty=\count374
-\c@highnamepenalty=\count375
-\c@lownamepenalty=\count376
-\c@maxparens=\count377
-\c@parenlevel=\count378
-\blx@tempcnta=\count379
-\blx@tempcntb=\count380
-\blx@tempcntc=\count381
-\c@blx@maxsection=\count382
-\blx@maxsegment@0=\count383
-\blx@notetype=\count384
-\blx@parenlevel@text=\count385
-\blx@parenlevel@foot=\count386
-\blx@sectionciteorder@0=\count387
-\blx@sectionciteorderinternal@0=\count388
-\blx@entrysetcounter=\count389
-\blx@biblioinstance=\count390
+\c@tabx@nest=\count354
+\c@listtotal=\count355
+\c@listcount=\count356
+\c@liststart=\count357
+\c@liststop=\count358
+\c@citecount=\count359
+\c@citetotal=\count360
+\c@multicitecount=\count361
+\c@multicitetotal=\count362
+\c@instcount=\count363
+\c@maxnames=\count364
+\c@minnames=\count365
+\c@maxitems=\count366
+\c@minitems=\count367
+\c@citecounter=\count368
+\c@maxcitecounter=\count369
+\c@savedcitecounter=\count370
+\c@uniquelist=\count371
+\c@uniquename=\count372
+\c@refsection=\count373
+\c@refsegment=\count374
+\c@maxextratitle=\count375
+\c@maxextratitleyear=\count376
+\c@maxextraname=\count377
+\c@maxextradate=\count378
+\c@maxextraalpha=\count379
+\c@abbrvpenalty=\count380
+\c@highnamepenalty=\count381
+\c@lownamepenalty=\count382
+\c@maxparens=\count383
+\c@parenlevel=\count384
+\blx@tempcnta=\count385
+\blx@tempcntb=\count386
+\blx@tempcntc=\count387
+\c@blx@maxsection=\count388
+\blx@maxsegment@0=\count389
+\blx@notetype=\count390
+\blx@parenlevel@text=\count391
+\blx@parenlevel@foot=\count392
+\blx@sectionciteorder@0=\count393
+\blx@sectionciteorderinternal@0=\count394
+\blx@entrysetcounter=\count395
+\blx@biblioinstance=\count396
 \labelnumberwidth=\skip78
 \labelalphawidth=\skip79
 \biblabelsep=\skip80
@@ -982,9 +1015,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language90
-\c@mincomprange=\count391
-\c@maxcomprange=\count392
-\c@mincompwidth=\count393
+\c@mincomprange=\count397
+\c@maxcomprange=\count398
+\c@mincompwidth=\count399
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/opt/texlive/2025/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -992,74 +1025,74 @@ File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count394
-\c@savedafterword=\count395
-\c@annotator=\count396
-\c@savedannotator=\count397
-\c@author=\count398
-\c@savedauthor=\count399
-\c@bookauthor=\count400
-\c@savedbookauthor=\count401
-\c@commentator=\count402
-\c@savedcommentator=\count403
-\c@editor=\count404
-\c@savededitor=\count405
-\c@editora=\count406
-\c@savededitora=\count407
-\c@editorb=\count408
-\c@savededitorb=\count409
-\c@editorc=\count410
-\c@savededitorc=\count411
-\c@foreword=\count412
-\c@savedforeword=\count413
-\c@holder=\count414
-\c@savedholder=\count415
-\c@introduction=\count416
-\c@savedintroduction=\count417
-\c@namea=\count418
-\c@savednamea=\count419
-\c@nameb=\count420
-\c@savednameb=\count421
-\c@namec=\count422
-\c@savednamec=\count423
-\c@translator=\count424
-\c@savedtranslator=\count425
-\c@shortauthor=\count426
-\c@savedshortauthor=\count427
-\c@shorteditor=\count428
-\c@savedshorteditor=\count429
-\c@labelname=\count430
-\c@savedlabelname=\count431
-\c@institution=\count432
-\c@savedinstitution=\count433
-\c@lista=\count434
-\c@savedlista=\count435
-\c@listb=\count436
-\c@savedlistb=\count437
-\c@listc=\count438
-\c@savedlistc=\count439
-\c@listd=\count440
-\c@savedlistd=\count441
-\c@liste=\count442
-\c@savedliste=\count443
-\c@listf=\count444
-\c@savedlistf=\count445
-\c@location=\count446
-\c@savedlocation=\count447
-\c@organization=\count448
-\c@savedorganization=\count449
-\c@origlocation=\count450
-\c@savedoriglocation=\count451
-\c@origpublisher=\count452
-\c@savedorigpublisher=\count453
-\c@publisher=\count454
-\c@savedpublisher=\count455
-\c@language=\count456
-\c@savedlanguage=\count457
-\c@origlanguage=\count458
-\c@savedoriglanguage=\count459
-\c@pageref=\count460
-\c@savedpageref=\count461
+\c@afterword=\count400
+\c@savedafterword=\count401
+\c@annotator=\count402
+\c@savedannotator=\count403
+\c@author=\count404
+\c@savedauthor=\count405
+\c@bookauthor=\count406
+\c@savedbookauthor=\count407
+\c@commentator=\count408
+\c@savedcommentator=\count409
+\c@editor=\count410
+\c@savededitor=\count411
+\c@editora=\count412
+\c@savededitora=\count413
+\c@editorb=\count414
+\c@savededitorb=\count415
+\c@editorc=\count416
+\c@savededitorc=\count417
+\c@foreword=\count418
+\c@savedforeword=\count419
+\c@holder=\count420
+\c@savedholder=\count421
+\c@introduction=\count422
+\c@savedintroduction=\count423
+\c@namea=\count424
+\c@savednamea=\count425
+\c@nameb=\count426
+\c@savednameb=\count427
+\c@namec=\count428
+\c@savednamec=\count429
+\c@translator=\count430
+\c@savedtranslator=\count431
+\c@shortauthor=\count432
+\c@savedshortauthor=\count433
+\c@shorteditor=\count434
+\c@savedshorteditor=\count435
+\c@labelname=\count436
+\c@savedlabelname=\count437
+\c@institution=\count438
+\c@savedinstitution=\count439
+\c@lista=\count440
+\c@savedlista=\count441
+\c@listb=\count442
+\c@savedlistb=\count443
+\c@listc=\count444
+\c@savedlistc=\count445
+\c@listd=\count446
+\c@savedlistd=\count447
+\c@liste=\count448
+\c@savedliste=\count449
+\c@listf=\count450
+\c@savedlistf=\count451
+\c@location=\count452
+\c@savedlocation=\count453
+\c@organization=\count454
+\c@savedorganization=\count455
+\c@origlocation=\count456
+\c@savedoriglocation=\count457
+\c@origpublisher=\count458
+\c@savedorigpublisher=\count459
+\c@publisher=\count460
+\c@savedpublisher=\count461
+\c@language=\count462
+\c@savedlanguage=\count463
+\c@origlanguage=\count464
+\c@savedoriglanguage=\count465
+\c@pageref=\count466
+\c@savedpageref=\count467
 \shorthandwidth=\skip86
 \shortjournalwidth=\skip87
 \shortserieswidth=\skip88
@@ -1083,19 +1116,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/opt/texlive/2025/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count462
-\c@textcitetotal=\count463
-\c@textcitemaxnames=\count464
-\c@biburlbigbreakpenalty=\count465
-\c@biburlbreakpenalty=\count466
-\c@biburlnumpenalty=\count467
-\c@biburlucpenalty=\count468
-\c@biburllcpenalty=\count469
+\c@textcitecount=\count468
+\c@textcitetotal=\count469
+\c@textcitemaxnames=\count470
+\c@biburlbigbreakpenalty=\count471
+\c@biburlbreakpenalty=\count472
+\c@biburlnumpenalty=\count473
+\c@biburlucpenalty=\count474
+\c@biburllcpenalty=\count475
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count470
+\c@smartand=\count476
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1105,8 +1138,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/opt/texlive/2025/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count471
-\c@bbx:relatedtotal=\count472
+\c@bbx:relatedcount=\count477
+\c@bbx:relatedtotal=\count478
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1187,18 +1220,18 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 116
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )) (/opt/texlive/2025/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
-\MT@toks=\toks50
+\MT@toks=\toks57
 \MT@tempbox=\box87
-\MT@count=\count473
+\MT@count=\count479
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks51
+\MT@prot@toks=\toks58
 LaTeX Info: Redefining \rightprotrusion on input line 1107.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen297
+\MT@outer@kern=\dimen304
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count474
+\MT@listname@count=\count480
  (/opt/texlive/2025/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2025/02/11 v3.2a Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
@@ -1212,12 +1245,12 @@ File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
 LaTeX Info: Redefining \microtypesetup on input line 3065.
 ) (/opt/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/03/10 v25.5 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
-\babel@savecnt=\count475
-\U@D=\dimen298
+\babel@savecnt=\count481
+\U@D=\dimen305
 \l@unhyphenated=\language91
  (/opt/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
-\bbl@dirlevel=\count476
+\bbl@dirlevel=\count482
  (/opt/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
@@ -1229,7 +1262,7 @@ Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 ) (/opt/texlive/2025/texmf-dist/tex/generic/babel-czech/czech.ldf
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 Package babel Info: Making " an active character on input line 172.
-\cs@wordlen=\count477
+\cs@wordlen=\count483
 Package babel Info: Making - an active character on input line 226.
 ) (/opt/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -1240,27 +1273,27 @@ Package babel Info: Importing font and identification data for english
 Package babel Info: Importing font and identification data for czech
 (babel)             from babel-cs.ini. Reported on input line 11.
 )
-\g_ctuthesis_geometry_textwidth_dim=\dimen299
-\g_ctuthesis_geometry_textheight_dim=\dimen300
+\g_ctuthesis_geometry_textwidth_dim=\dimen306
+\g_ctuthesis_geometry_textheight_dim=\dimen307
  (/opt/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/opt/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count478
-\Gm@cntv=\count479
-\c@Gm@tempcnt=\count480
-\Gm@bindingoffset=\dimen301
-\Gm@wd@mp=\dimen302
-\Gm@odd@mp=\dimen303
-\Gm@even@mp=\dimen304
-\Gm@layoutwidth=\dimen305
-\Gm@layoutheight=\dimen306
-\Gm@layouthoffset=\dimen307
-\Gm@layoutvoffset=\dimen308
-\Gm@dimlist=\toks52
+\Gm@cnth=\count484
+\Gm@cntv=\count485
+\c@Gm@tempcnt=\count486
+\Gm@bindingoffset=\dimen308
+\Gm@wd@mp=\dimen309
+\Gm@odd@mp=\dimen310
+\Gm@even@mp=\dimen311
+\Gm@layoutwidth=\dimen312
+\Gm@layoutheight=\dimen313
+\Gm@layouthoffset=\dimen314
+\Gm@layoutvoffset=\dimen315
+\Gm@dimlist=\toks59
 )
-\g_ctuthesis_geometry_innermargin_dim=\dimen309
+\g_ctuthesis_geometry_innermargin_dim=\dimen316
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: 
 * paper: a4paper
@@ -1299,12 +1332,12 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box88
 \beforetitleunit=\skip101
 \aftertitleunit=\skip102
-\ttl@plus=\dimen310
-\ttl@minus=\dimen311
-\ttl@toksa=\toks53
-\titlewidth=\dimen312
-\titlewidthlast=\dimen313
-\titlewidthfirst=\dimen314
+\ttl@plus=\dimen317
+\ttl@minus=\dimen318
+\ttl@toksa=\toks60
+\titlewidth=\dimen319
+\titlewidthlast=\dimen320
+\titlewidthfirst=\dimen321
 )
 \ctu@title@rulewidth=\skip103
 \ctu@title@rulesep=\skip104
@@ -1325,7 +1358,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip116
 \f@nch@widthC=\skip117
 \f@nch@widthR=\skip118
-\@temptokenb=\toks54
+\@temptokenb=\toks61
 )
 \g_ctuthesis_fancy_bluerule_l_box=\box90
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 589.
@@ -1334,27 +1367,27 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 \g_ctuthesis_fancy_bluerule_r_box=\box91
 \g_ctuthesis_fancy_bluerule_c_box=\box92
-\@float@every@figure=\toks55
-\@float@every@table=\toks56
+\@float@every@figure=\toks62
+\@float@every@table=\toks63
  (/opt/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen315
-\lightrulewidth=\dimen316
-\cmidrulewidth=\dimen317
-\belowrulesep=\dimen318
-\belowbottomsep=\dimen319
-\aboverulesep=\dimen320
-\abovetopsep=\dimen321
-\cmidrulesep=\dimen322
-\cmidrulekern=\dimen323
-\defaultaddspace=\dimen324
-\@cmidla=\count481
-\@cmidlb=\count482
-\@aboverulesep=\dimen325
-\@belowrulesep=\dimen326
-\@thisruleclass=\count483
-\@lastruleclass=\count484
-\@thisrulewidth=\dimen327
+\heavyrulewidth=\dimen322
+\lightrulewidth=\dimen323
+\cmidrulewidth=\dimen324
+\belowrulesep=\dimen325
+\belowbottomsep=\dimen326
+\aboverulesep=\dimen327
+\abovetopsep=\dimen328
+\cmidrulesep=\dimen329
+\cmidrulekern=\dimen330
+\defaultaddspace=\dimen331
+\@cmidla=\count487
+\@cmidlb=\count488
+\@aboverulesep=\dimen332
+\@belowrulesep=\dimen333
+\@thisruleclass=\count489
+\@lastruleclass=\count490
+\@thisrulewidth=\dimen334
 )
 \g_ctuthesis_tempa_box=\box93
 \g_ctuthesis_list_label_i_box=\box94
@@ -1372,15 +1405,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/opt/texlive/2025/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks57
-\thm@bodyfont=\toks58
-\thm@headfont=\toks59
-\thm@notefont=\toks60
-\thm@headpunct=\toks61
+\thm@style=\toks64
+\thm@bodyfont=\toks65
+\thm@headfont=\toks66
+\thm@notefont=\toks67
+\thm@headpunct=\toks68
 \thm@preskip=\skip119
 \thm@postskip=\skip120
 \thm@headsep=\skip121
-\dth@everypar=\toks62
+\dth@everypar=\toks69
 ) (/opt/texlive/2025/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
@@ -1391,24 +1424,24 @@ Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 Writing index file main.idx
 (/opt/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
-\c@tracingmulticols=\count485
+\c@tracingmulticols=\count491
 \mult@box=\box98
-\multicol@leftmargin=\dimen328
-\c@unbalance=\count486
-\c@collectmore=\count487
-\doublecol@number=\count488
-\multicoltolerance=\count489
-\multicolpretolerance=\count490
-\full@width=\dimen329
-\page@free=\dimen330
-\premulticols=\dimen331
-\postmulticols=\dimen332
+\multicol@leftmargin=\dimen335
+\c@unbalance=\count492
+\c@collectmore=\count493
+\doublecol@number=\count494
+\multicoltolerance=\count495
+\multicolpretolerance=\count496
+\full@width=\dimen336
+\page@free=\dimen337
+\premulticols=\dimen338
+\postmulticols=\dimen339
 \multicolsep=\skip122
 \multicolbaselineskip=\skip123
 \partial@page=\box99
 \last@line=\box100
 \mc@boxedresult=\box101
-\maxbalancingoverflow=\dimen333
+\maxbalancingoverflow=\dimen340
 \mult@rightbox=\box102
 \mult@grightbox=\box103
 \mult@firstbox=\box104
@@ -1449,34 +1482,34 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \@tempa=\box139
 \@tempa=\box140
 \@tempa=\box141
-\c@minrows=\count491
-\c@columnbadness=\count492
-\c@finalcolumnbadness=\count493
-\last@try=\dimen334
-\multicolovershoot=\dimen335
-\multicolundershoot=\dimen336
+\c@minrows=\count497
+\c@columnbadness=\count498
+\c@finalcolumnbadness=\count499
+\last@try=\dimen341
+\multicolovershoot=\dimen342
+\multicolundershoot=\dimen343
 \mult@nat@firstbox=\box142
 \colbreak@box=\box143
-\mc@col@check@num=\count494
+\mc@col@check@num=\count500
 ) (/opt/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count495
+\lst@mode=\count501
 \lst@gtempboxa=\box144
-\lst@token=\toks63
-\lst@length=\count496
-\lst@currlwidth=\dimen337
-\lst@column=\count497
-\lst@pos=\count498
-\lst@lostspace=\dimen338
-\lst@width=\dimen339
-\lst@newlines=\count499
-\lst@lineno=\count500
-\lst@maxwidth=\dimen340
+\lst@token=\toks70
+\lst@length=\count502
+\lst@currlwidth=\dimen344
+\lst@column=\count503
+\lst@pos=\count504
+\lst@lostspace=\dimen345
+\lst@width=\dimen346
+\lst@newlines=\count505
+\lst@lineno=\count506
+\lst@maxwidth=\dimen347
  (/opt/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (/opt/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count501
-\lst@skipnumbers=\count502
+\c@lstnumber=\count507
+\lst@skipnumbers=\count508
 \lst@framebox=\box145
 ) (/opt/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
@@ -1498,13 +1531,13 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/opt/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count503
+\c@section@level=\count509
 ) (/opt/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen341
-\Hy@linkcounter=\count504
-\Hy@pagecounter=\count505
+\@linkdim=\dimen348
+\Hy@linkcounter=\count510
+\Hy@pagecounter=\count511
  (/opt/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1512,7 +1545,7 @@ Now handling font encoding PD1 ...
 ) (/opt/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count506
+\Hy@SavedSpaceFactor=\count512
  (/opt/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -1529,17 +1562,17 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count507
+\c@Hy@tempcnt=\count513
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen342
+\XeTeXLinkMargin=\dimen349
  (/opt/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/opt/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count508
-\Field@Width=\dimen343
-\Fld@charsize=\dimen344
+\Fld@menulength=\count514
+\Field@Width=\dimen350
+\Fld@charsize=\dimen351
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -1551,9 +1584,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count509
-\c@Item=\count510
-\c@Hfootnote=\count511
+\Hy@abspage=\count515
+\c@Item=\count516
+\c@Hfootnote=\count517
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/opt/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -1562,8 +1595,8 @@ File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count512
-\c@bookmark@seq@number=\count513
+\Fld@listcount=\count518
+\c@bookmark@seq@number=\count519
  (/opt/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/opt/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -1587,39 +1620,39 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ) (./ctuth-templates.tex
 File: ctuth-templates.tex 2016/06/15 v0.1t1606152353 "Templates" part of the class ctuthesis
 )
-\c@theorem=\count514
+\c@theorem=\count520
  (/opt/texlive/2025/texmf-dist/tex/latex/mparhack/mparhack.sty
 Package: mparhack 2021-05-02 v1.5 (T. Sgouros and S. Ulrich)
 ) (/opt/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen345
-\c@nlinenum=\count515
-\TeXr@lab=\toks64
+\rotheadsize=\dimen352
+\c@nlinenum=\count521
+\TeXr@lab=\toks71
 ) (/opt/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen346
-\TX@old@table=\dimen347
-\TX@old@col=\dimen348
-\TX@target=\dimen349
-\TX@delta=\dimen350
-\TX@cols=\count516
-\TX@ftn=\toks65
+\TX@col@width=\dimen353
+\TX@old@table=\dimen354
+\TX@old@col=\dimen355
+\TX@target=\dimen356
+\TX@delta=\dimen357
+\TX@cols=\count522
+\TX@ftn=\toks72
 ) (/opt/texlive/2025/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
  (/opt/texlive/2025/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count517
-\l_MT_multwidth_dim=\dimen351
+\g_MT_multlinerow_int=\count523
+\l_MT_multwidth_dim=\dimen358
 \origjot=\skip125
-\l_MT_shortvdotswithinadjustabove_dim=\dimen352
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen353
-\l_MT_above_intertext_sep=\dimen354
-\l_MT_below_intertext_sep=\dimen355
-\l_MT_above_shortintertext_sep=\dimen356
-\l_MT_below_shortintertext_sep=\dimen357
+\l_MT_shortvdotswithinadjustabove_dim=\dimen359
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen360
+\l_MT_above_intertext_sep=\dimen361
+\l_MT_below_intertext_sep=\dimen362
+\l_MT_above_shortintertext_sep=\dimen363
+\l_MT_below_shortintertext_sep=\dimen364
 \xmathstrut@box=\box147
-\xmathstrut@dim=\dimen358
+\xmathstrut@dim=\dimen365
 ) (/opt/texlive/2025/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box148
@@ -1630,51 +1663,51 @@ Package: threeparttable 2003/06/13  v 3.0
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count518
-\@quotereset=\count519
+\@quotelevel=\count524
+\@quotereset=\count525
 (./main.aux
 Package babel Info: 'czech' activates 'czech' shorthands.
-(babel)             Reported  on input line 26.
+(babel)             Reported  on input line 24.
  (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./mechanical.aux) (./firmware.aux) (./software.aux) (./tests.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 193.
-LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 193.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 195.
+LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 195.
  (/opt/texlive/2025/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 193.
-LaTeX Font Info:    ... okay on input line 193.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 195.
+LaTeX Font Info:    ... okay on input line 195.
  (/opt/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count520
-\scratchdimen=\dimen359
+\scratchcounter=\count526
+\scratchdimen=\dimen366
 \scratchbox=\box150
-\nofMPsegments=\count521
-\nofMParguments=\count522
-\everyMPshowfont=\toks66
-\MPscratchCnt=\count523
-\MPscratchDim=\dimen360
-\MPnumerator=\count524
-\makeMPintoPDFobject=\count525
-\everyMPtoPDFconversion=\toks67
+\nofMPsegments=\count527
+\nofMParguments=\count528
+\everyMPshowfont=\toks73
+\MPscratchCnt=\count529
+\MPscratchDim=\dimen367
+\MPnumerator=\count530
+\makeMPintoPDFobject=\count531
+\everyMPtoPDFconversion=\toks74
 ) (/opt/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1683,8 +1716,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/opt/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 193.
-Package translations Info: no dictionary file `translations-basic-dictionary-czech.trsl' found. on input line 193.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 195.
+Package translations Info: no dictionary file `translations-basic-dictionary-czech.trsl' found. on input line 195.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1700,9 +1733,11 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
- (/opt/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(/opt/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load language 'czech'...
@@ -1718,22 +1753,22 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 193.
-Package biblatex Info: Reference segment=0 on input line 193.
-LaTeX Info: Redefining \microtypecontext on input line 193.
-Package microtype Info: Applying patch `item' on input line 193.
-Package microtype Info: Applying patch `toc' on input line 193.
-Package microtype Info: Applying patch `eqnum' on input line 193.
-Package microtype Info: Applying patch `footnote' on input line 193.
-Package microtype Info: Applying patch `verbatim' on input line 193.
-LaTeX Info: Redefining \microtypesetup on input line 193.
+Package biblatex Info: Reference section=0 on input line 195.
+Package biblatex Info: Reference segment=0 on input line 195.
+LaTeX Info: Redefining \microtypecontext on input line 195.
+Package microtype Info: Applying patch `item' on input line 195.
+Package microtype Info: Applying patch `toc' on input line 195.
+Package microtype Info: Applying patch `eqnum' on input line 195.
+Package microtype Info: Applying patch `footnote' on input line 195.
+Package microtype Info: Applying patch `verbatim' on input line 195.
+LaTeX Info: Redefining \microtypesetup on input line 195.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 193.
+LaTeX Info: Redefining \showhyphens on input line 195.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1775,48 +1810,48 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count526
-Package hyperref Info: Link coloring OFF on input line 193.
+\c@lstlisting=\count532
+Package hyperref Info: Link coloring OFF on input line 195.
 (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
 \ctuclsnamebox=\box151
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 202.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 204.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 202.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 204.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 202.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 204.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 202.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 204.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 202.
+(Font)              <10.95> on input line 204.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 202.
+(Font)              <8> on input line 204.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 202.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 202.
+(Font)              <6> on input line 204.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 204.
  (/opt/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/opt/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 202.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 204.
  (/opt/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/opt/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 202.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 204.
  (/opt/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1828,19 +1863,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<ctu_logo_black.pdf, id=296, 366.36874pt x 279.0425pt>
+<ctu_logo_black.pdf, id=300, 366.36874pt x 279.0425pt>
 File: ctu_logo_black.pdf Graphic file (type pdf)
 <use ctu_logo_black.pdf>
-Package pdftex.def Info: ctu_logo_black.pdf  used on input line 205.
+Package pdftex.def Info: ctu_logo_black.pdf  used on input line 207.
 (pdftex.def)             Requested size: 85.86746pt x 65.40001pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 205.
+(Font)              <14.4> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 205.
+(Font)              <10> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 205.
+(Font)              <7> on input line 207.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 205--205
+Overfull \hbox (5.0pt too wide) in paragraph at lines 207--207
 []|| [][][] 
  []
 
@@ -1855,6 +1890,86 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 205--205
 [2
 
 ]
+<zadani.pdf, id=314, 597.50829pt x 845.0471pt>
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf>
+Package pdftex.def Info: zadani.pdf  used on input line 207.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<zadani.pdf, id=316, page=1, 597.50829pt x 845.0471pt>
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 1>
+Package pdftex.def Info: zadani.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[3
+
+ <./zadani.pdf>]
+<zadani.pdf, id=351, page=2, 597.50829pt x 845.0471pt>
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 2>
+Package pdftex.def Info: zadani.pdf , page2 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 2>
+Package pdftex.def Info: zadani.pdf , page2 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: zadani.pdf Graphic file (type pdf)
+<use zadani.pdf, page 2>
+Package pdftex.def Info: zadani.pdf , page2 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[4
+
+ <./zadani.pdf>]
+<prohlaseni.pdf, id=356, 597.50829pt x 845.0471pt>
+File: prohlaseni.pdf Graphic file (type pdf)
+<use prohlaseni.pdf>
+Package pdftex.def Info: prohlaseni.pdf  used on input line 207.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<prohlaseni.pdf, id=358, page=1, 597.50829pt x 845.0471pt>
+File: prohlaseni.pdf Graphic file (type pdf)
+<use prohlaseni.pdf, page 1>
+Package pdftex.def Info: prohlaseni.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: prohlaseni.pdf Graphic file (type pdf)
+<use prohlaseni.pdf, page 1>
+Package pdftex.def Info: prohlaseni.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: prohlaseni.pdf Graphic file (type pdf)
+<use prohlaseni.pdf, page 1>
+Package pdftex.def Info: prohlaseni.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: prohlaseni.pdf Graphic file (type pdf)
+<use prohlaseni.pdf, page 1>
+Package pdftex.def Info: prohlaseni.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+
+
+File: prohlaseni.pdf Graphic file (type pdf)
+<use prohlaseni.pdf, page 1>
+Package pdftex.def Info: prohlaseni.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[5
+
+ <./prohlaseni.pdf>]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1892,40 +2007,14 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 205--205
 
 
 
-[3
+[6
 
-
-]
-
-
-
-[4
 
 ] (./main.toc
 
 )
 \tf@toc=\write7
 \openout7 = `main.toc'.
-
-
-
-[5
-
-] (./main.lof
-
-)
-\tf@lof=\write8
-\openout8 = `main.lof'.
-
-
-
-[6
-
-] (./main.lot)
-\tf@lot=\write9
-\openout9 = `main.lot'.
-
-
 
 
 
@@ -1972,6 +2061,7 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 205--205
 
 
 
+
 ]
 Chapter 1.
 
@@ -1988,7 +2078,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<images/05_FASTICPLUS_BLOCK.pdf, id=507, 1195.5867pt x 456.74638pt>
+<images/05_FASTICPLUS_BLOCK.pdf, id=488, 1195.5867pt x 456.74638pt>
 File: images/05_FASTICPLUS_BLOCK.pdf Graphic file (type pdf)
 <use images/05_FASTICPLUS_BLOCK.pdf>
 Package pdftex.def Info: images/05_FASTICPLUS_BLOCK.pdf  used on input line 10.
@@ -2001,8 +2091,8 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 [3{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./images/05_FASTICPLUS_BLOCK.pdf>])
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 220.
-[4{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 222.
+[4{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
 \openout2 = `aurora.aux'.
 
  (./aurora.tex
@@ -2025,91 +2115,91 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
 
 ]
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 
 
 [6]
@@ -2117,46 +2207,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 
 Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
@@ -2167,46 +2257,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 
 
 [7]
@@ -2214,58 +2304,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 )
 
 [8]
@@ -2278,66 +2368,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 
 
 [9
@@ -2345,67 +2435,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
 
 
-{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 
 
 [10]
@@ -2415,38 +2505,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 )
 
 [12]
@@ -2483,7 +2573,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic_power.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic_power-eps-converted-to.pdf images/schematic/fastic_power.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic_power-eps-converted-to.pdf, id=655, 561.09625pt x 199.74625pt>
+<images/schematic/fastic_power-eps-converted-to.pdf, id=651, 561.09625pt x 199.74625pt>
 File: images/schematic/fastic_power-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic_power-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic_power-eps-converted-to.pdf  used on input line 78.
@@ -2497,7 +2587,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic-eps-converted-to.pdf images/schematic/fastic.eps>
 (epstopdf)             \includegraphics on input line 91.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic-eps-converted-to.pdf, id=657, 587.19376pt x 259.97125pt>
+<images/schematic/fastic-eps-converted-to.pdf, id=653, 587.19376pt x 259.97125pt>
 File: images/schematic/fastic-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic-eps-converted-to.pdf  used on input line 91.
@@ -2514,7 +2604,7 @@ Package epstopdf Info: Source file: <images/schematic/fastic_vmon.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/fastic_vmon-eps-converted-to.pdf images/schematic/fastic_vmon.eps>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/fastic_vmon-eps-converted-to.pdf, id=671, 167.62625pt x 93.34875pt>
+<images/schematic/fastic_vmon-eps-converted-to.pdf, id=668, 167.62625pt x 93.34875pt>
 File: images/schematic/fastic_vmon-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/fastic_vmon-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/fastic_vmon-eps-converted-to.pdf  used on input line 118.
@@ -2522,7 +2612,7 @@ Package pdftex.def Info: images/schematic/fastic_vmon-eps-converted-to.pdf  used
 
 
 [18{/opt/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc} <./images/schematic/fastic-eps-converted-to.pdf>]
-<images/06_SLVS_specs.pdf, id=684, 404.47108pt x 123.5817pt>
+<images/06_SLVS_specs.pdf, id=682, 404.47108pt x 123.5817pt>
 File: images/06_SLVS_specs.pdf Graphic file (type pdf)
 <use images/06_SLVS_specs.pdf>
 Package pdftex.def Info: images/06_SLVS_specs.pdf  used on input line 130.
@@ -2570,7 +2660,7 @@ Package epstopdf Info: Source file: <images/schematic/usb.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/usb-eps-converted-to.pdf images/schematic/usb.eps>
 (epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/usb-eps-converted-to.pdf, id=724, 526.96875pt x 400.49625pt>
+<images/schematic/usb-eps-converted-to.pdf, id=725, 526.96875pt x 400.49625pt>
 File: images/schematic/usb-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/usb-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/usb-eps-converted-to.pdf  used on input line 172.
@@ -2587,7 +2677,7 @@ Package epstopdf Info: Source file: <images/schematic/ucpd.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/ucpd-eps-converted-to.pdf images/schematic/ucpd.eps>
 (epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/ucpd-eps-converted-to.pdf, id=737, 366.36874pt x 191.71625pt>
+<images/schematic/ucpd-eps-converted-to.pdf, id=739, 366.36874pt x 191.71625pt>
 File: images/schematic/ucpd-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/ucpd-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/ucpd-eps-converted-to.pdf  used on input line 182.
@@ -2604,7 +2694,7 @@ Package epstopdf Info: Source file: <images/schematic/clock.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/clock-eps-converted-to.pdf images/schematic/clock.eps>
 (epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/clock-eps-converted-to.pdf, id=749, 545.03625pt x 416.55624pt>
+<images/schematic/clock-eps-converted-to.pdf, id=753, 545.03625pt x 416.55624pt>
 File: images/schematic/clock-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/clock-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/clock-eps-converted-to.pdf  used on input line 193.
@@ -2618,7 +2708,7 @@ Package epstopdf Info: Source file: <images/schematic/slvs.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/slvs-eps-converted-to.pdf images/schematic/slvs.eps>
 (epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/slvs-eps-converted-to.pdf, id=754, 118.4425pt x 90.3375pt>
+<images/schematic/slvs-eps-converted-to.pdf, id=758, 118.4425pt x 90.3375pt>
 File: images/schematic/slvs-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/slvs-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/slvs-eps-converted-to.pdf  used on input line 203.
@@ -2635,7 +2725,7 @@ Package epstopdf Info: Source file: <images/schematic/hv.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv-eps-converted-to.pdf images/schematic/hv.eps>
 (epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv-eps-converted-to.pdf, id=765, 521.95pt x 394.47375pt>
+<images/schematic/hv-eps-converted-to.pdf, id=771, 521.95pt x 394.47375pt>
 File: images/schematic/hv-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv-eps-converted-to.pdf  used on input line 215.
@@ -2652,7 +2742,7 @@ Package epstopdf Info: Source file: <images/schematic/hv_isense.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv_isense-eps-converted-to.pdf images/schematic/hv_isense.eps>
 (epstopdf)             \includegraphics on input line 241.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv_isense-eps-converted-to.pdf, id=778, 243.91125pt x 225.84375pt>
+<images/schematic/hv_isense-eps-converted-to.pdf, id=784, 243.91125pt x 225.84375pt>
 File: images/schematic/hv_isense-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv_isense-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv_isense-eps-converted-to.pdf  used on input line 241.
@@ -2666,7 +2756,7 @@ Package epstopdf Info: Source file: <images/schematic/hv_usense.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/hv_usense-eps-converted-to.pdf images/schematic/hv_usense.eps>
 (epstopdf)             \includegraphics on input line 242.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/hv_usense-eps-converted-to.pdf, id=779, 249.93375pt x 227.85126pt>
+<images/schematic/hv_usense-eps-converted-to.pdf, id=785, 249.93375pt x 227.85126pt>
 File: images/schematic/hv_usense-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/hv_usense-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/hv_usense-eps-converted-to.pdf  used on input line 242.
@@ -2683,7 +2773,7 @@ Package epstopdf Info: Source file: <images/schematic/power_dcdc.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/power_dcdc-eps-converted-to.pdf images/schematic/power_dcdc.eps>
 (epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/power_dcdc-eps-converted-to.pdf, id=788, 293.095pt x 100.375pt>
+<images/schematic/power_dcdc-eps-converted-to.pdf, id=795, 293.095pt x 100.375pt>
 File: images/schematic/power_dcdc-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/power_dcdc-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/power_dcdc-eps-converted-to.pdf  used on input line 253.
@@ -2700,7 +2790,7 @@ Package epstopdf Info: Source file: <images/schematic/power_fastic.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/power_fastic-eps-converted-to.pdf images/schematic/power_fastic.eps>
 (epstopdf)             \includegraphics on input line 264.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/power_fastic-eps-converted-to.pdf, id=797, 631.35875pt x 113.42375pt>
+<images/schematic/power_fastic-eps-converted-to.pdf, id=805, 631.35875pt x 113.42375pt>
 File: images/schematic/power_fastic-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/power_fastic-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/power_fastic-eps-converted-to.pdf  used on input line 264.
@@ -2720,7 +2810,7 @@ Package epstopdf Info: Source file: <images/schematic/sipm.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/schematic/sipm-eps-converted-to.pdf images/schematic/sipm.eps>
 (epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
-<images/schematic/sipm-eps-converted-to.pdf, id=814, 282.05376pt x 78.2925pt>
+<images/schematic/sipm-eps-converted-to.pdf, id=824, 282.05376pt x 78.2925pt>
 File: images/schematic/sipm-eps-converted-to.pdf Graphic file (type pdf)
 <use images/schematic/sipm-eps-converted-to.pdf>
 Package pdftex.def Info: images/schematic/sipm-eps-converted-to.pdf  used on input line 285.
@@ -2747,7 +2837,7 @@ Package epstopdf Info: Source file: <images/high_speed.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/high_speed-eps-converted-to.pdf images/high_speed.eps>
 (epstopdf)             \includegraphics on input line 340.
 Package epstopdf Info: Output file is already uptodate.
-<images/high_speed-eps-converted-to.pdf, id=837, 167.62625pt x 109.40875pt>
+<images/high_speed-eps-converted-to.pdf, id=849, 167.62625pt x 109.40875pt>
 File: images/high_speed-eps-converted-to.pdf Graphic file (type pdf)
 <use images/high_speed-eps-converted-to.pdf>
 Package pdftex.def Info: images/high_speed-eps-converted-to.pdf  used on input line 340.
@@ -2764,7 +2854,7 @@ Package epstopdf Info: Source file: <images/fanout.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/fanout-eps-converted-to.pdf images/fanout.eps>
 (epstopdf)             \includegraphics on input line 352.
 Package epstopdf Info: Output file is already uptodate.
-<images/fanout-eps-converted-to.pdf, id=846, 72.27pt x 72.27pt>
+<images/fanout-eps-converted-to.pdf, id=860, 72.27pt x 72.27pt>
 File: images/fanout-eps-converted-to.pdf Graphic file (type pdf)
 <use images/fanout-eps-converted-to.pdf>
 Package pdftex.def Info: images/fanout-eps-converted-to.pdf  used on input line 352.
@@ -2781,7 +2871,7 @@ Package epstopdf Info: Source file: <images/top_layers.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/top_layers-eps-converted-to.pdf images/top_layers.eps>
 (epstopdf)             \includegraphics on input line 367.
 Package epstopdf Info: Output file is already uptodate.
-<images/top_layers-eps-converted-to.pdf, id=854, 173.64874pt x 173.64874pt>
+<images/top_layers-eps-converted-to.pdf, id=869, 173.64874pt x 173.64874pt>
 File: images/top_layers-eps-converted-to.pdf Graphic file (type pdf)
 <use images/top_layers-eps-converted-to.pdf>
 Package pdftex.def Info: images/top_layers-eps-converted-to.pdf  used on input line 367.
@@ -2798,59 +2888,60 @@ Package epstopdf Info: Source file: <images/bot_layers.eps>
 (epstopdf)             Command: <repstopdf --outfile=images/bot_layers-eps-converted-to.pdf images/bot_layers.eps>
 (epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
-<images/bot_layers-eps-converted-to.pdf, id=862, 173.64874pt x 173.64874pt>
+<images/bot_layers-eps-converted-to.pdf, id=877, 173.64874pt x 173.64874pt>
 File: images/bot_layers-eps-converted-to.pdf Graphic file (type pdf)
 <use images/bot_layers-eps-converted-to.pdf>
 Package pdftex.def Info: images/bot_layers-eps-converted-to.pdf  used on input line 376.
 (pdftex.def)             Requested size: 227.6299pt x 227.62204pt.
-<images/readout_3d-top.png, id=863, 279.444pt x 233.673pt>
+
+
+[35 <./images/top_layers-eps-converted-to.pdf> <./images/bot_layers-eps-converted-to.pdf>]
+<images/readout_3d-top.png, id=889, 279.444pt x 233.673pt>
 File: images/readout_3d-top.png Graphic file (type png)
 <use images/readout_3d-top.png>
 Package pdftex.def Info: images/readout_3d-top.png  used on input line 390.
 (pdftex.def)             Requested size: 176.93329pt x 147.95424pt.
-<images/readout_3d-bottom.png, id=865, 279.444pt x 233.673pt>
+<images/readout_3d-bottom.png, id=891, 279.444pt x 233.673pt>
 File: images/readout_3d-bottom.png Graphic file (type png)
 <use images/readout_3d-bottom.png>
 Package pdftex.def Info: images/readout_3d-bottom.png  used on input line 391.
 (pdftex.def)             Requested size: 176.93329pt x 147.95424pt.
-
-
-[35 <./images/top_layers-eps-converted-to.pdf> <./images/bot_layers-eps-converted-to.pdf>]
-<images/userboard_3d-top.png, id=875, 228.855pt x 228.855pt>
+<images/userboard_3d-top.png, id=892, 228.855pt x 228.855pt>
 File: images/userboard_3d-top.png Graphic file (type png)
 <use images/userboard_3d-top.png>
 Package pdftex.def Info: images/userboard_3d-top.png  used on input line 400.
 (pdftex.def)             Requested size: 147.9578pt x 147.95424pt.
-<images/userboard_3d-bottom.png, id=876, 231.264pt x 231.264pt>
+<images/userboard_3d-bottom.png, id=893, 231.264pt x 231.264pt>
 File: images/userboard_3d-bottom.png Graphic file (type png)
 <use images/userboard_3d-bottom.png>
 Package pdftex.def Info: images/userboard_3d-bottom.png  used on input line 402.
 (pdftex.def)             Requested size: 147.96257pt x 147.95424pt.
-<images/photo_readout_top.png, id=877, 2812.5075pt x 2389.92876pt>
+<images/photo_readout_top.png, id=894, 2812.5075pt x 2389.92876pt>
 File: images/photo_readout_top.png Graphic file (type png)
 <use images/photo_readout_top.png>
 Package pdftex.def Info: images/photo_readout_top.png  used on input line 412.
 (pdftex.def)             Requested size: 177.45499pt x 150.79968pt.
-<images/photo_readout_bot.png, id=878, 2812.5075pt x 2389.92876pt>
+<images/photo_readout_bot.png, id=895, 2812.5075pt x 2389.92876pt>
 File: images/photo_readout_bot.png Graphic file (type png)
 <use images/photo_readout_bot.png>
 Package pdftex.def Info: images/photo_readout_bot.png  used on input line 413.
 (pdftex.def)             Requested size: 177.45499pt x 150.79968pt.
-<images/photo_userboard_top.png, id=879, 2624.80624pt x 2537.48pt>
+
+
+[36 <./images/readout_3d-top.png> <./images/readout_3d-bottom.png> <./images/userboard_3d-top.png> <./images/userboard_3d-bottom.png>]
+<images/photo_userboard_top.png, id=906, 2624.80624pt x 2537.48pt>
 File: images/photo_userboard_top.png Graphic file (type png)
 <use images/photo_userboard_top.png>
 Package pdftex.def Info: images/photo_userboard_top.png  used on input line 422.
 (pdftex.def)             Requested size: 159.7881pt x 157.91287pt.
-<images/photo_userboard_bot.png, id=881, 2624.80624pt x 2537.48pt>
+<images/photo_userboard_bot.png, id=908, 2624.80624pt x 2537.48pt>
 File: images/photo_userboard_bot.png Graphic file (type png)
 <use images/photo_userboard_bot.png>
 Package pdftex.def Info: images/photo_userboard_bot.png  used on input line 424.
 (pdftex.def)             Requested size: 163.32906pt x 157.91287pt.
+)
 
-
-[36 <./images/readout_3d-top.png> <./images/readout_3d-bottom.png> <./images/userboard_3d-top.png> <./images/userboard_3d-bottom.png> <./images/photo_readout_top.png> <./images/photo_readout_bot.png>])
-
-[37 <./images/photo_userboard_bot.png> <./images/photo_userboard_top.png>]
+[37 <./images/photo_readout_top.png> <./images/photo_readout_bot.png> <./images/photo_userboard_bot.png> <./images/photo_userboard_top.png>]
 \openout2 = `mechanical.aux'.
 
  (./mechanical.tex
@@ -2862,12 +2953,12 @@ Package pdftex.def Info: images/photo_userboard_bot.png  used on input line 424.
 
 ]
 Chapter 9.
-<images/insert.png, id=904, 1254.18562pt x 572.1375pt>
+<images/insert.png, id=925, 1254.18562pt x 572.1375pt>
 File: images/insert.png Graphic file (type png)
 <use images/insert.png>
 Package pdftex.def Info: images/insert.png  used on input line 15.
 (pdftex.def)             Requested size: 249.47394pt x 113.81102pt.
-<images/mech_preview.png, id=905, 3011.25pt x 1505.625pt>
+<images/mech_preview.png, id=926, 3011.25pt x 1505.625pt>
 File: images/mech_preview.png Graphic file (type png)
 <use images/mech_preview.png>
 Package pdftex.def Info: images/mech_preview.png  used on input line 26.
@@ -2875,22 +2966,22 @@ Package pdftex.def Info: images/mech_preview.png  used on input line 26.
 
 
 [39 <./images/insert.png>]
-<images/mech_top.png, id=912, 756.8275pt x 757.83125pt>
+<images/mech_top.png, id=934, 756.8275pt x 757.83125pt>
 File: images/mech_top.png Graphic file (type png)
 <use images/mech_top.png>
 Package pdftex.def Info: images/mech_top.png  used on input line 35.
 (pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
-<images/mech_bottom.png, id=913, 756.8275pt x 757.83125pt>
+<images/mech_bottom.png, id=935, 756.8275pt x 757.83125pt>
 File: images/mech_bottom.png Graphic file (type png)
 <use images/mech_bottom.png>
 Package pdftex.def Info: images/mech_bottom.png  used on input line 36.
 (pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
-<images/mech_front.png, id=914, 756.8275pt x 757.83125pt>
+<images/mech_front.png, id=936, 756.8275pt x 757.83125pt>
 File: images/mech_front.png Graphic file (type png)
 <use images/mech_front.png>
 Package pdftex.def Info: images/mech_front.png  used on input line 37.
 (pdftex.def)             Requested size: 170.48671pt x 170.71652pt.
-<images/mech_rear.png, id=915, 756.8275pt x 757.83125pt>
+<images/mech_rear.png, id=937, 756.8275pt x 757.83125pt>
 File: images/mech_rear.png Graphic file (type png)
 <use images/mech_rear.png>
 Package pdftex.def Info: images/mech_rear.png  used on input line 38.
@@ -2911,26 +3002,26 @@ Chapter 10.
 
 
 ]
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 
 
 [42]
@@ -2938,138 +3029,138 @@ Chapter 10.
 [43]
 
 [44]
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
-\width=\dimen361 (locally)
-\height=\dimen362 (locally)
-\depth=\dimen363 (locally)
-\totalheight=\dimen364 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
+\width=\dimen368 (locally)
+\height=\dimen369 (locally)
+\depth=\dimen370 (locally)
+\totalheight=\dimen371 (locally)
 )
 
 [45]
@@ -3098,63 +3189,79 @@ Chapter 11.
 
 ]
 Chapter 12.
-<images/measurements/dcdc_ripple.png, id=979, 803.0pt x 504.88625pt>
+<images/measurements/dcdc_ripple.png, id=1003, 803.0pt x 504.88625pt>
 File: images/measurements/dcdc_ripple.png Graphic file (type png)
 <use images/measurements/dcdc_ripple.png>
-Package pdftex.def Info: images/measurements/dcdc_ripple.png  used on input line 11.
+Package pdftex.def Info: images/measurements/dcdc_ripple.png  used on input line 12.
 (pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
 
 
 [49]
-<images/measurements/ripple.png, id=985, 803.0pt x 504.88625pt>
+<images/measurements/ripple.png, id=1010, 803.0pt x 504.88625pt>
 File: images/measurements/ripple.png Graphic file (type png)
 <use images/measurements/ripple.png>
-Package pdftex.def Info: images/measurements/ripple.png  used on input line 23.
+Package pdftex.def Info: images/measurements/ripple.png  used on input line 24.
 (pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
-<images/measurements/hv_transient.png, id=986, 803.0pt x 504.88625pt>
+<images/measurements/hv_transient.png, id=1011, 803.0pt x 504.88625pt>
 File: images/measurements/hv_transient.png Graphic file (type png)
 <use images/measurements/hv_transient.png>
-Package pdftex.def Info: images/measurements/hv_transient.png  used on input line 33.
+Package pdftex.def Info: images/measurements/hv_transient.png  used on input line 34.
 (pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
 
 
 [50 <./images/measurements/dcdc_ripple.png (PNG copy)> <./images/measurements/ripple.png (PNG copy)>]
-<images/measurements/injection.png, id=994, 803.0pt x 504.88625pt>
+<images/measurements/injection.png, id=1020, 803.0pt x 504.88625pt>
 File: images/measurements/injection.png Graphic file (type png)
 <use images/measurements/injection.png>
-Package pdftex.def Info: images/measurements/injection.png  used on input line 48.
+Package pdftex.def Info: images/measurements/injection.png  used on input line 49.
 (pdftex.def)             Requested size: 271.52155pt x 170.71652pt.
 
 
 [51 <./images/measurements/hv_transient.png (PNG copy)>]
 
-[52 <./images/measurements/injection.png (PNG copy)>])
-Underfull \hbox (badness 10000) in paragraph at lines 108--227
+[52 <./images/measurements/injection.png (PNG copy)>]
+
+[53]
+Package pgfplots info on input line 129: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+PGFPlots: reading {staircase_1.csv}
+
+NOTE: coordinate (0,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (1,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (2,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (61,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+NOTE: coordinate (62,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
+)
+Underfull \hbox (badness 10000) in paragraph at lines 149--229
 
  []
 
 
-Overfull \hbox (4.87393pt too wide) in paragraph at lines 108--227
+Overfull \hbox (4.87393pt too wide) in paragraph at lines 149--229
 \T1/lmr/bx/n/12 (-20) TADY BUDE DALSI KO-MEN-TAR K TOMU EX-PER-I-MENTU
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[53]
+
 
 [54]
-Chapter 13.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 229.
 
+[55]
 
-[55
+[56
 
 
 
 ]
+Chapter 13.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 231.
 
-[56
+
+[57]
+
+[58
 
 
 ]
@@ -3162,217 +3269,248 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (3.17776pt too wide) in paragraph at lines 243--243
+Overfull \hbox (3.17776pt too wide) in paragraph at lines 244--244
 []\T1/lmr/m/n/10.95 (-20) STMicroelectronics. \T1/lmr/m/it/10.95 (-20) RM0433: STM32H7 Se-ries Ad-vanced Arm$[]$ Cortex$[]$-
  []
 
 
-Overfull \hbox (11.25768pt too wide) in paragraph at lines 243--243
+Overfull \hbox (11.25768pt too wide) in paragraph at lines 244--244
 []\T1/lmr/m/n/10.95 (-20) Texas In-stru-ments. \T1/lmr/m/it/10.95 (-20) DS90LVRA2: Dual LVDS Re-peater/Redriver Datasheet\T1/lmr/m/n/10.95 (-20) .
  []
 
 
 
-[57]
-Overfull \hbox (8.46396pt too wide) in paragraph at lines 243--243
+[59]
+Overfull \hbox (8.46396pt too wide) in paragraph at lines 244--244
 \T1/lmr/m/n/10.95 (-20) output, 44-QFN 7x7 mm pack-age. 2023. \T1/lmr/m/sc/10.95 (-20) url\T1/lmr/m/n/10.95 (-20) : []$\T1/lmtt/m/n/10.95 https : / / www . skyworksinc .
  []
 
 
-Overfull \hbox (5.93079pt too wide) in paragraph at lines 243--243
+Overfull \hbox (5.93079pt too wide) in paragraph at lines 244--244
 []\T1/lmr/m/n/10.95 (-20) Analog De-vices. \T1/lmr/m/it/10.95 (-20) LT3571: 75V DC/DC Con-verter for APD Bias Datasheet\T1/lmr/m/n/10.95 (-20) .
  []
 
 
-Overfull \hbox (1.14406pt too wide) in paragraph at lines 243--243
+Overfull \hbox (1.14406pt too wide) in paragraph at lines 244--244
 \T1/lmtt/m/n/10.95 www . ti . com / lit / an / spraar7j / spraar7j . pdf$[] \T1/lmr/m/n/10.95 (-20) (vis-ited on 04/04/2023). 
  []
 
 
 
-[58]
+[60]
 
-[59]
+[61]
 
-[60
+[62
 
 ]
 
-[61]
-Overfull \hbox (11.2pt too wide) in paragraph at lines 301--302
+[63]
+Overfull \hbox (11.2pt too wide) in paragraph at lines 302--303
 [][] 
  []
 
 
 
-[62]
-<fastic-readout.pdf, id=1097, 1194.4625pt x 845.1575pt>
+[64]
+<fastic-readout.pdf, id=1142, 1194.4625pt x 845.1575pt>
 File: fastic-readout.pdf Graphic file (type pdf)
 <use fastic-readout.pdf>
-Package pdftex.def Info: fastic-readout.pdf  used on input line 305.
+Package pdftex.def Info: fastic-readout.pdf  used on input line 307.
 (pdftex.def)             Requested size: 1194.45958pt x 845.15544pt.
-<fastic-readout.pdf, id=1099, page=1, 1194.4625pt x 845.1575pt>
+<fastic-readout.pdf, id=1144, page=1, 1194.4625pt x 845.1575pt>
 File: fastic-readout.pdf Graphic file (type pdf)
 <use fastic-readout.pdf, page 1>
-Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 305.
+Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 307.
 (pdftex.def)             Requested size: 1194.45958pt x 845.15544pt.
 File: fastic-readout.pdf Graphic file (type pdf)
 <use fastic-readout.pdf, page 1>
-Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 305.
+Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 
 
-[63
+[65
 
 ]
 File: fastic-readout.pdf Graphic file (type pdf)
 <use fastic-readout.pdf, page 1>
-Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 305.
+Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 File: fastic-readout.pdf Graphic file (type pdf)
 <use fastic-readout.pdf, page 1>
-Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 305.
+Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 
 
 File: fastic-readout.pdf Graphic file (type pdf)
 <use fastic-readout.pdf, page 1>
-Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 305.
-(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
-[64
-
- <./fastic-readout.pdf>]
-<fastic-readout.pdf, id=1144, page=2, 1194.4625pt x 845.1575pt>
-File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 2>
-Package pdftex.def Info: fastic-readout.pdf , page2 used on input line 305.
-(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
-File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 2>
-Package pdftex.def Info: fastic-readout.pdf , page2 used on input line 305.
-(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
-
-
-File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 2>
-Package pdftex.def Info: fastic-readout.pdf , page2 used on input line 305.
-(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
-[65
-
- <./fastic-readout.pdf>]
-<fastic-readout.pdf, id=1163, page=3, 1194.4625pt x 845.1575pt>
-File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 3>
-Package pdftex.def Info: fastic-readout.pdf , page3 used on input line 305.
-(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
-File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 3>
-Package pdftex.def Info: fastic-readout.pdf , page3 used on input line 305.
-(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
-
-
-File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 3>
-Package pdftex.def Info: fastic-readout.pdf , page3 used on input line 305.
+Package pdftex.def Info: fastic-readout.pdf , page1 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 [66
 
  <./fastic-readout.pdf>]
-<fastic-readout.pdf, id=1180, page=4, 1194.4625pt x 845.1575pt>
+<fastic-readout.pdf, id=1190, page=2, 1194.4625pt x 845.1575pt>
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 4>
-Package pdftex.def Info: fastic-readout.pdf , page4 used on input line 305.
+<use fastic-readout.pdf, page 2>
+Package pdftex.def Info: fastic-readout.pdf , page2 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 4>
-Package pdftex.def Info: fastic-readout.pdf , page4 used on input line 305.
+<use fastic-readout.pdf, page 2>
+Package pdftex.def Info: fastic-readout.pdf , page2 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 
 
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 4>
-Package pdftex.def Info: fastic-readout.pdf , page4 used on input line 305.
+<use fastic-readout.pdf, page 2>
+Package pdftex.def Info: fastic-readout.pdf , page2 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 [67
 
  <./fastic-readout.pdf>]
-<fastic-readout.pdf, id=1196, page=5, 1194.4625pt x 845.1575pt>
+<fastic-readout.pdf, id=1209, page=3, 1194.4625pt x 845.1575pt>
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 5>
-Package pdftex.def Info: fastic-readout.pdf , page5 used on input line 305.
+<use fastic-readout.pdf, page 3>
+Package pdftex.def Info: fastic-readout.pdf , page3 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 5>
-Package pdftex.def Info: fastic-readout.pdf , page5 used on input line 305.
+<use fastic-readout.pdf, page 3>
+Package pdftex.def Info: fastic-readout.pdf , page3 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 
 
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 5>
-Package pdftex.def Info: fastic-readout.pdf , page5 used on input line 305.
+<use fastic-readout.pdf, page 3>
+Package pdftex.def Info: fastic-readout.pdf , page3 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 [68
 
  <./fastic-readout.pdf>]
-<fastic-readout.pdf, id=1212, page=6, 1194.4625pt x 845.1575pt>
+<fastic-readout.pdf, id=1225, page=4, 1194.4625pt x 845.1575pt>
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 6>
-Package pdftex.def Info: fastic-readout.pdf , page6 used on input line 305.
+<use fastic-readout.pdf, page 4>
+Package pdftex.def Info: fastic-readout.pdf , page4 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 6>
-Package pdftex.def Info: fastic-readout.pdf , page6 used on input line 305.
+<use fastic-readout.pdf, page 4>
+Package pdftex.def Info: fastic-readout.pdf , page4 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 
 
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 6>
-Package pdftex.def Info: fastic-readout.pdf , page6 used on input line 305.
+<use fastic-readout.pdf, page 4>
+Package pdftex.def Info: fastic-readout.pdf , page4 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 [69
 
  <./fastic-readout.pdf>]
-<fastic-readout.pdf, id=1228, page=7, 1194.4625pt x 845.1575pt>
+<fastic-readout.pdf, id=1241, page=5, 1194.4625pt x 845.1575pt>
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 7>
-Package pdftex.def Info: fastic-readout.pdf , page7 used on input line 305.
+<use fastic-readout.pdf, page 5>
+Package pdftex.def Info: fastic-readout.pdf , page5 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 7>
-Package pdftex.def Info: fastic-readout.pdf , page7 used on input line 305.
+<use fastic-readout.pdf, page 5>
+Package pdftex.def Info: fastic-readout.pdf , page5 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 
 
 File: fastic-readout.pdf Graphic file (type pdf)
-<use fastic-readout.pdf, page 7>
-Package pdftex.def Info: fastic-readout.pdf , page7 used on input line 305.
+<use fastic-readout.pdf, page 5>
+Package pdftex.def Info: fastic-readout.pdf , page5 used on input line 307.
 (pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
 [70
 
- <./fastic-readout.pdf>] (./main.aux (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./mechanical.aux) (./firmware.aux) (./software.aux) (./tests.aux))
+ <./fastic-readout.pdf>]
+<fastic-readout.pdf, id=1257, page=6, 1194.4625pt x 845.1575pt>
+File: fastic-readout.pdf Graphic file (type pdf)
+<use fastic-readout.pdf, page 6>
+Package pdftex.def Info: fastic-readout.pdf , page6 used on input line 307.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+File: fastic-readout.pdf Graphic file (type pdf)
+<use fastic-readout.pdf, page 6>
+Package pdftex.def Info: fastic-readout.pdf , page6 used on input line 307.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+
+
+File: fastic-readout.pdf Graphic file (type pdf)
+<use fastic-readout.pdf, page 6>
+Package pdftex.def Info: fastic-readout.pdf , page6 used on input line 307.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+[71
+
+ <./fastic-readout.pdf>]
+<fastic-readout.pdf, id=1274, page=7, 1194.4625pt x 845.1575pt>
+File: fastic-readout.pdf Graphic file (type pdf)
+<use fastic-readout.pdf, page 7>
+Package pdftex.def Info: fastic-readout.pdf , page7 used on input line 307.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+File: fastic-readout.pdf Graphic file (type pdf)
+<use fastic-readout.pdf, page 7>
+Package pdftex.def Info: fastic-readout.pdf , page7 used on input line 307.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+
+
+File: fastic-readout.pdf Graphic file (type pdf)
+<use fastic-readout.pdf, page 7>
+Package pdftex.def Info: fastic-readout.pdf , page7 used on input line 307.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+[72
+
+ <./fastic-readout.pdf>]
+<fastic-userboard.pdf, id=1290, 1194.4625pt x 845.1575pt>
+File: fastic-userboard.pdf Graphic file (type pdf)
+<use fastic-userboard.pdf>
+Package pdftex.def Info: fastic-userboard.pdf  used on input line 308.
+(pdftex.def)             Requested size: 1194.45958pt x 845.15544pt.
+<fastic-userboard.pdf, id=1292, page=1, 1194.4625pt x 845.1575pt>
+File: fastic-userboard.pdf Graphic file (type pdf)
+<use fastic-userboard.pdf, page 1>
+Package pdftex.def Info: fastic-userboard.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 1194.45958pt x 845.15544pt.
+File: fastic-userboard.pdf Graphic file (type pdf)
+<use fastic-userboard.pdf, page 1>
+Package pdftex.def Info: fastic-userboard.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+File: fastic-userboard.pdf Graphic file (type pdf)
+<use fastic-userboard.pdf, page 1>
+Package pdftex.def Info: fastic-userboard.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+File: fastic-userboard.pdf Graphic file (type pdf)
+<use fastic-userboard.pdf, page 1>
+Package pdftex.def Info: fastic-userboard.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+
+
+File: fastic-userboard.pdf Graphic file (type pdf)
+<use fastic-userboard.pdf, page 1>
+Package pdftex.def Info: fastic-userboard.pdf , page1 used on input line 308.
+(pdftex.def)             Requested size: 844.61137pt x 597.61578pt.
+[73
+
+ <./fastic-userboard.pdf>] (./main.aux (./fastic.aux) (./aurora.aux) (./fastic_com.aux) (./electronics.aux) (./mechanical.aux) (./firmware.aux) (./software.aux) (./tests.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 762CA9324935C47952193BA8D508C91C;9456.
+(rerunfilecheck)             Checksum: 84D781C5188C3AC8CB6025AAF140C835;9609.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48512 strings out of 473190
- 971945 string characters out of 5688193
- 1839318 words of memory out of 5000000
- 70374 multiletter control sequences out of 15000+600000
- 690148 words of font info for 299 fonts, out of 8000000 for 9000
+ 58441 strings out of 473190
+ 1308032 string characters out of 5688193
+ 2261976 words of memory out of 5000000
+ 80173 multiletter control sequences out of 15000+600000
+ 690223 words of font info for 300 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,17n,101p,1659b,4095s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,17n,101p,1678b,4084s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (78 pages, 42762564 bytes).
+Output written on main.pdf (81 pages, 43208811 bytes).
 PDF statistics:
- 1399 PDF objects out of 1440 (max. 8388607)
- 1164 compressed objects within 12 object streams
- 231 named destinations out of 1000 (max. 500000)
- 78670 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1492 PDF objects out of 1728 (max. 8388607)
+ 1219 compressed objects within 13 object streams
+ 239 named destinations out of 1000 (max. 500000)
+ 78728 words of extra memory for PDF output out of 89155 (max. 10000000)
 

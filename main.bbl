@@ -69,8 +69,8 @@
       \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
       \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Revision 7, DS12195}
@@ -98,8 +98,8 @@
       \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
       \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Revision 7, RM0433}
@@ -111,6 +111,29 @@
       \verb{url}
       \verb https://www.st.com/resource/en/reference_manual/dm00314099-stm32h7-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
       \endverb
+    \endentry
+    \entry{Vosahlo2024}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=2d55aa920267e74736f54c2288f6886a}{%
+           family={Vosáhlo},
+           familyi={V\bibinitperiod},
+           given={Vojtěch},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{fullhash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{fullhashraw}{2d55aa920267e74736f54c2288f6886a}
+      \strng{bibnamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorbibnamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authornamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorfullhash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorfullhashraw}{2d55aa920267e74736f54c2288f6886a}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rozhraní pro protokol Aurora}
     \endentry
     \entry{ds90lvra2_datasheet}{manual}{}{}
       \name{author}{1}{}{%
@@ -156,8 +179,8 @@
       \strng{authorfullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
       \strng{authorfullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Rev. J, SLVAV94J}
@@ -188,8 +211,8 @@
       \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
       \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
       \field{extraname}{3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{AN2834 Rev 9}
@@ -246,8 +269,8 @@
       \strng{authorfullhash}{ed12702f830dd2b0fabe23c1d36e1c6d}
       \strng{authorfullhashraw}{ed12702f830dd2b0fabe23c1d36e1c6d}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{BAV99: High-Speed Switching Diode Datasheet}}
@@ -276,8 +299,8 @@
       \strng{authornamehash}{9cd4a9b68fc384ecf80f1e731d3988eb}
       \strng{authorfullhash}{9cd4a9b68fc384ecf80f1e731d3988eb}
       \strng{authorfullhashraw}{9cd4a9b68fc384ecf80f1e731d3988eb}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Universal Serial Bus Specification Revision 1.1}}
@@ -306,8 +329,8 @@
       \strng{authornamehash}{2336bd3a632bc865dfa55dc96a1325a0}
       \strng{authorfullhash}{2336bd3a632bc865dfa55dc96a1325a0}
       \strng{authorfullhashraw}{2336bd3a632bc865dfa55dc96a1325a0}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}
@@ -418,8 +441,8 @@
       \strng{authornamehash}{a12ff886a2379a9ee6efaa9acfb54df4}
       \strng{authorfullhash}{a12ff886a2379a9ee6efaa9acfb54df4}
       \strng{authorfullhashraw}{a12ff886a2379a9ee6efaa9acfb54df4}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Document Number: 3571fa}
@@ -541,23 +564,56 @@
       \field{title}{High Speed Digital Design: A Handbook of Black Magic}
       \field{year}{1993}
     \endentry
+    \entry{Zahlava2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=2cbf256d262b2032faed5d2cc1f590da}{%
+           family={Záhlava},
+           familyi={Z\bibinitperiod},
+           given={Vít},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Praha}%
+      }
+      \list{publisher}{1}{%
+        {BEN - technická literatura}%
+      }
+      \strng{namehash}{2cbf256d262b2032faed5d2cc1f590da}
+      \strng{fullhash}{2cbf256d262b2032faed5d2cc1f590da}
+      \strng{fullhashraw}{2cbf256d262b2032faed5d2cc1f590da}
+      \strng{bibnamehash}{2cbf256d262b2032faed5d2cc1f590da}
+      \strng{authorbibnamehash}{2cbf256d262b2032faed5d2cc1f590da}
+      \strng{authornamehash}{2cbf256d262b2032faed5d2cc1f590da}
+      \strng{authorfullhash}{2cbf256d262b2032faed5d2cc1f590da}
+      \strng{authorfullhashraw}{2cbf256d262b2032faed5d2cc1f590da}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-80-7300-266-4}
+      \field{subtitle}{principy a pravidla praktického návrhu}
+      \field{title}{Návrh a konstrukce desek plošných spojů}
+      \field{year}{2010}
+    \endentry
     \entry{wojtacz_fastic_readout_hw}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=cc00937223ec5677b4445824d6e3e5f8}{%
-           family={WojtaCZ},
-           familyi={W\bibinitperiod}}}%
+        {{hash=2d55aa920267e74736f54c2288f6886a}{%
+           family={Vosáhlo},
+           familyi={V\bibinitperiod},
+           given={Vojtěch},
+           giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{fullhash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{fullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{bibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authorbibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authornamehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authorfullhash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authorfullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
-      \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \strng{namehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{fullhash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{fullhashraw}{2d55aa920267e74736f54c2288f6886a}
+      \strng{bibnamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorbibnamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authornamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorfullhash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorfullhashraw}{2d55aa920267e74736f54c2288f6886a}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-04-17}
@@ -586,8 +642,8 @@
       \strng{authornamehash}{aa808efc88a96b6a19624e8328f59203}
       \strng{authorfullhash}{aa808efc88a96b6a19624e8328f59203}
       \strng{authorfullhashraw}{aa808efc88a96b6a19624e8328f59203}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-04-17}
@@ -616,8 +672,8 @@
       \strng{authornamehash}{f6642523b2dedbf31fbe209f05835959}
       \strng{authorfullhash}{f6642523b2dedbf31fbe209f05835959}
       \strng{authorfullhashraw}{f6642523b2dedbf31fbe209f05835959}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-04-17}
@@ -632,21 +688,23 @@
     \endentry
     \entry{wojtacz_fastic_readout}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=cc00937223ec5677b4445824d6e3e5f8}{%
-           family={WojtaCZ},
-           familyi={W\bibinitperiod}}}%
+        {{hash=2d55aa920267e74736f54c2288f6886a}{%
+           family={Vosáhlo},
+           familyi={V\bibinitperiod},
+           given={Vojtěch},
+           giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{fullhash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{fullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{bibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authorbibnamehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authornamehash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authorfullhash}{cc00937223ec5677b4445824d6e3e5f8}
-      \strng{authorfullhashraw}{cc00937223ec5677b4445824d6e3e5f8}
-      \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \strng{namehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{fullhash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{fullhashraw}{2d55aa920267e74736f54c2288f6886a}
+      \strng{bibnamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorbibnamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authornamehash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorfullhash}{2d55aa920267e74736f54c2288f6886a}
+      \strng{authorfullhashraw}{2d55aa920267e74736f54c2288f6886a}
+      \field{extraname}{3}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-04-17}
@@ -687,36 +745,6 @@
       \field{title}{Modern Control Engineering}
       \field{year}{2010}
     \endentry
-    \entry{pyusb}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=0eccb5ed308e4b20bfd352483bf08116}{%
-           family={Malaco},
-           familyi={M\bibinitperiod},
-           given={Jonas},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{0eccb5ed308e4b20bfd352483bf08116}
-      \strng{fullhash}{0eccb5ed308e4b20bfd352483bf08116}
-      \strng{fullhashraw}{0eccb5ed308e4b20bfd352483bf08116}
-      \strng{bibnamehash}{0eccb5ed308e4b20bfd352483bf08116}
-      \strng{authorbibnamehash}{0eccb5ed308e4b20bfd352483bf08116}
-      \strng{authornamehash}{0eccb5ed308e4b20bfd352483bf08116}
-      \strng{authorfullhash}{0eccb5ed308e4b20bfd352483bf08116}
-      \strng{authorfullhashraw}{0eccb5ed308e4b20bfd352483bf08116}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-04-17}
-      \field{title}{PyUSB: Python USB Access Module}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://pyusb.github.io/pyusb/
-      \endverb
-      \verb{url}
-      \verb https://pyusb.github.io/pyusb/
-      \endverb
-    \endentry
     \entry{diodes_ap62201}{manual}{}{}
       \name{author}{1}{}{%
         {{hash=800c1b26873a5ebb93b90393c92c9fb3}{%
@@ -733,8 +761,8 @@
       \strng{authornamehash}{800c1b26873a5ebb93b90393c92c9fb3}
       \strng{authorfullhash}{800c1b26873a5ebb93b90393c92c9fb3}
       \strng{authorfullhashraw}{800c1b26873a5ebb93b90393c92c9fb3}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed: 2025-04-17}
@@ -745,6 +773,56 @@
       \endverb
       \verb{url}
       \verb https://www.diodes.com/part/view/AP62201/
+      \endverb
+    \endentry
+    \entry{onsemiAND9770}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=e53a96542e62222130baf6a1ffa923e2}{%
+           family={{ON Semiconductor}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ON Semiconductor}%
+      }
+      \strng{namehash}{e53a96542e62222130baf6a1ffa923e2}
+      \strng{fullhash}{e53a96542e62222130baf6a1ffa923e2}
+      \strng{fullhashraw}{e53a96542e62222130baf6a1ffa923e2}
+      \strng{bibnamehash}{e53a96542e62222130baf6a1ffa923e2}
+      \strng{authorbibnamehash}{e53a96542e62222130baf6a1ffa923e2}
+      \strng{authornamehash}{e53a96542e62222130baf6a1ffa923e2}
+      \strng{authorfullhash}{e53a96542e62222130baf6a1ffa923e2}
+      \strng{authorfullhashraw}{e53a96542e62222130baf6a1ffa923e2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{note}{Application Note, Rev. 9}
+      \field{number}{AND9770/D}
+      \field{title}{Introduction to the Silicon Photomultiplier (SiPM)}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.onsemi.com/pub/collateral/and9770-d.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.onsemi.com/pub/collateral/and9770-d.pdf
+      \endverb
+    \endentry
+    \entry{hamamatsuS13360}{manual}{}{}
+      \list{institution}{1}{%
+        {Hamamatsu Photonics K.K.}%
+      }
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{note}{Datasheet, Document No. KAPD1052E}
+      \field{title}{MPPC (Multi-Pixel Photon Counter) S13360 Series}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13360_series_kapd1052e.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/ssd/s13360_series_kapd1052e.pdf
       \endverb
     \endentry
   \enddatalist

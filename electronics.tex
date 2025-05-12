@@ -8,7 +8,7 @@ The ultimate goal was to develop a system utilizing the FastIC+ chips that could
     \item financially available for schools and companies.
 \end{itemize}
 
-To allow for versatility, it was decided that two FastIC+ chips would be used, resulting in a total of 16 detection channels. The trigger inputs and outputs were decided to be exposed to the user to allow the synchronization of multiple readout boards. On the other hand, it was decided to read the data from the FastIC+ chips at the lowest possible speed of \SI{80}{\mega\bit\per\second}, as it was found sufficient for most applications and would greatly simplify the development.
+To allow for versatility, it was decided that two FastIC+ chips would be used, resulting in a total of 16 detection channels. On the other hand, it was decided to read the data from the FastIC+ chips at the lowest possible speed of \SI{80}{\mega\bit\per\second}, as it was found sufficient for most applications and would greatly simplify the development.
 
 To make the readout easy to use and standalone, a \emph{USB} interface was proposed to both power the device and transfer the data to a host computer for processing. This, in turn, required the device to be power-efficient and capable of sufficient \emph{USB} bandwidth.
 
@@ -38,7 +38,7 @@ The STM32H753XIH6 was chosen as an excellent microcontroller candidate for the s
 As noted above, the most suitable peripheral for receiving the \emph{Aurora} stream with this microcontroller is the \emph{SPI} peripheral. This peripheral is an industry-standard serial interface, implemented in all modern \textit{MCUs}, designed for receiving a serial stream with a dedicated clock. In simplex slave, receiver-only mode, which suits this use case well, the peripheral uses the \verb|CLK| and \verb|MOSI| pins. The \verb|MOSI| pin is used to input the data stream into the peripheral. The clock, present on the \verb|CLK| pin, is then used to sample the data stream. The sampled data is shifted into a register on a selected clock edge and sent over the internal microcontroller buses for processing. \cite{stm32h753xih6_ref_manual} The only challenge with using \emph{SPI} is that the need to recover the clock from the data stream remains.
 
 \subsection{Omitting clock recovery with the FastIC+}
-As noted in Section \ref{sec:fastic}, the FastIC+ requires a \SI{40}{\mega\hertz} reference clock to function. The chip features an internal \emph{PLL}, which synchronizes to this clock and distributes it to other peripherals, including the \emph{Aurora} transmitter. Since the \emph{PLL} phase is phase-locked to the input clock, the \emph{Aurora} transmitter, and thus the \emph{Aurora} output stream, is also phase-locked to the input clock, just delayed by the transmitter propagation delay $t_{pd}$. \cite{ficDatasheet} Measurements have shown that this delay is very stable across a temperature range of \SI{0}{\celsius} to \SI{100}{\celsius}, with a value of $t_{pd}$ = \SI{3.48 (0.08)}{\nano\second}. If this delay is combined with an additional controlled delay, the digital stream can be aligned such that the data can be sampled with an \SI{80}{\mega\hertz} sampling clock that is in phase with the FastIC+ reference clock.
+As noted in Section \ref{sec:fastic}, the FastIC+ requires a \SI{40}{\mega\hertz} reference clock to function. The chip features an internal \emph{PLL}, which synchronizes to this clock and distributes it to other peripherals, including the \emph{Aurora} transmitter. Since the \emph{PLL} phase is phase-locked to the input clock, the \emph{Aurora} transmitter, and thus the \emph{Aurora} output stream, is also phase-locked to the input clock, just delayed by the transmitter propagation delay $t_{pd}$. \cite{ficDatasheet} Measurements have shown that this delay is very stable across a temperature range of \SI{0}{\celsius} to \SI{100}{\celsius}, with a value of $t_{pd}$ = \SI{3.48 (0.31)}{\nano\second}. \cite{Vosahlo2024} If this delay is combined with an additional controlled delay, the digital stream can be aligned such that the data can be sampled with an \SI{80}{\mega\hertz} sampling clock that is in phase with the FastIC+ reference clock.
 
 The delay could be implemented using a variable delay line. However, the $t_{pd}$ of the FastIC+, combined with the typical propagation delay of a common \emph{LVDS-to-CMOS} receiver (typically \SI{5}{\nano\second}) \cite{ds90lvra2_datasheet}, equals approximately \SI{9}{\nano\second}. The \emph{Aurora} data stream operates at double data rate \cite{auroraSpec}, meaning a valid symbol is transferred on both the rising and falling edges of the reference clock. This results in a symbol duration of \SI{12.5}{\nano\second}. The \SI{9}{\nano\second} delay, being almost exactly $3/4$ of the symbol duration, shifts the data so that both sampling clock edges fall within the data symbol, as shown in Figure \ref{fig:clock_align}. Consequently, the data symbol can be sampled on either the rising or falling edge, and the edge can be selected programmatically based on the receiver propagation delay to avoid sampling in a metastable state. Since the FastIC+ outputs an \emph{SLVS} signal \cite{ficDatasheet} and an \emph{MCU} with \emph{CMOS} inputs is used to capture the stream \cite{stm32h753xih6_datasheet}, this receiver must be present anyway. If carefully chosen, it can also serve as the delay line to achieve the correct sampling clock phase, thereby completely eliminating the need to recover the clock from the data stream.
 \FloatBarrier
@@ -70,7 +70,7 @@ The delay could be implemented using a variable delay line. However, the $t_{pd}
 \end{figure}
 \FloatBarrier
 \section{FastIC+}
-As mentioned above, the FastIC+ requires almost no additional components aside from a \SI{1.2}{\volt} power source and the \SI{40}{\mega\hertz} reference clock. The XVDD (\emph{PLL}) power domain has been isolated from the TVDD (threshold circuitry) by a ferrite bead to reduce noise coupling between the two. However, the \emph{PLL} is only expected to produce noise at startup, while the threshold circuitry is used only after the \emph{PLL} has locked, so any noise coupling between the two domains should have little to no impact. \cite{ficDatasheet} All of the power domains have been thoroughly decoupled, as seen in Figure \ref{fig:fastic_power}.
+As mentioned before, the FastIC+ requires almost no additional components aside from a \SI{1.2}{\volt} power source and the \SI{40}{\mega\hertz} reference clock. The XVDD (\emph{PLL}) power domain has been isolated from the TVDD (threshold circuitry) by a ferrite bead to reduce noise coupling between the two. However, the \emph{PLL} is only expected to produce noise at startup, while the threshold circuitry is used only after the \emph{PLL} has locked, so any noise coupling between the two domains should have little to no impact. \cite{ficDatasheet} All of the power domains have been thoroughly decoupled, as seen in Figure \ref{fig:fastic_power}.
 %
 \FloatBarrier
 \begin{figure}[htp!]
@@ -100,7 +100,7 @@ Both \verb|nRST| (reset of the FastIC+) and \verb|SRST| (reset of the synchronou
 As the FastIC+ voltage domains all run at \SI{1.2}{\volt}, a voltage shifter had to be implemented for communication with the microcontroller over \emph{I2C}. For this, the PCA9306DQER has been chosen for its miniature \emph{X2SON} package and sufficent \SI{400}{\kilo\hertz} speed. \cite{pca9306dqer_datasheet}
 %
 \subsection{Calibration pulse generator}
-The FastIC+ features a \verb|CAL| input pin used for injecting a test pulse into any of the eight input channels. This pin converts the pulse to current with an internal \SI{70}{\ohm} resistor. \cite{ficDatasheet} The usual shape of such a pulse should resemble a real sensor output, thus a decaying exponential with an amplitude of a few milliamperes and a length under a microsecond. To create this pulse, a high-side switch has been implemented with series resistance to limit the current and parallel capacitance to recreate the decaying exponential. The transistor gate is driven by a quick digital pulse from the microcontroller, whose length can be adjusted to modify the current pulse width and, to some degree, also the amplitude.
+The FastIC+ features a \verb|CAL| input pin used for injecting a test pulse into any of the eight input channels. This pin converts the pulse to current with an internal \SI{70}{\ohm} resistor and the $\sim$\SI{30}{\ohm} frontend impedance. \cite{ficDatasheet} The usual shape of such a pulse should resemble a real sensor output, thus a decaying exponential with an amplitude of a few milliamperes and a length under a microsecond. To create this pulse, a high-side switch has been implemented with series resistance to limit the current and parallel capacitance to recreate the decaying exponential. The transistor gate is driven by a quick digital pulse from the microcontroller, whose length can be adjusted to modify the current pulse width and, to some degree, also the amplitude.
 %
 \subsection{Voltage monitoring}
 %
@@ -110,7 +110,7 @@ The \verb|VMON| pin on the ASIC serves for monitoring the internal analog thresh
     A_V = \left( 1 + \frac{R41}{R44}\right) = \left( 1 + \frac{\SI{10}{\kilo\ohm}}{\SI{20}{\kilo\ohm}}\right) = 1.5
 \end{equation}
 %
-has been implemented to amplify the \SI{1.2}{\volt} output to the microcontroller's full-scale range and improve performance. \cite{an2834_adc_accuracy} Because the \verb|VMON| output is used only for threshold monitoring, thus only DC voltages, a slow RC filter has been used to reduce the noise coupled to the analog signal. \cite{ficDatasheet}
+has been implemented to amplify the \SI{1.2}{\volt} output to the microcontroller's full-scale range to improve performance. \cite{an2834_adc_accuracy} Because the \verb|VMON| output is used only for threshold monitoring, thus only DC voltages, a quite slow RC filter with an $f_c = \SI{3388}{\hertz}$ has been used at both the input and output to reduce the noise coupled to the analog signal. \cite{ficDatasheet}
 %
 \FloatBarrier
 \begin{figure}[htp!]
@@ -134,7 +134,7 @@ The FastIC+ outputs use the \emph{Scalable Low Voltage Signaling} standard. \emp
 	\label{fig:slvs_voltages}
 \end{figure}
 
-A differential output capable of transmitting a pulse whose beginning timestamps the \emph{ToA} of a photon and whose length resembles the \emph{ToT} is present on the FastIC+ for each channel separately. However, as the readout uses the data digitized by the internal \emph{TDC}, these channels are left unconnected and disabled in the chip to reduce \emph{EMI}. \cite{ficDatasheet}
+A differential output capable of transmitting a pulse whose beginning timestamps the \emph{ToA} of a photon and whose length resembles the \emph{ToT} is present on the FastIC+ for each channel separately. These are the \verb|OUT_x_P/N| pins. However, as the readout uses the data digitized by the internal \emph{TDC}, these channels are left unconnected and disabled in the chip to reduce \emph{EMI}. \cite{ficDatasheet}
 
 The \verb|TIME| output can be internally connected to the trigger comparator and used for the trigger threshold calibration routine. That's why it was also interfaced with the microcontroller. When the pin is not used for calibration, it is disabled to reduce any \emph{EMI} generated by the fast edges. The \verb|TDCOUT| is the output of the \emph{Aurora} stream from the transmitter. \cite{ficDatasheet}
 
@@ -153,7 +153,7 @@ The trigger inputs (used for externally triggering the ASIC) and outputs (output
 \FloatBarrier
 
 \section{USB}
-To supply power to the device and handle communication with the host computer, a \emph{USB Type-C} connector has been used.
+To supply power to the device and handle communication with the host computer, a \emph{USB Type-C} connector has been used. An ESD protection diode has been put in place to protect the data lines.
 \FloatBarrier
 \begin{figure}[htp!]
     \centering
@@ -332,7 +332,7 @@ Leaving the planes solid also keeps the impedance minimal which reduces the volt
 %
 \section{High speed signals}
 To mitigate possible reflections on the high-speed lines carrying high-frequency signals, the characteristic impedance of each line was calculated to match the driver impedance. For differential signals, the differential impedance was optimized to be \SI{100}{\ohm}, except for the USB lines, which require a differential impedance of \SI{90}{\ohm}. For single-ended lines, the target impedance was \SI{50}{\ohm}.
-The line widths, as well as the spacing for differential pairs, were calculated using Altium Designer’s impedance calculator and verified using the PCB manufacturer’s impedance calculation tool. These calculations resulted in a width of $W_{USB} = \SI{0.183}{\milli\meter}$ and spacing of $S_{USB} = \SI{0.2}{\milli\meter}$ for the USB differential pair; a width of $W_{DIFF} = \SI{0.15}{\milli\meter}$ and spacing of $S_{DIFF} = \SI{0.2}{\milli\meter}$ for the remaining differential pairs; and a width of $W_{SE} = \SI{0.182}{\milli\meter}$ for all single-ended high-speed lines. The spacing from the ground plane on these was kept as large as possible to avoid affecting the impedance. These widths and spacings were followed during PCB routing to ensure the trace impedances remained as close to their respective targets as possible. Where necessary, the line lengths and skews were matched. Additional care was taken to place ground vias near locations where high-speed lines transition between the top and bottom \emph{PCB} layers. Since the current of a high-speed signal in a transmission line is concentrated in close proximity to the signal trace, the corresponding return current flows along the adjacent ground plane. By placing ground vias next to the signal vias, the return path is preserved, minimizing the loop area and reducing emitted \emph{EMI}. Routing of the \emph{ULPI} interface and FastIC+ clock lines can be seen in Figure \ref{fig:highspeed}. \cite{highSpeedGuidlines} \cite{HighSpeedDesign}
+The line widths, as well as the spacing for differential pairs, were calculated using Altium Designer’s impedance calculator and verified using the PCB manufacturer’s impedance calculation tool. These calculations resulted in a width of $W_{USB} = \SI{0.183}{\milli\meter}$ and spacing of $S_{USB} = \SI{0.2}{\milli\meter}$ for the USB differential pair; a width of $W_{DIFF} = \SI{0.15}{\milli\meter}$ and spacing of $S_{DIFF} = \SI{0.2}{\milli\meter}$ for the remaining differential pairs; and a width of $W_{SE} = \SI{0.182}{\milli\meter}$ for all single-ended high-speed lines. The spacing from the ground plane on these was kept as large as possible to avoid affecting the impedance. These widths and spacings were followed during PCB routing to ensure the trace impedances remained as close to their respective targets as possible. Where necessary, the line lengths and skews were matched. Additional care was taken to place ground vias near locations where high-speed lines transition between the top and bottom \emph{PCB} layers. Since the current of a high-speed signal in a transmission line is concentrated in close proximity to the signal trace, the corresponding return current flows along the adjacent ground plane. By placing ground vias next to the signal vias, the return path is preserved, minimizing the loop area and reducing emitted \emph{EMI}. Routing of the \emph{ULPI} interface and FastIC+ clock lines can be seen in Figure \ref{fig:highspeed}. \cite{highSpeedGuidlines} \cite{HighSpeedDesign} \cite{Zahlava2010}
 
 \FloatBarrier
 \begin{figure}[htp!]
@@ -378,7 +378,7 @@ Gerber files were generated using Altium Designer and were made available on the
     \label{fig:metal_bot}
 \end{figure}
 \FloatBarrier
-
+\newpage
 \section{Manufacturing}
 The two PCBs described above were manufactured and assembled by Eurocircuits. The 3D renders as well as actual photos of the assembled PCBs can be seen in the images bellow. 
 

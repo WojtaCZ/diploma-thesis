@@ -24,6 +24,8 @@
 \usepackage{bytefield}
 \usepackage{tikz-timing}
 \usepackage{soul}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 \usepackage{float}
 \usepackage[defernumbers=true, sorting=none]{biblatex}
@@ -43,7 +45,7 @@
 
 
 \DeclareSIUnit\bit{b}
-
+\DeclareSIUnit\count{c}
 
 \makeatletter
 \edef\mytoday{\expandafter\@gobbletwo\the\year\ifnum\month<10 0\fi\the\month\ifnum\day<10 0\fi\the\day}
@@ -135,7 +137,7 @@
 
 % Abstract in Czech
 \begin{abstract-czech}
-Tato práce se zabývá návrhem elektronického systému určeného k vyčítání dat z integrovaných obvodů FastIC+ vyvíjených v rámci CERN pro aplikace precizního rychlého časování. Práce nastiňue vlastnosti zmíněných ASIC, jejich účel a popisuje komunikaci s čipy. Následně detailně popisuje návrh elektroniky, firmware zařízení a jejich testování. Dále popisuje návrh ovládacího software pro měření se zařízením a interpretaci dat. V neposlední řadě pak ověřuje funkcionalitu zařízení na praktickém experimentu. 
+Tato práce se zabývá návrhem elektronického systému určeného k vyčítání dat z integrovaných obvodů FastIC+ vyvíjených v rámci CERN pro aplikace precizního rychlého časování. Práce nastiňue vlastnosti zmíněných ASIC, jejich účel a popisuje komunikaci s čipy. Následně detailně popisuje návrh elektroniky, firmware zařízení a jeho testování. Dále popisuje návrh ovládacího software pro měření se zařízením a interpretaci dat. V neposlední řadě pak ověřuje funkcionalitu zařízení na praktickém experimentu. 
 \end{abstract-czech}
 
 % Abstract in English
@@ -213,9 +215,9 @@ V Praze, \monthinlanguage{second} \ctufield{day}, \ctufield{year}
 \pagebreak
 
 \chapter{Introduction}
-The development of devices for particle detectors at CERN has often found applications beyond high-energy physics, particularly in the medical field. One such example is the FastIC chip, which was designed for fast timing applications but has been also utilized in positron emission tomography (\emph{PET}) to improve imaging precision. Building on the success of the FastIC chip, a new version, FastIC+, has been developed. This updated version integrates a picosecond Time-to-Digital Converter (\emph{TDC}) for enhanced time measurement capabilities and higher integration. To facilitate the evaluation of the FastIC+ chip's performance, a evaluation board had to be designed to provide a compact and accessible platform for researchers and engineers to test and analyze the chip's capabilities in various applications.
+The development of devices for particle detectors at CERN has often found applications beyond high-energy physics, particularly in the medical field. One such example is the FastIC chip, which was designed for fast timing applications inside CERN but has found its use in many other applications. Building on the success of the FastIC chip, a new version, FastIC+, has been developed. This updated version integrates a picosecond Time-to-Digital Converter (\emph{TDC}) for enhanced time measurement capabilities and higher integration. To facilitate the evaluation of the FastIC+ chip's performance, a evaluation board had to be designed to provide a compact and accessible platform for researchers and engineers to test and analyze the chip's capabilities in various applications.
 
-This work describes the design of the evaluation board, referred to as the readout system, developed at CERN. First, the FastIC+ is detailed along with its communication protocol. Subsequently, the hardware concept is proposed, and its key components are described in detail. The hardware design process is presented, and both firmware and host software are developed to enable easy control of the device. Finally, functional tests are conducted to evaluate the device, and an experiment at CERN is performed to verify the functionality of the readout system in a real-world application.
+This work describes the design of the evaluation board, referred to as the readout system, developed by the author at CERN. First, the FastIC+ is detailed along with its communication protocol. Subsequently, the hardware concept is proposed, and its key components are described in detail. The hardware design process is presented, and both firmware and host software are developed to enable easy control of the device. Finally, functional tests are conducted to evaluate the device, and an experiment at CERN is performed to verify the functionality of the readout system in a real-world application.
 
 \include{fastic}
 \include{aurora}
@@ -233,9 +235,8 @@ A readout system concept was proposed and the miniature readout system that inte
 
 Custom firmware was written to enable full functionality of the system, including configuration of the FastIC+ registers, real-time data acquisition, and communication with external control software. To provide an accessible and user-friendly interface, a Python-based software was developed to communicate with the readout from host computer.
 
-The complete readout systems performance was then verified with electrical measurements. A basic pulse injection test was conducted to evaluate the whole reception chain. Finally, the system was deployed in a real-world single-photon time resolution (SPTR) experiment using a silicon photomultiplier (SiPM) at CERN. The device successfully acquired the data which was interpreted and the results presented.
+The complete readout systems performance was then verified with electrical measurements. A basic pulse injection test was conducted to evaluate the whole reception chain. Finally, a treshold scan experiment was performed and the system was deployed in a real-world single-photon time resolution (SPTR) experiment using a silicon photomultiplier (SiPM) at CERN. The device successfully acquired the data which was interpreted and the results presented.
 
-This work represents a comprehensive development effort, from concept to deployment, of a miniature, standalone and versatile readout system based on the FastIC+ chip, suitable for various applications in fast timing and high-energy physics. 
 
 \clearpage
 \FloatBarrier
@@ -301,7 +302,9 @@ DMA & Direct Memory Access\\
 \end{tabularx}
 
 \chapter*{Device schematic}
+The following pages contain the schematic of the readout board and the user board. 
 \noindent
 \includepdf[pages=-, landscape=true]{fastic-readout.pdf}
+\includepdf[pages=-, landscape=true]{fastic-userboard.pdf}
 
 \end{document}

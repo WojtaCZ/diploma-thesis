@@ -1,9 +1,9 @@
 \chapter{FastIC+ packet structure}
 %
-As mentioned in section \ref{sec:fastic_digitizing}, the ASIC encodes timing and other information into a format suitable for transmission. \cite{ficDatasheet} The structure of these packets is described below.
+As mentioned in section \ref{sec:fastic_digitizing}, the FastIC+ encodes timing and other information into a format suitable for transmission in the \emph{BERO}. \cite{ficDatasheet} The structure of these packets is described below.
 \section{Data Packet}
 %
-Each detection event on each channel of the FastIC+ is represented by one or more 48-bit data packets containing the digitized \emph{ToA} and \emph{ToT} values. The stream of packets is then encoded into \emph{Aurora data blocks}. \cite{ficDatasheet}  The structure of the packet is shown in Figure \ref{fig:packet}.
+Each detection event on each channel of the FastIC+ is represented by one or more 48-bit data packets containing the digitized \emph{ToA} and \emph{ToT} values. The stream of packets is then encoded into \emph{Aurora Data}, \emph{Separator-7} and \emph{Separator}. \cite{ficDatasheet}  The structure of the packet is shown in Figure \ref{fig:packet}.
 \\
 \FloatBarrier
 \begin{figure}[tph!]

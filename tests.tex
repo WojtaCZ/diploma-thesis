@@ -1,5 +1,6 @@
 \chapter{Function verification}
-To verify the functionality of the device, a serie of basic measurements was performed. Later on a more complex test - injecting synthetised pulses to the fastic - was performed and the functionality of the whole device was thus verified.
+To verify the functionality of the device, a serie of basic measurements was performed. Later on, the injection pulse generator was tested and first synthetized pulses were received. Finally, a real \emph{SiPM} performance was measured.
+
 \section{Measurements}
 Multiple measurements were done to verify the basic functionality of the device. A \SI{200}{\mega\hertz} DSO-X 2024A oscilloscobe with a \SI{350}{\mega\hertz} probe has been used to carry out the measurements. Measurements on the power supplies were done as close to the supply output as possible. A spring contact was used to contact the ground of the probe to minimize the loop inductance of the probe.
 \subsection{Power supplies}
@@ -53,7 +54,7 @@ The function of the pulse injection circuitry was also verified by measurement, 
 \FloatBarrier
 
 \section{Injection pulse test}
-For the injection pulse test, the FastIC+ 1 was configured to enable the injection signal routing into channel 0. The injection pulse generator was than enabled to generate the injection signal (\SI{100}{\nano\second} pulses with \SI{100}{\micro\second} period). Streaming of the aurora data to the USB was than started and \SI{100}{\milli\second} capture of the bitsream was created. The python library was than used to parse the raw data into packets. The packets for a first packet detection is presented bellow.
+For the injection pulse test, the FastIC+ 1 was configured to enable the injection signal routing into channel 0. The injection pulse generator was than enabled to generate the injection signal (\SI{100}{\nano\second} pulses with \SI{100}{\micro\second} period). Streaming of the aurora data to the USB was than started and \SI{100}{\milli\second} capture of the bitsream was created. The python library was than used to parse the raw data into packets. The packets for a first pulse detection are presented bellow.
 \begin{small}
 \begin{verbatim}
     --- Packet 1 ---
@@ -101,11 +102,51 @@ Along with a second detection that is subsequent to the fist one.
 \end{verbatim}
 \end{small}
 
-The two packets received on channel 0 correspond to the \emph{ToA} of the pulse, transferred in the \verb|PKT_TOA| packet, and the \emph{ToT} transferred in the \verb|PKT_TOTLN|. The third packet on channel 8 is the \emph{ToA} of the trigger pulse generated to start the FSM. These differ due to different thresholds and processing on the separate paths. Taking the relevant information from the first set, it can be seen that a packet with a \emph{ToT} of \SI{106.249}{\nano\second} was detected at time \SI{107474.247}{\micro\second}. The \emph{ToT} corresponds nicely to the generator pulse width. Taking the difference between the \emph{ToA} timestamps of the subsequent detections, the period of the pulses can be calculated as $T = \SI{107571.846}{\micro\second} - \SI{107474.247}{\micro\second} = \SI{97.599}{\micro\second}$, which corresponds to the set period of \SI{100}{\micro\second} of the injection generator. The inaccuracy of both the \emph{ToA} and \emph{ToT} originates from the injection generator rather than the FastIC+, which is very precise. The purpose of the injection is to easily check that the FastIC+ can receive pulses and process them correctly, rather than verifying the FastIC+'s accuracy. 
+The two packets received on channel 0 correspond to the \emph{ToA} of the pulse, transferred in the \verb|PKT_TOA| packet, and the \emph{ToT} transferred in the \verb|PKT_TOTLN|. The third packet on channel 8 is the \emph{ToA} of the trigger pulse that starts the \emph{FSM}. These differ due to different thresholds and processing on the separate paths. Taking the relevant information from the first set, it can be seen that a packet with a \emph{ToT} of \SI{106.249}{\nano\second} was detected at time \SI{107474.247}{\micro\second}. The \emph{ToT} corresponds nicely to the generator pulse width. Taking the difference between the \emph{ToA} timestamps of the subsequent detections, the period of the pulses can be calculated as $T = \SI{107571.846}{\micro\second} - \SI{107474.247}{\micro\second} = \SI{97.599}{\micro\second}$, which corresponds to the set period of \SI{100}{\micro\second} of the injection generator. The inaccuracy of both the \emph{ToA} and \emph{ToT} originates from the injection generator rather than the FastIC+, which is very precise. The purpose of the injection is to easily check that the FastIC+ can receive pulses and process them correctly, rather than verifying the FastIC+'s accuracy. 
+
+\section{SiPM treshold scan}
+A common test performed on a physical \emph{SiPM} is a threshold scan. In this test, the \emph{SiPM} is connected to the readout electronics and placed in a completely dark environment. The threshold of the detection chain on the channel is then varied across its full range, and the number of detected photopulses is recorded for each threshold setting. This experiment typically yields a staircase-like curve, where each step represents the number of dark counts at a given photon threshold level. \cite{onsemiAND9770}
+
+
+Dark counts in the sensor are primarily caused by thermally generated electrons in the material. Based on this plot, a suitable threshold is selected for actual measurements with the \emph{SiPM} to minimize the influence of dark counts. \cite{onsemiAND9770}
+
+This experiment was conducted using a Hamamatsu \emph{SiPM}, model S13360-3025PE. The \emph{SiPM} was connected to the FastIC+ and placed in a dark box with multiple shielding layers to prevent any light leakage. To further reduce the chance of light intrusion, the experiment was performed at night in a completely dark room. The \emph{SiPM} was biased at \SI{56}{\volt}. The FastIC+ allows for threshold adjustment over 64 discrete levels, this full range was used. Under this configuration, the following plot was obtained.
+
+\FloatBarrier
+\begin{figure}[!htpb]
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+width=12cm,
+height=8cm,
+xlabel={Threshold (lsb)},
+ylabel={Packet Counts per Second},
+xmin=0, xmax=70,
+xtick={0,10,...,70},
+ymode=log,
+grid=both,
+legend pos=north east,
+]
+\addplot table [x=Threshold, y=ValidPackets, col sep=comma] {staircase_1.csv};
+\end{axis}
+\end{tikzpicture}
+\caption{Staircase plot for the S13360-3025PE}
+\label{fig:staircase_plot}
+\end{center}
+\end{figure}
+\FloatBarrier
+
+The three lowest threshold values were excluded from the chart. At these settings, the channel detects mostly noise, resulting in saturation and a high number of error packets on the \emph{Aurora} channel. This behavior is unexpected, and at the time of writing this thesis, I am collaborating with the chip designers to investigate the cause.
+
+The remaining data is very clean, and the expected staircase shape is clearly visible. The first step corresponds to the threshold level required to detect single-photon events, the second step to two-photon events, and so on. Beyond threshold level 40, the number of detected hits becomes very low, and due to the limited data sample size, the staircase structure becomes indistinguishable from noise. For practical measurements, a threshold above level 40 would typically be selected to minimize the effect of dark counts.
+
+Another notable observation is that the first step level (around \SI{800}{\kilo\count\per\second}) closely matches the datasheet value of a typical \SI{500}{\kilo\count\per\second} (with a maximum of \SI{1500}{\kilo\count\per\second}). Dark count rates vary with temperature and bias voltage, which accounts for the discrepancy between measured and datasheet values. \cite{hamamatsuS13360}
+
+
 
 
 \section{SiPM SPTR measurement}
 To verify the device's functionality in a real-world application and stress test the FastIC+ accuracy, a Single Photon Time Resolution (SPTR) measurement with a real SiPM was performed at CERN. In this test, a laser source sends short pulses of light to a \emph{SiPM} sensor connected to the readout. A trigger signal output from the laser is fed into the readout trigger input. On every laser shot, the readout is triggered by the laser and thus generates a \emph{ToA} packet on channel 8. After the beam of light travels to the \emph{SiPM}, it is converted into an electrical pulse and sensed by the FastIC+, which generates the \emph{ToA} and \emph{ToT} packets for the detection. The delay between the trigger \emph{ToA} and the detection \emph{ToA} corresponds to the time the \emph{SiPM} needs to detect the photon and generate the electrical pulse, thus the \emph{SPTR} of the \emph{SiPM}. The \emph{ToT} is used to detect only single-photon events. 
 \\
 \\
-\large \textbf{TADY BUDE DALSI KOMENTAR K TOMU EXPERIMENTU AZ HO CERN UDELA :D}
+\large \textbf{TADY BUDE DALSI KOMENTAR K TOMU EXPERIMENTU AZ HO CERN UDELA, TAKZE TU SPIS NEBUDE, PROTOZE TI MATLACI NEJSOU SCHOPNI ROZJET ANI TEN STAIRCASE EXAMPLE CO JSEM JIM DAL :D}

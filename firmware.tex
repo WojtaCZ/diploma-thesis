@@ -31,12 +31,14 @@ A control transfer is started by an eight-byte-long \emph{Setup Packet}, which c
         \label{fig:usb_control_transfer}
     \end{center}
 \end{figure}
+\noindent
 The \verb|bmType| field indicates:
 \begin{itemize}
     \item the direction of the communication,
     \item the type, in this case, a Vendor transfer,
     \item and the recipient, in this case, a Device.
 \end{itemize}
+\noindent
 The \verb|bRequest| field indicates the request number. The readout text commands have each been mapped to a unique number, which is used in this field in the binary communication. \verb|wValue| and \verb|wIndex| allow for other parameters to be passed with the request, such as the index of the FastIC+ chip or the address of the selected register. If there is more data to be transferred, the \verb|wLength| field is used to specify the length of an additional data packet sent after the \emph{Setup Packet}. \cite{usb20_spec}
 
 \subsection{Vendor interfaces}
@@ -56,7 +58,7 @@ A closed-loop \emph{PID controller} was implemented using the \emph{ADC} inputs 
 \end{equation}
 where $O$ is the output value, and $K_P$, $K_I$, and $K_D$ are the proportional, integral, and derivative constants, respectively.
 
-The aforementioned constants can either be determined analytically after modeling the control loop's transfer function, heuristically (for example, by the Ziegler-Nichols method) \cite{ogata2010modern}, or manually, which was chosen in this case. First, the proportional constant was set to a value that would bring the output close to the desired value while not causing any oscillations. Then, the integral part was increased to minimize the steady-state error but kept safely below any oscillation threshold. Overshoots and undershoots of the regulator were examined with every change. Finally, the derivative part was added to improve the dynamic response, and the performance was tested. The values of $K_P = 150$, $K_I = 3$, and $K_D = 10$ were found to be suitable for the regulator.
+The aforementioned constants can either be determined analytically after modeling the control loop's transfer function, heuristically (for example, by the Ziegler-Nichols method) \cite{ogata2010modern}, or experimentally, which was chosen in this case. First, the proportional constant was set to a value that would bring the output close to the desired value while not causing any oscillations. Then, the integral part was increased to minimize the steady-state error but kept safely below any oscillation threshold. Overshoots and undershoots of the regulator were examined with every change. Finally, the derivative part was added to improve the dynamic response, and the performance was tested. The values of $K_P = 150$, $K_I = 3$, and $K_D = 10$ were found to be suitable for the regulator.
 \section{FastIC+}
 Both of the FastIC+ chips are mainly controlled over the \emph{I2C} interface. Only a very basic configuration is done by the software, setting the propper clock dividers to be able to receive the \emph{Aurora} stream. Rest of the settings are left for the user to modify, as the registers of the FastIC+ can be accessed directly over the communication interface and most of them need to be tuned for a specific application of the readout.
 \subsection{Aurora stream}
