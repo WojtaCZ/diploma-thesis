@@ -54,26 +54,20 @@ The function of the pulse injection circuitry was also verified by measurement, 
 \FloatBarrier
 
 \section{Injection pulse test}
-For the injection pulse test, the FastIC+ 1 was configured to enable the injection signal routing into channel 0. The injection pulse generator was than enabled to generate the injection signal (\SI{100}{\nano\second} pulses with \SI{100}{\micro\second} period). Streaming of the aurora data to the USB was than started and \SI{100}{\milli\second} capture of the bitsream was created. The python library was than used to parse the raw data into packets. The packets for a first pulse detection are presented bellow.
+For the injection pulse test, the FastIC+ 1 was configured to enable the injection signal routing into channel 5. The injection pulse generator was than enabled to generate the injection signal ($\sim$\SI{100}{\nano\second} pulses with $\sim$\SI{100}{\micro\second} period). Streaming of the aurora data to the USB was than started and \SI{100}{\milli\second} capture of the bitsream was created. The python library was than used to parse the raw data into packets. The packets for a first pulse detection are presented bellow.
 \begin{small}
 \begin{verbatim}
-    --- Packet 1 ---
-    Channel: 0
-    Packet Type: PKT_TOTLN
-    Timestamp absolute: 107474.438 us
-    Pulse Width: 106.249 ns
-  
-    --- Packet 2 ---
-    Channel: 8
-    Packet Type: PKT_TOA_TOTNL
-    Timestamp absolute: 107474.251 us
-    Pulse Width: 1032.812 ns
-  
-    --- Packet 3 ---
-    Channel: 0
-    Packet Type: PKT_TOA
-    Timestamp absolute: 107474.247 us
-    Pulse Width: 124.218 ns
+[DATA] 
+   Channel: 8 
+   Packet type: PKT_TOA_TOTNL 
+   Timestamp absolute (ps): 43951762448.88306 
+   Pulse width (ps): 1025781.25 
+
+[DATA] 
+   Channel: 5 
+   Packet type: PKT_TOA_TOTLN 
+   Timestamp absolute (ps): 43953254158.78296 
+   Pulse width (ps): 91796.875 
 
 \end{verbatim}
 \end{small}
@@ -81,28 +75,22 @@ For the injection pulse test, the FastIC+ 1 was configured to enable the injecti
 Along with a second detection that is subsequent to the fist one.
 \begin{small}
 \begin{verbatim}
-    --- Packet 1 ---
-    Channel: 0
-    Packet Type: PKT_TOTLN
-    Timestamp absolute: 107572.038 us
-    Pulse Width: 107.031 ns
-  
-    --- Packet 2 ---
-    Channel: 8
-    Packet Type: PKT_TOA_TOTNL
-    Timestamp absolute: 107571.850 us
-    Pulse Width: 1035.546 ns
-  
-    --- Packet 3 ---
-    Channel: 0
-    Packet Type: PKT_TOA
-    Timestamp absolute: 107571.846 us
-    Pulse Width: 125.000 ns
+[DATA] 
+   Channel: 8 
+   Packet type: PKT_TOA_TOTNL 
+   Timestamp absolute (ps): 44054708425.14038 
+   Pulse width (ps): 1025000.0 
+
+[DATA] 
+   Channel: 5 
+   Packet type: PKT_TOA_TOTLN 
+   Timestamp absolute (ps): 44056162624.7406 
+   Pulse width (ps): 92187.5 
   
 \end{verbatim}
 \end{small}
 
-The two packets received on channel 0 correspond to the \emph{ToA} of the pulse, transferred in the \verb|PKT_TOA| packet, and the \emph{ToT} transferred in the \verb|PKT_TOTLN|. The third packet on channel 8 is the \emph{ToA} of the trigger pulse that starts the \emph{FSM}. These differ due to different thresholds and processing on the separate paths. Taking the relevant information from the first set, it can be seen that a packet with a \emph{ToT} of \SI{106.249}{\nano\second} was detected at time \SI{107474.247}{\micro\second}. The \emph{ToT} corresponds nicely to the generator pulse width. Taking the difference between the \emph{ToA} timestamps of the subsequent detections, the period of the pulses can be calculated as $T = \SI{107571.846}{\micro\second} - \SI{107474.247}{\micro\second} = \SI{97.599}{\micro\second}$, which corresponds to the set period of \SI{100}{\micro\second} of the injection generator. The inaccuracy of both the \emph{ToA} and \emph{ToT} originates from the injection generator rather than the FastIC+, which is very precise. The purpose of the injection is to easily check that the FastIC+ can receive pulses and process them correctly, rather than verifying the FastIC+'s accuracy. 
+The packets received on channel 5 correspond to the \emph{ToA} and \emph{ToT} of the pulse, transferred in the \verb|PKT_TOA_TOTLN| packet. The packet on channel 8 is the \emph{ToA} and \emph{ToT} of the trigger pulse that starts the \emph{FSM}. These differ due to different thresholds and processing on the separate paths. Taking the \emph{ToA} information from the channel 5 packets, it can be seen that a packet with a \emph{ToT} of \SI{91.797}{\nano\second} was detected first, followed by the second detection with \emph{ToT} of \SI{92.188}{\nano\second}. The \emph{ToT} corresponds nicely to the set generator pulse width. Taking the difference between the \emph{ToA} timestamps of the truggers, the period of the pulses can be calculated as $T = \SI{44054708425.14038}{\pico\second} - \SI{43951762448.88306}{\pico\second} = \SI{102.946e6}{\pico\second}$, which corresponds to the set period of \SI{100}{\micro\second} of the injection generator. The inaccuracy of both the \emph{ToA} and \emph{ToT} originates from the injection generator rather than the FastIC+, which is very precise. The purpose of the injection is to easily check that the FastIC+ can receive pulses and process them correctly, rather than verifying the FastIC+'s accuracy. 
 
 \section{SiPM treshold scan}
 A common test performed on a physical \emph{SiPM} is a threshold scan. In this test, the \emph{SiPM} is connected to the readout electronics and placed in a completely dark environment. The threshold of the detection chain on the channel is then varied across its full range, and the number of detected photopulses is recorded for each threshold setting. This experiment typically yields a staircase-like curve, where each step represents the number of dark counts at a given photon threshold level. \cite{onsemiAND9770}

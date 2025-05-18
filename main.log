@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  12 MAY 2025 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.28)  18 MAY 2025 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3222,7 +3222,7 @@ Package pdftex.def Info: images/measurements/injection.png  used on input line 4
 [52 <./images/measurements/injection.png (PNG copy)>]
 
 [53]
-Package pgfplots info on input line 129: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 117: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 PGFPlots: reading {staircase_1.csv}
 
 NOTE: coordinate (0,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
@@ -3231,17 +3231,14 @@ NOTE: coordinate (2,0.0) has been dropped because it is unbounded (in y). (see a
 NOTE: coordinate (61,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
 NOTE: coordinate (62,0.0) has been dropped because it is unbounded (in y). (see also unbounded coords=jump). 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 149--229
+Underfull \hbox (badness 10000) in paragraph at lines 137--229
 
  []
 
 
-Overfull \hbox (4.87393pt too wide) in paragraph at lines 149--229
+Overfull \hbox (4.87393pt too wide) in paragraph at lines 137--229
 \T1/lmr/bx/n/12 (-20) TADY BUDE DALSI KO-MEN-TAR K TOMU EX-PER-I-MENTU
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -3500,14 +3497,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  58441 strings out of 473190
- 1308032 string characters out of 5688193
+ 1308030 string characters out of 5688193
  2261976 words of memory out of 5000000
  80173 multiletter control sequences out of 15000+600000
  690223 words of font info for 300 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,17n,101p,1678b,4084s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmss10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on main.pdf (81 pages, 43208811 bytes).
+Output written on main.pdf (81 pages, 43209269 bytes).
 PDF statistics:
  1492 PDF objects out of 1728 (max. 8388607)
  1219 compressed objects within 13 object streams
