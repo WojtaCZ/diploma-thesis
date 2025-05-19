@@ -19,7 +19,7 @@ Each detection event on each channel of the FastIC+ is represented by one or mor
             \bitbox{1}{\texttt{\footnotesize TSP}} & \bitbox{1}{\texttt{\footnotesize PWP}} & \bitbox{1}{\texttt{\footnotesize PAR}} 
         \end{bytefield}
     \end{center}
-    \caption{FastIC+ data packet structure}
+    \caption{FastIC+ data packet structure \cite{ficDatasheet}}
     \label{fig:packet}
 \end{figure}
 %
@@ -31,7 +31,7 @@ Each detection event on each channel of the FastIC+ is represented by one or mor
     \item \emph{ToA + linear ToT} type represented by the value \verb|0b11|.
 \end{itemize}
 %
-The \verb|TIMESTAMP| contains the digitized \emph{ToA} value, where each count is $1/1024$ of the reference clock period, thus each count is equal to $\frac{1}{\SI{40}{\mega\hertz}} \cdot \frac{1}{1024} \approx \SI{24.4}{\pico\second} $. It shall be noted that the timestamp of the packet is relative to the last coarse counter packet (see \ref{sec:coarse_counter}). To reconstruct the absolute timestamp, the coarse counter needs to also be taken into account. The \verb|PULSE WIDTH| field contains the digitized \emph{ToT} value with resolution of $1/64$ of the reference clock period, thus $\frac{1}{\SI{40}{\mega\hertz}} \cdot \frac{1}{64} \approx \SI{390.6}{\pico\second}$. \verb|DBG| is a flag used in debug mode. \cite{ficDatasheet}  The rest of the bits are even parity bits, namely:
+The \verb|TIMESTAMP| contains the digitized \emph{ToA} value, where each count is $1/1024$ of the reference clock period, thus each count is equal to $\frac{1}{\SI{40}{\mega\hertz}} \cdot \frac{1}{1024} \approx \SI{24.4}{\pico\second} $. It shall be noted that the timestamp of the packet is relative to the last data or coarse counter packet (see \ref{sec:coarse_counter}). To reconstruct the absolute timestamp, these need to also be taken into account. The \verb|PULSE WIDTH| field contains the digitized \emph{ToT} value with resolution of $1/64$ of the reference clock period, thus $\frac{1}{\SI{40}{\mega\hertz}} \cdot \frac{1}{64} \approx \SI{390.6}{\pico\second}$. \verb|DBG| is a flag used in debug mode. \cite{ficDatasheet}  The rest of the bits are even parity bits, namely:
 \begin{itemize}
     \item \verb|CHP| parity bit of the \verb|CHANNEL| field,
     \item \verb|TYP| parity bit of the \verb|TYPE| field,
@@ -62,7 +62,7 @@ In addition to the data packets, FastIC+ also periodically transmits a statistic
             \bitbox[lrb]{8}{\texttt{\footnotesize (16 bits)}}
         \end{bytefield}
     \end{center}
-    \caption{FastIC+ statistics packet structure}
+    \caption{FastIC+ statistics packet structure \cite{ficDatasheet}}
     \label{fig:statpacket}
 \end{figure}
 %
@@ -93,7 +93,7 @@ When no detection events are processed during the \emph{Coarse Counter Extension
             \bitbox[lrb]{7}{} & \bitbox{1}{\texttt{\footnotesize RST}}
         \end{bytefield}
     \end{center}
-    \caption{FastIC+ counter extension and event counter packet structure}
+    \caption{FastIC+ counter extension and event counter packet structure \cite{ficDatasheet}}
     \label{fig:extpacket}
 \end{figure}
 %

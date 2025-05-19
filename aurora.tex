@@ -30,7 +30,7 @@ A \emph{Data block}, shown in Figure \ref{fig:data}, consists of eight octets of
             \hfill
             \bitbox{8}{\footnotesize D3} & \bitbox{8}{\texttt{\footnotesize D2}} & \bitbox{8}{\texttt{\footnotesize D1}} & \bitbox{8}{\texttt{\footnotesize D0}}
         \end{bytefield}
-        \caption{Data block structure}
+        \caption{Data block structure \cite{auroraSpec}}
         \label{fig:data}
     \end{center}
 \end{figure}
@@ -50,7 +50,7 @@ A \emph{Separator-7 block} is transmitted when only seven octets of data remain 
             \hfill
             \bitbox{8}{\texttt{\footnotesize D3}} & \bitbox{8}{\texttt{\footnotesize D2}} & \bitbox{8}{\texttt{\footnotesize D1}} & \bitbox{8}{\texttt{\footnotesize D0}}
         \end{bytefield}
-        \caption{Separator-7 block structure}
+        \caption{Separator-7 block structure \cite{auroraSpec}}
         \label{fig:sep7}
     \end{center}
 \end{figure}
@@ -70,7 +70,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
             \hfill
             \bitbox{8}{\texttt{\footnotesize D3}} & \bitbox{8}{\texttt{\footnotesize D2}} & \bitbox{8}{\texttt{\footnotesize D1}} & \bitbox{8}{\texttt{\footnotesize D0}}
         \end{bytefield}
-        \caption{Separator block structure}
+        \caption{Separator block structure \cite{auroraSpec}}
         \label{fig:sep}
     \end{center}
 \end{figure}
@@ -92,7 +92,7 @@ A \emph{Separator block} is transmitted when 0-6 octets of data remain to be sen
             \hfill
             \bitbox{8}{\texttt{\footnotesize D3}} & \bitbox{8}{\texttt{\footnotesize D2}} & \bitbox{8}{\texttt{\footnotesize D1}} & \bitbox{8}{\texttt{\footnotesize D0}}
         \end{bytefield}
-        \caption{User K-Block structure}
+        \caption{User K-Block structure \cite{auroraSpec}}
         \label{fig:kblock}
     \end{center}
 \end{figure}
@@ -113,7 +113,7 @@ Figure \ref{fig:idle} shows a structure of an \emph{Idle block}. When no data is
             \bitbox[tbr]{32}{\texttt{\footnotesize Don't care}}
         \end{bytefield}
     \end{center}
-    \caption{Idle block structure}
+    \caption{Idle block structure \cite{auroraSpec}}
     \label{fig:idle}
 \end{figure}
 \FloatBarrier

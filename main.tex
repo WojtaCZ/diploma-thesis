@@ -28,7 +28,7 @@
 \pgfplotsset{compat=1.18}
 
 \usepackage{float}
-\usepackage[defernumbers=true, sorting=none]{biblatex}
+\usepackage[style=ieee,citestyle=numeric-comp,defernumbers=true, sorting=none]{biblatex}
 \addbibresource{bibliography.bib}
 
 
@@ -217,7 +217,7 @@ V Praze, \monthinlanguage{second} \ctufield{day}, \ctufield{year}
 \chapter{Introduction}
 The development of devices for particle detectors at CERN has often found applications beyond high-energy physics, particularly in the medical field. One such example is the FastIC chip, which was designed for fast timing applications inside CERN but has found its use in many other applications. Building on the success of the FastIC chip, a new version, FastIC+, has been developed. This updated version integrates a picosecond Time-to-Digital Converter (\emph{TDC}) for enhanced time measurement capabilities and higher integration. To facilitate the evaluation of the FastIC+ chip's performance, a evaluation board had to be designed to provide a compact and accessible platform for researchers and engineers to test and analyze the chip's capabilities in various applications.
 
-This work describes the design of the evaluation board, referred to as the readout system, developed by the author at CERN. First, the FastIC+ is detailed along with its communication protocol. Subsequently, the hardware concept is proposed, and its key components are described in detail. The hardware design process is presented, and both firmware and host software are developed to enable easy control of the device. Finally, functional tests are conducted to evaluate the device, and an experiment at CERN is performed to verify the functionality of the readout system in a real-world application.
+This work describes the design of the evaluation board, referred to as the readout system, developed by the author at CERN. First, the FastIC+ is detailed along with its communication protocol. Subsequently, the hardware concept is proposed, and its key components are described in detail. The hardware design process is presented, and both firmware and host software are developed to enable easy control of the device. Finally, functional tests are conducted to evaluate the device, and an experiment at CERN is performed to confirm the functionality of the readout system.
 
 \include{fastic}
 \include{aurora}
@@ -235,7 +235,7 @@ A readout system concept was proposed and the miniature readout system that inte
 
 Custom firmware was written to enable full functionality of the system, including configuration of the FastIC+ registers, real-time data acquisition, and communication with external control software. To provide an accessible and user-friendly interface, a Python-based software was developed to communicate with the readout from host computer.
 
-The complete readout systems performance was then verified with electrical measurements. A basic pulse injection test was conducted to evaluate the whole reception chain. Finally, a treshold scan experiment was performed and the system was deployed in a real-world single-photon time resolution (SPTR) experiment using a silicon photomultiplier (SiPM) at CERN. The device successfully acquired the data which was interpreted and the results presented.
+The readout system's performance was then verified through electrical measurements. A basic pulse injection test was conducted to evaluate the reception chain. Finally, a threshold scan experiment was performed using a silicon photomultiplier, and the results were later confirmed by repeating the experiment under ideal conditions at CERN. The device successfully acquired the data, and the interpreted results matched expectations.
 
 
 \clearpage

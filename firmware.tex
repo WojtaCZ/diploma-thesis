@@ -12,7 +12,7 @@ The USB specification describes a way to communicate with a USB device in a burs
 
 The same commands as in the \emph{CDC} interface have been implemented using control transfers to allow for easier interactions with the device via software on the host, as the text communication adds unnecessary overhead.
 
-A control transfer is started by an eight-byte-long \emph{Setup Packet}, which contains the following fields: \cite{usb20_spec}
+A control transfer is started by an eight-byte-long \emph{Setup Packet}, which contains the following fields: \cite{usb11_spec}
 
 \FloatBarrier
 \begin{figure}[htpb]
@@ -27,7 +27,7 @@ A control transfer is started by an eight-byte-long \emph{Setup Packet}, which c
             \bitbox{16}{\texttt{\footnotesize wIndex}} & 
             \bitbox{16}{\texttt{\footnotesize wLength}} 
         \end{bytefield}
-        \caption{Setup packet structure}
+        \caption{Setup packet structure \cite{usb11_spec}}
         \label{fig:usb_control_transfer}
     \end{center}
 \end{figure}
@@ -65,7 +65,7 @@ Both of the FastIC+ chips are mainly controlled over the \emph{I2C} interface. O
 When enabled by a specific command, the \emph{Aurora} stream is continuously sampled by an \emph{SPI} interface on the rising edge of the sampling clock. The \emph{SPI} interface buffers the received bytes in its internal \emph{FIFO} until a \emph{DMA} peripheral, configured in double-buffer circular mode, transfers the data to a buffer. In double-buffer mode, the programmer provides the \emph{DMA} with two separate buffers. The \emph{DMA} is then configured to switch back and forth between the buffers every time one of them is full. This allows the rest of the code to transfer data over USB from one of the buffers while the other is being filled, preventing any bit drops.
 
 \subsection{Pulse injection}
-The pulse injection circuit is fed by a fast timer output. The width of the timer pulse directly influences the width and amplitude of the generated pulse, which is used for testing the frontends. The size of this pulse has been fixed, and the pulses are generated with a period of \SI{50}{\micro\second}.
+The pulse injection circuit is fed by a fast timer output. The width of the timer pulse directly influences the width and amplitude of the generated pulse, which is used for testing the frontends. The size of this pulse has been fixed, and the pulses are generated with a period of \SI{100}{\micro\second}.
 \newpage
 \section{User board}
 
